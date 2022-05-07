@@ -4,9 +4,11 @@
 @import "category";
 @import "contact";
 @import "dashboard";
+
 // courses
-@import "courses/courses.scss";
-@import "courses/course.scss";
+@import "courses/courses";
+@import "courses/course";
+
 // articles
-@import "articles/articles.scss";
-@import "articles/article.scss";
+@import "articles/articles";
+@import "articles/article";
