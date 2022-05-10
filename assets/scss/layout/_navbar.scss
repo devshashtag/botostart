@@ -1,0 +1,64 @@
+header {
+  // navbar
+  .header__navbar {
+    nav {
+      z-index: 6;
+      // positions
+      position: fixed;
+      top: var(--navbar-mobile-height); // defined by javascript
+      right: calc($navbar-mobile-width * -1);
+      bottom: 0;
+
+      width: $navbar-mobile-width;
+
+      background-color: $color-blue-4;
+      transition: all 0.4s;
+      overflow-y: auto;
+      scrollbar-width: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+
+        li a {
+          @extend %no-select;
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: $color-white;
+          transition: color 0.5s;
+
+          &:hover {
+            color: $color-black-1;
+          }
+        }
+      }
+    }
+
+    // screen overlay
+    .screen-overlay {
+      z-index: 5;
+      position: fixed;
+      background-color: $color-alpha-black-2;
+      left: 0;
+      top: var(--navbar-mobile-height);
+      bottom: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &.active {
+      nav {
+        transform: translateX(calc($navbar-mobile-width * -1));
+      }
+
+      .screen-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
