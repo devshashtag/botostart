@@ -1,11 +1,13 @@
 //? colors
 // black
 $color-black-0: #000000;
-$color-black-1: #0000004d;
-$color-black-2: #0000005c;
-$color-black-3: #00000066;
-$color-black-4: #111111;
-$color-black-5: #222222;
+$color-black-1: #111111;
+$color-black-2: #222222;
+
+$color-alpha-black-0: #00000013;
+$color-alpha-black-1: #0000004d;
+$color-alpha-black-2: #0000005c;
+$color-alpha-black-3: #00000066;
 
 // gray
 $color-gray-0: #2e2e2e;
@@ -24,8 +26,18 @@ $color-blue-0: #5442cad4;
 $color-blue-1: #654efe40;
 $color-blue-2: #654efe;
 $color-blue-3: #654fef;
+$color-blue-4: #6560d1;
 
 // white
 $color-white: #ffffff;
 
 //? sizes
+//* main-header
+$toggle-icon-height: 2px;
+$toggle-icon-width: calc($toggle-icon-height * 9);
+//* main-header constants
+$toggle-icon-gap-neg: calc($toggle-icon-height * -3);
+$toggle-icon-gap-pos: calc($toggle-icon-height * 3);
+
+$header-buttons-icons-size: 46px;
+$navbar-mobile-width: 200px;

@@ -1,0 +1,144 @@
+body {
+  height: 500vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: $color-white;
+
+  -webkit-box-shadow: 0 0.125rem 0.25rem $color-alpha-black-0;
+  box-shadow: 0 0.125rem 0.25rem $color-alpha-black-0;
+
+  .container {
+    @extend %flex-center;
+    padding: 0 20px;
+  }
+
+  // logo
+  .header__logo {
+    @extend %flex-center;
+    margin: 0 10px;
+    img {
+      height: 40px;
+    }
+  }
+
+  // navbar
+  .header__navbar {
+    nav {
+      z-index: 6;
+      // positions
+      position: fixed;
+      top: var(--navbar-mobile-height); // defined by javascript
+      right: calc($navbar-mobile-width * -1);
+      bottom: 0;
+
+      width: $navbar-mobile-width;
+
+      background-color: $color-blue-4;
+      transition: all 0.4s;
+      overflow-y: auto;
+      scrollbar-width: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+
+        li a {
+          @extend %no-select;
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: $color-white;
+          transition: color 0.5s;
+
+          &:hover {
+            color: $color-black-1;
+          }
+        }
+      }
+    }
+
+    // screen overlay
+    .screen-overlay {
+      z-index: 5;
+      position: fixed;
+      background-color: $color-alpha-black-2;
+      left: 0;
+      top: var(--navbar-mobile-height);
+      bottom: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &.active {
+      nav {
+        transform: translateX(calc($navbar-mobile-width * -1));
+      }
+
+      .screen-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  // buttons
+  .header__buttons {
+    @extend %flex-center;
+    padding: 10px 0;
+
+    margin-left: auto;
+
+    > * {
+      width: $header-buttons-icons-size;
+      height: $header-buttons-icons-size;
+
+      cursor: pointer;
+    }
+
+    // login-button
+    .login-button {
+      @extend %header-icon;
+
+      .login-text {
+        display: none;
+      }
+    }
+
+    // cart button
+    .cart-button {
+      @extend %header-icon;
+
+      i {
+        position: relative;
+
+        .counter {
+          @extend %flex-center;
+
+          position: absolute;
+          background-color: $color-gray-6;
+          color: $color-white;
+          border-radius: 50%;
+          font-size: 8px;
+          font-weight: 100;
+          max-width: 2rem;
+          overflow: hidden;
+          text-align: center;
+          padding: 5px;
+          top: 70%;
+          left: 50%;
+        }
+      }
+    }
+
+    // cart content
+    .cart-content {
+      display: none;
+    }
+  }
+}

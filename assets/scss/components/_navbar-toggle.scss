@@ -1,0 +1,45 @@
+.navbar-toggle {
+  @extend %flex-center;
+
+  .toggle-icon {
+    background-color: $color-gray-3;
+    position: relative;
+    display: inline-block;
+
+    width: $toggle-icon-width;
+    height: $toggle-icon-height;
+    transition: all 0.5s;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $color-gray-3;
+      width: $toggle-icon-width;
+      height: $toggle-icon-height;
+      transition: all 0.5s;
+    }
+
+    &::before {
+      top: $toggle-icon-gap-neg;
+    }
+
+    &::after {
+      top: $toggle-icon-gap-pos;
+    }
+  }
+
+  &.active .toggle-icon {
+    background-color: $color-white;
+
+    &::before {
+      -webkit-transform: translateY($toggle-icon-gap-pos) rotateZ(-45deg);
+      transform: translateY($toggle-icon-gap-pos) rotateZ(-45deg);
+    }
+
+    &::after {
+      -webkit-transform: translateY($toggle-icon-gap-neg) rotateZ(45deg);
+      transform: translateY($toggle-icon-gap-neg) rotateZ(45deg);
+    }
+  }
+}

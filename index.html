@@ -17,6 +17,60 @@
 </head>
 
 <body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <!-- buttons -->
+      <div class="header__buttons">
+        <!-- navbar toggle -->
+        <div class="navbar-toggle">
+          <span class="toggle-icon"></span>
+        </div>
+
+        <!-- login -->
+        <div class="login-button">
+          <i class="fa fa-user-lock"></i>
+          <div class="login-text">ورود و ثبت نام</div>
+        </div>
+
+        <!-- cart -->
+        <div class="cart-button">
+          <i class="fa fa-shopping-bag" aria-hidden="true">
+            <div class="counter">0</div>
+          </i>
+        </div>
+
+        <!-- cart content -->
+        <div class="cart-content">
+          <div class="cart-sidebar">سبد خرید شما خالی است</div>
+          <div class="cart-overlay"></div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <div class="header__navbar">
+        <nav>
+          <ul>
+            <li><a href="/" class="active">صفحه اصلی</a></li>
+            <li><a href="/pages/courses/courses.html">دوره ها</a></li>
+            <li><a href="/pages/contact.html">تماس با ما</a></li>
+            <li><a href="/pages/about.html">درباره ما</a></li>
+            <li><a href="/pages/cart.html">سبد خرید</a></li>
+          </ul>
+        </nav>
+
+        <div class="screen-overlay"></div>
+      </div>
+
+      <!-- logo -->
+      <div class="header__logo">
+        <a href="/">
+          <img src="/assets/icons/logo.svg" alt="logo">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
 
   <!-- scripts -->
   <script type="module" src="/assets/js/global.js"></script>

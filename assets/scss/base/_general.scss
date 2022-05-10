@@ -3,6 +3,10 @@ img {
   height: 100%;
 }
 
+body.disable {
+  overflow-y: hidden;
+}
+
 %no-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -15,4 +19,19 @@ img {
 
 %no-select:focus {
   outline: none !important;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%header-icon {
+  @extend %flex-center;
+  @extend %no-select;
+
+  color: $color-blue-3;
+  cursor: pointer;
+  font-size: 25px;
 }
