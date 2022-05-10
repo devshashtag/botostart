@@ -1,5 +1,12 @@
 .navbar-toggle {
   @extend %flex-center;
+  padding: 10px 5px;
+  cursor: pointer;
+
+  // desktop styles
+  @include breakpoint(lg) {
+    display: none;
+  }
 
   .toggle-icon {
     background-color: $color-gray-3;

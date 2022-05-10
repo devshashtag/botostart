@@ -1,63 +1,110 @@
-header {
-  // navbar
-  .header__navbar {
+header .header__navbar {
+  // mobile styles
+  nav {
+    z-index: 6;
+    // positions
+    position: fixed;
+    top: var(--navbar-mobile-height); // defined by javascript
+    right: calc($navbar-mobile-width * -1);
+    bottom: 0;
+
+    width: $navbar-mobile-width;
+
+    background-color: $color-blue-4;
+    transition: all 0.4s;
+    overflow-y: auto;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+
+      li a {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $color-white;
+        transition: color 0.5s;
+
+        &:hover {
+          color: $color-black-1;
+        }
+      }
+    }
+  }
+
+  // screen overlay
+  .screen-overlay {
+    z-index: 5;
+    position: fixed;
+    background-color: $color-alpha-black-1;
+    left: 0;
+    top: var(--navbar-mobile-height);
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &.active {
     nav {
-      z-index: 6;
-      // positions
-      position: fixed;
-      top: var(--navbar-mobile-height); // defined by javascript
-      right: calc($navbar-mobile-width * -1);
-      bottom: 0;
+      transform: translateX(calc($navbar-mobile-width * -1));
+    }
 
-      width: $navbar-mobile-width;
+    .screen-overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
-      background-color: $color-blue-4;
-      transition: all 0.4s;
-      overflow-y: auto;
-      scrollbar-width: 0;
+  // desktop styles
+  @include breakpoint(lg) {
+    margin-left: auto;
+
+    nav {
+      position: static;
+      background-color: transparent;
+      width: auto;
+      overflow: hidden;
 
       ul {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        gap: 2rem;
+        flex-direction: row;
+        padding: 0;
+        gap: 1rem;
 
-        li a {
-          @extend %no-select;
-          font-size: 1.5rem;
-          font-weight: 300;
-          color: $color-white;
-          transition: color 0.5s;
+        li {
+          padding: 4px 5px;
 
-          &:hover {
-            color: $color-black-1;
+          a {
+            color: $color-gray-2;
+            font-size: 1.2rem;
+            font-weight: 600;
+            &:hover {
+              color: $color-blue-5;
+            }
+          }
+
+          &.active {
+            pointer-events: none;
+            border-radius: 3px;
+            border-bottom: 4px solid $color-blue-5;
+
+            a:hover {
+              color: $color-gray-2;
+            }
           }
         }
       }
     }
 
-    // screen overlay
-    .screen-overlay {
-      z-index: 5;
-      position: fixed;
-      background-color: $color-alpha-black-2;
-      left: 0;
-      top: var(--navbar-mobile-height);
-      bottom: 0;
-      right: 0;
-      visibility: hidden;
-      opacity: 0;
-      cursor: pointer;
-    }
-
     &.active {
       nav {
-        transform: translateX(calc($navbar-mobile-width * -1));
+        transform: translateX(0);
       }
 
       .screen-overlay {
-        visibility: visible;
-        opacity: 1;
+        display: none;
       }
     }
   }

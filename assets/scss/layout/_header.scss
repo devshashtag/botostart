@@ -5,14 +5,35 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: $color-white;
 
+  background-color: $color-white;
   -webkit-box-shadow: 0 2px 4px $color-alpha-black-0;
   box-shadow: 0 2px 4px $color-alpha-black-0;
 
   .container {
     @extend %flex-center;
-    padding: 0 20px;
+    @extend %no-select;
+    padding: 10px 20px;
+    transition: all 0.5s;
+
+    @include breakpoint(sm) {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    @include breakpoint(md) {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    // desktop styles
+    @include breakpoint(lg) {
+      flex-direction: row-reverse;
+      gap: 4rem;
+      padding: 10px 15px;
+      max-width: none;
+      margin: 0;
+    }
   }
 
   // logo
@@ -27,23 +48,45 @@ header {
   // buttons
   .header__buttons {
     @extend %flex-center;
-    padding: 10px 0;
+    gap: 25px;
 
     margin-left: auto;
-
-    > * {
-      width: $header-buttons-icons-size;
-      height: $header-buttons-icons-size;
-
-      cursor: pointer;
+    // desktop styles
+    @include breakpoint(lg) {
+      flex-direction: row-reverse;
+      margin-left: 0;
     }
 
     // login-button
     .login-button {
-      @extend %header-icon;
+      i {
+        @extend %header-icon;
+      }
+
+      // desktop styles
+      @include breakpoint(lg) {
+        display: flex;
+        gap: 10px;
+        background-color: $color-blue-5;
+        border-radius: 7px;
+        padding: 12px 16px;
+
+        i {
+          color: $color-white;
+          font-size: 1.5rem;
+        }
+      }
 
       .login-text {
         display: none;
+
+        // desktop styles
+        @include breakpoint(lg) {
+          display: block;
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: $color-white;
+        }
       }
     }
 
