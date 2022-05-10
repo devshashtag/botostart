@@ -29,7 +29,6 @@ body.disable {
 
 %header-icon {
   @extend %flex-center;
-  @extend %no-select;
 
   color: $color-blue-3;
   cursor: pointer;
