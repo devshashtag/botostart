@@ -1,1 +1,68 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    gap: 1rem;
+    background-color: $color-white;
+    
+  }
+  .main-menu {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+   .icon-shopp{
+     i{
+       font-size: 30px;
+       color: $color-blue-2;
+       margin-left: 5px;
+     }
+   }
+  .btn-login {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color:$color-blue-2;
+    color: $color-white;
+    padding: 10px;
+    border-radius:7px;
+    i{
+       color: $color-white;
+       font-size: 18px;
+       margin-left: 5px;
+    }
+    
+    p {
+      display: inline;
+      color: $color-white;
+      font-size: 15px;
+      margin-left: 5px;
+    }
+  }
+
+  .header-top {
+    display: flex;
+    gap: 1rem;
+   
+   .text{
+     position: absolute;
+     top: 50%;
+     right: 30px;
+   }
+   
+  
+  }
+}
