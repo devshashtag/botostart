@@ -15,11 +15,11 @@ window.addEventListener("load", function () {
   screenOverlay.forEach(item => {
     item.addEventListener('click', (elm) => {
       let element = elm.target.parentNode;
-      element.classList.toggle('active');
+      element.classList.remove('active');
 
       if (element.classList.contains('header__navbar')) {
-        navbarToggle.classList.toggle('active');
-        body.classList.toggle('disable');
+        navbarToggle.classList.remove('active');
+        body.classList.remove('disable');
       }
     })
   });
