@@ -31,7 +31,6 @@ body.disable {
   @extend %flex-center;
 
   color: $color-blue-3;
-  cursor: pointer;
   font-size: 25px;
 
   @include breakpoint(lg) {
