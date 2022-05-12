@@ -59,6 +59,8 @@ header {
 
     // login-button
     .login-button {
+      cursor: pointer;
+
       i {
         @extend %header-icon;
       }
@@ -92,23 +94,24 @@ header {
 
     // cart button
     .cart-button {
-      @extend %header-icon;
+      cursor: pointer;
 
       i {
+        @extend %header-icon;
         position: relative;
 
         .counter {
           @extend %flex-center;
 
           position: absolute;
-          background-color: $color-gray-6;
+          background-color: $color-gray-4;
           color: $color-white;
           border-radius: 50%;
           font-size: 8px;
           font-weight: 100;
-          max-width: 2rem;
           overflow: hidden;
-          text-align: center;
+          max-width: 2rem;
+          word-wrap: break-word;
           padding: 5px;
           top: 70%;
           left: 50%;
@@ -118,7 +121,66 @@ header {
 
     // cart content
     .cart-content {
-      display: none;
+      transition: all 0.5s;
+
+      visibility: hidden;
+
+      .cart-sidebar {
+        background-color: $color-white;
+        z-index: 4;
+        padding: 5rem 0;
+        font-size: 1.2rem;
+        color: $color-gray-6;
+        text-align: center;
+
+        transition: all 0.5s;
+
+        // position
+        position: fixed;
+        top: var(--navbar-mobile-height); // defined by javascript
+        right: calc($shop-width * -1);
+        width: $shop-width;
+        bottom: 0;
+
+        img {
+          height: auto;
+          width: 35px;
+
+          max-width: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      .screen-overlay {
+        z-index: 3;
+        background-color: $color-alpha-black-1;
+        transition: all 0.5s;
+
+        visibility: hidden;
+        opacity: 0;
+
+        // position
+        position: fixed;
+        left: 0;
+        top: var(--navbar-mobile-height);
+        bottom: 0;
+        right: 0;
+
+        cursor: pointer;
+      }
+    }
+
+    .cart-content.active {
+      visibility: visible;
+
+      .cart-sidebar {
+        transform: translateX(calc($shop-width * -1));
+      }
+
+      .screen-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 }
