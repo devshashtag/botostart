@@ -11,7 +11,7 @@ header .header__navbar {
     width: $navbar-mobile-width;
 
     background-color: $color-blue-4;
-    transition: all 0.4s;
+    transition: all 0.5s;
     overflow-y: auto;
 
     ul {
@@ -24,7 +24,7 @@ header .header__navbar {
         font-size: 1.5rem;
         font-weight: 300;
         color: $color-white;
-        transition: color 0.5s;
+        transition: color 0.2s;
 
         &:hover {
           color: $color-black-1;
