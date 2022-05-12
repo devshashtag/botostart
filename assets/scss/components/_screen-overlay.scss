@@ -1,0 +1,23 @@
+.screen-overlay {
+  z-index: 1;
+  background-color: $color-alpha-black-1;
+
+  // animation
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+
+  // position
+  position: fixed;
+  left: 0;
+  top: var(--navbar-mobile-height);
+  bottom: 0;
+  right: 0;
+
+  cursor: pointer;
+}
+
+.active .screen-overlay {
+  visibility: visible;
+  opacity: 1;
+}

@@ -121,17 +121,17 @@ header {
 
     // cart content
     .cart-content {
+      // animation
       transition: all 0.5s;
-
       visibility: hidden;
 
       .cart-sidebar {
         background-color: $color-white;
-        z-index: 4;
         padding: 5rem 0;
         font-size: 1.2rem;
         color: $color-gray-6;
         text-align: center;
+        z-index: 5;
 
         transition: all 0.5s;
 
@@ -150,24 +150,6 @@ header {
           vertical-align: middle;
         }
       }
-
-      .screen-overlay {
-        z-index: 3;
-        background-color: $color-alpha-black-1;
-        transition: all 0.5s;
-
-        visibility: hidden;
-        opacity: 0;
-
-        // position
-        position: fixed;
-        left: 0;
-        top: var(--navbar-mobile-height);
-        bottom: 0;
-        right: 0;
-
-        cursor: pointer;
-      }
     }
 
     .cart-content.active {
@@ -175,11 +157,6 @@ header {
 
       .cart-sidebar {
         transform: translateX(calc($shop-width * -1));
-      }
-
-      .screen-overlay {
-        visibility: visible;
-        opacity: 1;
       }
     }
   }

@@ -1,18 +1,17 @@
 header .header__navbar {
   // mobile styles
   nav {
+    width: $navbar-mobile-width;
+    background-color: $color-blue-4;
+    transition: all 0.5s;
+    overflow-y: auto;
     z-index: 6;
+
     // positions
     position: fixed;
     top: var(--navbar-mobile-height); // defined by javascript
     right: calc($navbar-mobile-width * -1);
     bottom: 0;
-
-    width: $navbar-mobile-width;
-
-    background-color: $color-blue-4;
-    transition: all 0.5s;
-    overflow-y: auto;
 
     ul {
       display: flex;
@@ -38,32 +37,12 @@ header .header__navbar {
     }
   }
 
-  // screen overlay
   .screen-overlay {
     z-index: 5;
-    position: fixed;
-    background-color: $color-alpha-black-1;
-    left: 0;
-    top: var(--navbar-mobile-height);
-    bottom: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-
-    transition: all 0.5s;
-
-    cursor: pointer;
   }
 
-  &.active {
-    nav {
-      transform: translateX(calc($navbar-mobile-width * -1));
-    }
-
-    .screen-overlay {
-      visibility: visible;
-      opacity: 1;
-    }
+  &.active nav {
+    transform: translateX(calc($navbar-mobile-width * -1));
   }
 
   // desktop styles
