@@ -45,7 +45,6 @@ header .header__navbar {
     transform: translateX(calc($navbar-mobile-width * -1));
   }
 
-  // desktop styles
   @include breakpoint(lg) {
     margin-left: auto;
 

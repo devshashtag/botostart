@@ -26,7 +26,6 @@ header {
       margin: 0 auto;
     }
 
-    // desktop styles
     @include breakpoint(lg) {
       flex-direction: row-reverse;
       gap: 4rem;
@@ -48,10 +47,9 @@ header {
   // buttons
   .header__buttons {
     @extend %flex-center;
+    margin-left: auto;
     gap: 25px;
 
-    margin-left: auto;
-    // desktop styles
     @include breakpoint(lg) {
       flex-direction: row-reverse;
       margin-left: 0;
@@ -65,7 +63,6 @@ header {
         @extend %header-icon;
       }
 
-      // desktop styles
       @include breakpoint(lg) {
         display: flex;
         gap: 10px;
@@ -82,7 +79,6 @@ header {
       .login-text {
         display: none;
 
-        // desktop styles
         @include breakpoint(lg) {
           display: block;
           font-size: 1.2rem;
@@ -119,44 +115,46 @@ header {
       }
     }
 
-    // cart content
-    .cart-content {
-      // animation
-      transition: all 0.5s;
-      visibility: hidden;
-
-      .cart-sidebar {
-        background-color: $color-white;
-        padding: 5rem 0;
-        font-size: 1.2rem;
-        color: $color-gray-6;
-        text-align: center;
-        z-index: 5;
-
+    .button__contents {
+      // cart content
+      .cart-content {
+        // animation
         transition: all 0.5s;
+        visibility: hidden;
 
-        // position
-        position: fixed;
-        top: var(--navbar-mobile-height); // defined by javascript
-        right: calc($shop-width * -1);
-        width: $shop-width;
-        bottom: 0;
+        .cart-sidebar {
+          background-color: $color-white;
+          padding: 5rem 0;
+          font-size: 1.2rem;
+          color: $color-gray-6;
+          text-align: center;
+          z-index: 5;
 
-        img {
-          height: auto;
-          width: 35px;
+          transition: all 0.5s;
 
-          max-width: 100%;
-          vertical-align: middle;
+          // position
+          position: fixed;
+          top: var(--navbar-mobile-height); // defined by javascript
+          right: calc($shop-width * -1);
+          width: $shop-width;
+          bottom: 0;
+
+          img {
+            height: auto;
+            width: 35px;
+
+            max-width: 100%;
+            vertical-align: middle;
+          }
         }
-      }
-    }
 
-    .cart-content.active {
-      visibility: visible;
+        &.active {
+          visibility: visible;
 
-      .cart-sidebar {
-        transform: translateX(calc($shop-width * -1));
+          .cart-sidebar {
+            transform: translateX(calc($shop-width * -1));
+          }
+        }
       }
     }
   }

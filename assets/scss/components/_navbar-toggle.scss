@@ -3,7 +3,6 @@
   padding: 10px 5px;
   cursor: pointer;
 
-  // desktop styles
   @include breakpoint(lg) {
     display: none;
   }
