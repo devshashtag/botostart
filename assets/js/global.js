@@ -17,16 +17,18 @@ window.addEventListener("load", function () {
   // get client height of header for styles
   const headerHeight = document.querySelector("header").clientHeight;
   document.documentElement.style.setProperty('--navbar-mobile-height', headerHeight.toString() + 'px');
-
   // screenOverlay events
   screenOverlay.forEach(item => {
     item.addEventListener('click', (elm) => {
       let element = elm.target.parentNode;
       element.classList.remove('active');
 
-      if (element.classList.contains('header__navbar')) {
+      if (element === navbar) {
         navbarToggle.classList.remove('active');
         body.classList.remove('disable');
+      }
+      else if (element === loginModal) {
+        hideLoginModal();
       }
     })
   });
@@ -46,9 +48,14 @@ window.addEventListener("load", function () {
   // login events
   loginButton.addEventListener('click', () => {
     loginModal.classList.toggle('active');
+    body.classList.toggle('disable');
   });
 
-  loginClose.addEventListener('click', () => {
+  loginClose.addEventListener('click', hideLoginModal);
+
+  function hideLoginModal() {
     loginModal.classList.remove('active');
-  });
+    body.classList.toggle('disable');
+  }
+
 });
