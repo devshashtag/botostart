@@ -1,12 +1,12 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   // screenOverlay [navbar, cart, login modal]
   const screenOverlay = document.querySelectorAll(".screen-overlay");
   // navbar
   const navbarToggle = document.querySelector("div.navbar-toggle");
   const navbar = document.querySelector(".header__navbar");
   // cart
-  const cartButton = document.querySelector("header .cart-button");
-  const cartContent = document.querySelector("header .cart-content");
+  const cartButton = document.querySelector(".main-header .cart-button");
+  const cartContent = document.querySelector(".main-header .cart-content");
   // login
   const loginButton = document.querySelector(".header__buttons .login-button");
   const loginModal = document.querySelector(".buttons__content .login-modal");

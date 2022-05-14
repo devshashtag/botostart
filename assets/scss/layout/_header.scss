@@ -2,8 +2,8 @@ body {
   height: 500vh;
 }
 
-header {
-  .container {
+.main-header {
+  .header__container {
     @extend %flex-center;
     @extend %no-select;
 
