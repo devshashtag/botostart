@@ -14,9 +14,6 @@ window.addEventListener("load", function () {
   // body
   const body = document.body;
 
-  // get client height of header for styles
-  const headerHeight = document.querySelector("header").clientHeight;
-  document.documentElement.style.setProperty('--navbar-mobile-height', headerHeight.toString() + 'px');
   // screenOverlay events
   screenOverlay.forEach(item => {
     item.addEventListener('click', (elm) => {

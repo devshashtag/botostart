@@ -9,7 +9,7 @@ header .header__navbar {
 
     // positions
     position: fixed;
-    top: var(--navbar-mobile-height); // defined by javascript
+    top: $header-height;
     right: calc($navbar-mobile-width * -1);
     bottom: 0;
 

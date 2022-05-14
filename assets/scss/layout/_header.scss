@@ -3,17 +3,19 @@ body {
 }
 
 header {
-  position: sticky;
-  top: 0;
-
-  background-color: $color-white-0;
-  -webkit-box-shadow: 0 2px 4px $color-alpha-black-0;
-  box-shadow: 0 2px 4px $color-alpha-black-0;
-
   .container {
     @extend %flex-center;
     @extend %no-select;
-    padding: 10px 20px;
+
+    height: $header-height;
+    position: sticky;
+    top: 0;
+
+    -webkit-box-shadow: 0 2px 4px $color-alpha-black-0;
+    box-shadow: 0 2px 4px $color-alpha-black-0;
+    background-color: $color-white-0;
+    padding: 0 20px;
+
     transition: all 0.5s;
 
     @include breakpoint(sm) {
@@ -29,7 +31,7 @@ header {
     @include breakpoint(lg) {
       flex-direction: row-reverse;
       gap: 4rem;
-      padding: 10px 15px;
+      padding: 0 15px;
       max-width: none;
       margin: 0;
     }
@@ -134,7 +136,7 @@ header {
 
           // position
           position: fixed;
-          top: var(--navbar-mobile-height); // defined by javascript
+          top: $header-height;
           right: calc($shop-width * -1);
           width: $shop-width;
           bottom: 0;

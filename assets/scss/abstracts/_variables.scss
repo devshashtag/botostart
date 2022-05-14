@@ -38,13 +38,12 @@ $color-white-0: #ffffff;
 $color-white-1: #f6f6f6;
 
 //? sizes
-//* main-header
-$toggle-icon-height: 2px;
-$toggle-icon-width: calc($toggle-icon-height * 9);
-//* main-header constants
-$toggle-icon-gap-neg: calc($toggle-icon-height * -3);
-$toggle-icon-gap-pos: calc($toggle-icon-height * 3);
-
-$header-buttons-icons-size: 46px;
+//* header
+$header-height: 65px;
 $navbar-mobile-width: 200px;
 $shop-width: 339px;
+$toggle-icon-height: 2px;
+$toggle-icon-width: calc($toggle-icon-height * 9);
+//* header constants
+$toggle-icon-gap-neg: calc($toggle-icon-height * -3);
+$toggle-icon-gap-pos: calc($toggle-icon-height * 3);
