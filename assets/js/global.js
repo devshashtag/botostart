@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
   const cartContent = document.querySelector("header .cart-content");
   // login
   const loginButton = document.querySelector(".header__buttons .login-button");
-  const loginModal = document.querySelector(".button__contents .login-modal");
+  const loginModal = document.querySelector(".buttons__content .login-modal");
   const loginClose = document.querySelector(".login__header .login--close");
   // body
   const body = document.body;
