@@ -1,0 +1,113 @@
+.header__buttons .button__contents .login-modal {
+  z-index: 100;
+  // position
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // animation
+  transition: all 0.2s;
+  visibility: hidden;
+  opacity: 0;
+
+  .login {
+    &__box {
+      z-index: 105;
+      position: relative;
+      width: auto;
+      margin: 8px;
+      border-radius: 15px;
+      background-color: $color-white-0;
+      overflow: hidden;
+
+      @include breakpoint(sm) {
+        max-width: 400px;
+        margin: 10vh auto 0 auto;
+      }
+    }
+
+    &__header {
+      font-size: 20px;
+      background-color: $color-white-1;
+      padding: 18px 40px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .login--close {
+        cursor: pointer;
+        color: $color-gray-5;
+
+        i {
+          vertical-align: middle;
+          font-size: 25px;
+        }
+      }
+    }
+
+    &__content {
+      padding: 16px 29px 20px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+          color: $color-gray-4;
+          font-size: 14px;
+        }
+        padding-bottom: 15px;
+      }
+
+      .form {
+        &-box {
+          @extend %form-box;
+        }
+
+        &-options {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+
+            input[type="checkbox"] {
+              cursor: pointer;
+            }
+          }
+
+          a {
+            font-size: 14px;
+            color: $color-gray-3;
+            &:hover {
+              color: $color-blue-3;
+            }
+          }
+        }
+
+        &-submit {
+          @extend %form-submit;
+        }
+      }
+    }
+  }
+
+  .screen-overlay {
+    z-index: 101;
+    background-color: $color-alpha-black-6;
+    top: 0;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

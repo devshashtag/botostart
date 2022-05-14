@@ -1,14 +1,21 @@
 window.addEventListener("load", function () {
+  // screenOverlay [navbar, cart, login modal]
+  const screenOverlay = document.querySelectorAll(".screen-overlay");
+  // navbar
   const navbarToggle = document.querySelector("div.navbar-toggle");
   const navbar = document.querySelector(".header__navbar");
-  const screenOverlay = document.querySelectorAll(".screen-overlay");
+  // cart
   const cartButton = document.querySelector("header .cart-button");
   const cartContent = document.querySelector("header .cart-content");
+  // login
+  const loginButton = document.querySelector(".header__buttons .login-button");
+  const loginModal = document.querySelector(".button__contents .login-modal");
+  const loginClose = document.querySelector(".login__header .login--close");
+  // body
   const body = document.body;
 
+  // get client height of header for styles
   const headerHeight = document.querySelector("header").clientHeight;
-
-  // set default height of navbar items in mobile
   document.documentElement.style.setProperty('--navbar-mobile-height', headerHeight.toString() + 'px');
 
   // screenOverlay events
@@ -25,16 +32,23 @@ window.addEventListener("load", function () {
   });
 
   // navbar events
-  navbarToggle.addEventListener('click', activeNavbar);
+  navbarToggle.addEventListener('click', () => {
+    navbarToggle.classList.toggle('active');
+    navbar.classList.toggle('active');
+    body.classList.toggle('disable');
+  });
+
   // cart events
   cartButton.addEventListener('click', () => {
     cartContent.classList.toggle('active');
   });
 
+  // login events
+  loginButton.addEventListener('click', () => {
+    loginModal.classList.toggle('active');
+  });
 
-  function activeNavbar() {
-    navbarToggle.classList.toggle('active');
-    navbar.classList.toggle('active');
-    body.classList.toggle('disable');
-  }
+  loginClose.addEventListener('click', () => {
+    loginModal.classList.remove('active');
+  });
 });

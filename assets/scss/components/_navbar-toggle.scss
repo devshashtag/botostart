@@ -36,7 +36,7 @@
   }
 
   &.active .toggle-icon {
-    background-color: $color-white;
+    background-color: $color-white-0;
 
     &::before {
       -webkit-transform: translateY($toggle-icon-gap-pos) rotateZ(-45deg);

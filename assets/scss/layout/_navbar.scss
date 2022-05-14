@@ -22,7 +22,7 @@ header .header__navbar {
       li a {
         font-size: 1.5rem;
         font-weight: 300;
-        color: $color-white;
+        color: $color-white-0;
         transition: color 0.2s;
 
         &:hover {
@@ -32,7 +32,7 @@ header .header__navbar {
     }
 
     hr {
-      background-color: $color-white;
+      background-color: $color-white-0;
       height: 2px;
     }
   }
