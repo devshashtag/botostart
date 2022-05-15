@@ -11,7 +11,7 @@ body {
   background-color: $color-white-0;
 
   .header__container {
-    @extend %flex-center;
+    display: flex;
     @extend %no-select;
 
     height: $header-height;
