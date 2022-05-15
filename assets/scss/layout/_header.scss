@@ -3,6 +3,10 @@ body {
 }
 
 .main-header {
+  -webkit-box-shadow: 0 2px 4px $color-alpha-black-0;
+  box-shadow: 0 2px 4px $color-alpha-black-0;
+  background-color: $color-white-0;
+
   .header__container {
     @extend %flex-center;
     @extend %no-select;
@@ -11,9 +15,6 @@ body {
     position: sticky;
     top: 0;
 
-    -webkit-box-shadow: 0 2px 4px $color-alpha-black-0;
-    box-shadow: 0 2px 4px $color-alpha-black-0;
-    background-color: $color-white-0;
     padding: 0 20px;
 
     transition: all 0.5s;
