@@ -1,1 +1,64 @@
+main.home {
+  section {
+    background-color: $color-white-2;
+  }
 
+  .home__heading {
+    height: calc(100vh - $header-height);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: 27rem;
+    padding-top: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    transition: all 0.2s;
+
+    .title {
+      color: $color-gray-0;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    .text {
+      color: $color-gray-2;
+      font-size: 1.3rem;
+    }
+
+    .btn-start {
+      @extend %default-button;
+      font-family: inherit;
+      font-size: 1.5rem;
+      padding: 18px 30px;
+      transition: all 0.5s;
+      background-image: none;
+      background-color: $color-blue-2;
+      &:hover {
+        background-color: $color-blue-5;
+      }
+    }
+
+    @include breakpoint(lg) {
+      background-position: 8vw 40%;
+      background-size: 60vh;
+      padding-top: 0;
+      padding-right: 5vw;
+
+      align-items: flex-start;
+      gap: 3rem;
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
