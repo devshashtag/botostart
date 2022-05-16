@@ -2,6 +2,10 @@
 
 botostart.ir template
 
+# todo
+
+- [ ] example todo
+
 # npm scripts
 
 ## http server
