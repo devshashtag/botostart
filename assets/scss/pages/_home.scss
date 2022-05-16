@@ -1,10 +1,17 @@
 main.home {
+  background-color: $color-white-1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
   section {
     background-color: $color-white-2;
   }
 
+  // heading
   .home__heading {
     height: calc(100vh - $header-height);
+    max-height: 700px;
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: center 10%;
@@ -43,10 +50,10 @@ main.home {
     }
 
     @include breakpoint(lg) {
-      background-position: 8vw 40%;
-      background-size: 60vh;
+      background-position: 5rem 40%;
+      background-size: 38%;
       padding-top: 0;
-      padding-right: 5vw;
+      padding-right: 5rem;
 
       align-items: flex-start;
       gap: 3rem;
@@ -59,6 +66,17 @@ main.home {
       .text {
         font-size: 1.4rem;
       }
+    }
+  }
+
+  // courses
+  .home__courses {
+    padding: 1rem 0 2rem;
+    .title {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: 800;
     }
   }
 }
