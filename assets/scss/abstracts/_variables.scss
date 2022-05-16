@@ -13,6 +13,9 @@ $color-alpha-black-5: #000000aa;
 $color-alpha-black-6: #000000cc;
 $color-alpha-black-7: #000000ee;
 
+$color-shadow-0: #00000033;
+$color-shadow-1: #a8acb94d;
+
 // gray
 $color-gray-0: #2e2e2e;
 $color-gray-1: #434343;
@@ -39,12 +42,18 @@ $color-white-1: #f6f6f6;
 $color-white-2: #f3f3f3;
 
 //? sizes
-//* header
+// global
+$section-max-width: 1200px;
+
+// header
 $header-height: 65px;
 $navbar-mobile-width: 200px;
 $shop-width: 339px;
 $toggle-icon-height: 2px;
 $toggle-icon-width: calc($toggle-icon-height * 9);
-//* header constants
+// header constants
 $toggle-icon-gap-neg: calc($toggle-icon-height * -3);
 $toggle-icon-gap-pos: calc($toggle-icon-height * 3);
+
+// card
+$card-icon-size: 40px;
