@@ -1,8 +1,5 @@
-body {
-  height: 500vh;
-}
-
 .main-header {
+  z-index: 50;
   position: sticky;
   top: 0;
 
@@ -26,15 +23,13 @@ body {
 
     @include breakpoint(md) {
       max-width: 920px;
-      margin: 0 auto;
     }
 
     @include breakpoint(lg) {
       flex-direction: row-reverse;
       gap: 4rem;
       padding: 0 15px;
-      max-width: none;
-      margin: 0;
+      max-width: $section-max-width;
     }
   }
 
