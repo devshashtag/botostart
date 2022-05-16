@@ -4,7 +4,9 @@ botostart.ir template
 
 # todo
 
-- [ ] example todo
+- [ ] create json file for courses
+- [ ] read data from json file with fetch
+- [ ] display all courses in home\_\_courses
 
 # npm scripts
 
