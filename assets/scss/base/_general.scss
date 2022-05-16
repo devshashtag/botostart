@@ -7,6 +7,12 @@ body.disable {
   overflow-y: hidden;
 }
 
+section {
+  width: 100%;
+  max-width: $section-max-width;
+  margin: 0 auto;
+}
+
 %no-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -93,5 +99,23 @@ body.disable {
   input[type="password"] {
     @extend %form-input;
     padding-left: 45px;
+  }
+}
+
+// cards
+%cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 2rem 4rem;
+  gap: 3rem 2rem;
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
