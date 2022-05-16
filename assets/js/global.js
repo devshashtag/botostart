@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-  // screenOverlay [navbar, cart, login modal]
+  // screenOverlay [navbar, cart, login-modal]
   const screenOverlay = document.querySelectorAll(".screen-overlay");
   // navbar
   const navbarToggle = document.querySelector("div.navbar-toggle");
