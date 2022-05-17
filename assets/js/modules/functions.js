@@ -9,7 +9,7 @@ function commafy(num) {
 // used for calculate discount
 function calcDiscount(discount, price) {
   // if price equal to 0 then it's free
-  if (price === 0)
+  if (+price <= 0)
     return "free";
 
   // check if discount not empty
