@@ -4,9 +4,21 @@ botostart.ir template
 
 # todo
 
+## home
+
 - [x] create json file for courses
 - [x] read data from json file with fetch
 - [x] display all courses in home\_\_courses
+
+## articles
+
+- [ ] create articles section
+- [ ] make articles responsive
+
+## footer
+
+- [ ] create footer
+- [ ] make footer responsive
 
 # npm scripts
 
