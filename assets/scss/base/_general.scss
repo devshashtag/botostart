@@ -112,7 +112,9 @@ section {
 
   @include breakpoint(md) {
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
+
+    gap: 3rem;
+    padding: 2rem 5rem;
   }
 
   @include breakpoint(lg) {
