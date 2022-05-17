@@ -242,7 +242,7 @@
         padding: 5px 0;
       }
 
-      .price {
+      .price::before {
         display: none;
       }
     }
