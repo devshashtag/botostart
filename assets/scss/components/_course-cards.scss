@@ -236,6 +236,8 @@
 
     // free
     &__price.free {
+      flex-direction: row-reverse;
+
       .discount {
         color: $color-gray-4;
         background-color: transparent;

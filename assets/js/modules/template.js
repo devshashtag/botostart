@@ -3,7 +3,7 @@ import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
 function courseCard(item) {
   const discount = commafy(calcDiscount(item.discount, item.price));
   const isFree = (discount === "free") ? true : false;
-  const templateFooterDiscount = `<div class="discount">${isFree ? "رایگان!" : discount}</div>`;
+  const templateFooterDiscount = `<div class="discount">${isFree ? "– رایگان!" : discount}</div>`;
 
   let rating = item.rating;
   if (rating > 5) rating = 5;
