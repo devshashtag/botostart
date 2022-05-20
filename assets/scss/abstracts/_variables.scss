@@ -36,6 +36,8 @@ $color-blue-3: #654fef;
 $color-blue-4: #6560d1;
 $color-blue-5: #5442ca;
 
+$color-alpha-blue-0: #5442cabb;
+
 // white
 $color-white-0: #ffffff;
 $color-white-1: #f6f6f6;
@@ -43,6 +45,9 @@ $color-white-2: #f3f3f3;
 
 // green
 $color-green-0: #29ca4a;
+
+//pink
+$color-pink-0: #ec406a;
 
 //? sizes
 // global
@@ -59,4 +64,4 @@ $toggle-icon-gap-neg: calc($toggle-icon-height * -3);
 $toggle-icon-gap-pos: calc($toggle-icon-height * 3);
 
 // card
-$card-icon-size: 4rem;
+$card-icon-size: 40px;
