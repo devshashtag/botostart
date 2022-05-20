@@ -2,11 +2,15 @@
 
 botostart.ir template
 
-# todo
+# global todo
 
-## home
+## variables
 
-### footer
+- [ ] Remove unused colors
+
+# home-page todo
+
+## footer
 
 - [ ] add footer html
 - [ ] add footer styles
