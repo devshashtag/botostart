@@ -6,9 +6,10 @@ botostart.ir template
 
 ## home
 
-## footer
+### footer
 
-- [ ] create footer
+- [ ] add footer html
+- [ ] add footer styles
 - [ ] make footer responsive
 
 # npm scripts
