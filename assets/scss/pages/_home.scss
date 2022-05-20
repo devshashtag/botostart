@@ -4,8 +4,17 @@ main.home {
   flex-direction: column;
   gap: 2rem;
 
+  // all sections
   section {
     background-color: $color-white-2;
+
+    h2.title {
+      color: $color-gray-0;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+    }
   }
 
   // heading
@@ -42,8 +51,6 @@ main.home {
       font-size: 1.5rem;
       padding: 18px 30px;
       transition: all 0.5s;
-      background-image: none;
-      background-color: $color-blue-2;
       &:hover {
         background-color: $color-blue-5;
       }
@@ -69,14 +76,187 @@ main.home {
     }
   }
 
-  // courses
-  .home__courses {
-    padding: 1rem 0 2rem;
+  // courses, articles
+  .home__courses,
+  .home__articles {
+    padding: 1rem 0 4rem;
+  }
+
+  // articles
+  .home__articles {
     .title {
-      text-align: center;
-      padding: 2rem;
-      font-size: 2rem;
-      font-weight: 800;
+      padding: 2rem 2rem 4rem;
+    }
+
+    .article {
+      // article posts
+      &__posts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 50vw;
+        grid-gap: 30px;
+        padding: 2rem;
+
+        @include breakpoint(sm) {
+          padding: 2rem 4rem;
+        }
+
+        @include breakpoint(md) {
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: 25vw;
+          grid-gap: 25px;
+        }
+
+        @include breakpoint(lg) {
+          padding: 2rem 4rem;
+          grid-auto-rows: 150px;
+          grid-template-columns: 6fr 2fr;
+        }
+      }
+
+      // article post
+      &__post {
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+
+        @include breakpoint(md) {
+          &:first-child {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+          }
+        }
+
+        @include breakpoint(lg) {
+          &:first-child {
+            grid-column-start: unset;
+          }
+          // main articles repeat after each 3 item
+          &:nth-of-type(4n + 1) {
+            overflow: unset;
+            grid-row-start: span 3;
+
+            // specific style for main article
+            .article__content {
+              background-color: $color-white-0;
+              color: $color-black-0;
+              width: 35rem;
+              margin: 3rem 0;
+              margin-right: -2.5rem;
+              border-radius: 15px;
+              padding: 2rem 1rem;
+
+              box-shadow: 0 0 25px $color-alpha-black-1;
+
+              .article__category {
+                background-color: unset;
+                margin-right: unset;
+
+                &::before {
+                  display: block;
+                }
+              }
+
+              .article__name {
+                font-size: 16px;
+                padding: 0 15px;
+                text-align: justify;
+                font-weight: 350;
+              }
+            }
+          }
+        }
+        // a is article content wrapper
+        a {
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+
+          background-color: $color-alpha-black-3;
+          border-radius: 15px;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: $color-alpha-blue-0;
+          }
+        }
+
+        &:hover {
+          .article__content {
+            transform: translateY(-5px);
+          }
+        }
+      }
+
+      // article content
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        transition: all 0.3s;
+
+        padding: 2rem;
+        color: $color-white-0;
+        font-weight: 200;
+
+        @include breakpoint(md) {
+          padding: 2rem 1rem;
+        }
+
+        @include breakpoint(lg) {
+          padding: 1rem;
+        }
+      }
+
+      // article category
+      &__category {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 16px;
+        margin-right: -1rem;
+
+        &::before {
+          display: block;
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $color-pink-0;
+        }
+
+        @include breakpoint(md) {
+          background-color: $color-alpha-black-2;
+          padding: 10px 15px;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        @include breakpoint(lg) {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+
+      // article name
+      &__name {
+        font-size: 14px;
+        font-weight: 300;
+
+        @include breakpoint(lg) {
+          font-size: 11px;
+          font-weight: 400;
+        }
+      }
     }
   }
 }
