@@ -12,7 +12,7 @@ botostart.ir template
 
 ## footer
 
-- [ ] add footer html
+- [x] add footer html
 - [ ] add footer styles
 - [ ] make footer responsive
 
