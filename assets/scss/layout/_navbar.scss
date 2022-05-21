@@ -2,7 +2,7 @@
   // mobile styles
   nav {
     width: $navbar-mobile-width;
-    background-color: $color-blue-4;
+    background-color: $color-blue-2;
     transition: all 0.5s;
     overflow-y: auto;
     z-index: 6;
@@ -66,7 +66,7 @@
           padding: 4px 5px;
 
           a {
-            color: $color-gray-2;
+            color: $color-gray-1;
             font-size: 1.2rem;
             font-weight: 600;
 
@@ -75,17 +75,17 @@
             }
 
             &:hover {
-              color: $color-blue-5;
+              color: $color-blue-3;
             }
           }
 
           &.active {
             pointer-events: none;
             border-radius: 3px;
-            border-bottom: 4px solid $color-blue-5;
+            border-bottom: 4px solid $color-blue-3;
 
             a:hover {
-              color: $color-gray-2;
+              color: $color-gray-1;
             }
           }
         }

@@ -36,7 +36,7 @@ section {
 %header-icon {
   @extend %flex-center;
 
-  color: $color-blue-3;
+  color: $color-blue-1;
   font-size: 25px;
 
   @include breakpoint(lg) {
@@ -49,8 +49,8 @@ section {
   color: $color-white-0;
   padding: 12px 16px;
   border-radius: 7px;
-  background-color: $color-blue-2;
-  // background-image: linear-gradient(300deg, $color-blue-2, $color-blue-5);
+  background-color: $color-blue-0;
+  // background-image: linear-gradient(300deg, $color-blue-0, $color-blue-3);
 }
 
 %input-icon {
@@ -65,7 +65,7 @@ section {
   bottom: 0;
   width: 50px;
   font-size: 22px;
-  color: $color-gray-9;
+  color: $color-gray-7;
 }
 
 %form-input {
@@ -75,12 +75,12 @@ section {
   padding: 8px 10px;
   border-radius: 50px;
   line-height: 1.6;
-  border: 1px solid $color-blue-5;
+  border: 1px solid $color-blue-3;
   -webkit-appearance: none;
 }
 
 %form-submit {
-  background-color: $color-blue-5;
+  background-color: $color-blue-3;
   color: $color-white-0;
   padding: 14px 17px;
   border-radius: 5px;

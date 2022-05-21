@@ -38,7 +38,7 @@
 
       .login--close {
         cursor: pointer;
-        color: $color-gray-5;
+        color: $color-gray-4;
 
         i {
           vertical-align: middle;
@@ -56,7 +56,7 @@
         gap: 10px;
 
         label {
-          color: $color-gray-4;
+          color: $color-gray-3;
           font-size: 14px;
         }
         padding-bottom: 15px;
@@ -90,7 +90,7 @@
           }
 
           a {
-            color: $color-gray-3;
+            color: $color-gray-2;
             font-size: 12px;
 
             @include breakpoint(md) {
@@ -98,7 +98,7 @@
             }
 
             &:hover {
-              color: $color-blue-3;
+              color: $color-blue-1;
             }
           }
         }
@@ -116,7 +116,7 @@
 
   .screen-overlay {
     z-index: 101;
-    background-color: $color-alpha-black-6;
+    background-color: $color-alpha-black-5;
     top: 0;
   }
 

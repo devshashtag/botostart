@@ -64,7 +64,7 @@
       @include breakpoint(lg) {
         display: flex;
         gap: 10px;
-        background-color: $color-blue-5;
+        background-color: $color-blue-3;
         border-radius: 7px;
         padding: 12px 16px;
 
@@ -98,7 +98,7 @@
           @extend %flex-center;
 
           position: absolute;
-          background-color: $color-gray-4;
+          background-color: $color-gray-3;
           color: $color-white-0;
           border-radius: 50%;
           font-size: 8px;
@@ -124,7 +124,7 @@
           background-color: $color-white-0;
           padding: 5rem 0;
           font-size: 1.2rem;
-          color: $color-gray-6;
+          color: $color-gray-5;
           text-align: center;
           z-index: 5;
 

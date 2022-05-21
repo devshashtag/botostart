@@ -41,7 +41,7 @@ main.home {
     }
 
     .text {
-      color: $color-gray-2;
+      color: $color-gray-1;
       font-size: 1.3rem;
     }
 
@@ -52,7 +52,7 @@ main.home {
       padding: 18px 30px;
       transition: all 0.5s;
       &:hover {
-        background-color: $color-blue-5;
+        background-color: $color-blue-3;
       }
     }
 
