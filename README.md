@@ -2,19 +2,9 @@
 
 botostart.ir template
 
-# global todo
-
-## variables
-
-- [ ] Remove unused colors
-
 # home-page todo
 
-## footer
-
-- [x] add footer html
-- [ ] add footer styles
-- [ ] make footer responsive
+- [ ] fix home page bugs
 
 # npm scripts
 
