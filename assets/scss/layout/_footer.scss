@@ -1,0 +1,146 @@
+.main-footer {
+  background-color: $color-gray-7;
+
+  .footer {
+    // footer container
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    // footer content
+    &__content {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-gap: 2rem 3rem;
+
+      padding: 4rem 2rem;
+      color: $color-gray-1;
+
+      max-width: $section-max-width;
+      margin-inline: auto;
+
+      @include breakpoint(sm) {
+        padding: 4rem 5rem;
+      }
+
+      @include breakpoint(lg) {
+        padding: 4rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    // footer title
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 2rem;
+      font-size: 17px;
+      font-weight: 500;
+
+      &::after {
+        content: "";
+        display: inline;
+        width: 18px;
+        height: 3px;
+        background-color: $color-blue-3;
+      }
+    }
+
+    // footer text
+    &__text {
+      font-size: 13px;
+      line-height: 2;
+      font-weight: 400;
+
+      @include breakpoint(lg) {
+        text-align: justify;
+        line-height: 2.5;
+      }
+
+      img {
+        width: 60px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    // footer menu
+    &__menu {
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem 2rem;
+
+        li {
+          display: flex;
+          align-items: center;
+          color: $color-gray-1;
+          font-size: 14px;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: $color-white-0;
+
+            transition: width 0.3s;
+          }
+
+          &:hover::before {
+            margin-left: 5px;
+            width: 12px;
+          }
+        }
+      }
+    }
+
+    // footer bottom
+    &__bottom {
+      background-color: $color-alpha-black-0;
+    }
+
+    // footer wrapper
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      max-width: $section-max-width;
+      margin-inline: auto;
+      padding: 4rem 1rem;
+
+      @include breakpoint(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 2rem 2rem 5rem;
+      }
+    }
+
+    // footer copyright
+    &__copyright {
+      font-size: 13px;
+      color: $color-gray-1;
+    }
+
+    // footer links
+    &__links {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        color: $color-gray-1;
+      }
+
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+}
