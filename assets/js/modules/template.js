@@ -1,6 +1,6 @@
 import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
 
-function courseCard(item) {
+function courseCardTemplate(item) {
   const discount = commafy(calcDiscount(item.discount, item.price));
   const isFree = (discount === "free") ? true : false;
   const templateFooterDiscount = `<div class="discount">${isFree ? "– رایگان!" : discount}</div>`;
@@ -84,4 +84,4 @@ function courseCard(item) {
   return templateCourseCard;
 }
 
-export { courseCard };
+export { courseCardTemplate };
