@@ -2,7 +2,7 @@ import { courseCardTemplate } from "/assets/js/modules/template.js";
 
 // used for formating prices
 function commafy(num) {
-  if (num === "free") return num;
+  if (num === "free" || num === "") return num;
 
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   ;
@@ -10,12 +10,10 @@ function commafy(num) {
 
 // used for calculate discount
 function calcDiscount(discount, price) {
+  console.log(discount, price);
   // if price equal to 0 then it's free
-  if (+price <= 0)
-    return "free";
-
   // check if discount not empty
-  if (!discount)
+  if (+price <= 0 || !discount)
     return "";
 
   // remove % from number: 100% => 100
@@ -31,12 +29,13 @@ function calcDiscount(discount, price) {
   else if (discountNumber >= 100) {
     return "free";
   }
-  // for negative values return empty string
+
+  // for negative and zero values return empty string
   return "";
 }
 
 // courses functions
-function courseCards(courseCardsClass) {
+function courseCards(courseCardsClass, coursesAPI) {
   if (!courseCardsClass) {
     console.log("courseCardsClass is undefined");
     return;
@@ -44,7 +43,7 @@ function courseCards(courseCardsClass) {
 
   const courseCardsElm = document.querySelector(courseCardsClass);
 
-  fetch("/assets/js/data/courses.json")
+  fetch(coursesAPI)
     .then(response => response.json())
     .then(courses => {
       console.log(courses);

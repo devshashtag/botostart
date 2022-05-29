@@ -1,7 +1,7 @@
 import { courseCards } from '/assets/js/modules/functions.js';
 
 window.addEventListener("DOMContentLoaded", function () {
-  const courseCardsClass = ".home__courses > .course__cards";
-  const coursesAPI = "/assets/js/data/home-courses.json";
+  const courseCardsClass = ".courses__products > .course__cards";
+  const coursesAPI = "/assets/js/data/product-courses.json";
   courseCards(courseCardsClass, coursesAPI);
 });

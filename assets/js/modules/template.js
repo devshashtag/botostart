@@ -5,14 +5,21 @@ function courseCardTemplate(item) {
   const isFree = (discount === "free") ? true : false;
   const templateFooterDiscount = `<div class="discount">${isFree ? "– رایگان!" : discount}</div>`;
 
+  // price
+  if (+item.price === 0 && !discount) {
+    item.price = "رایگان!";
+  }
+
+  // rating
   let rating = item.rating;
   if (rating > 5) rating = 5;
   else if (rating < 0) rating = 0;
 
   let ratingTitle = 'هنوز امتیازی ثبت نشده است';
   if (rating > 0 && rating <= 5)
-    ratingTitle = `دارای امتیاز ${rating} از 5`
+    ratingTitle = `دارای امتیاز ${rating} از 5`;
 
+  // template Course Card
   const templateCourseCard = `
 <!-- card -->
 <div class="course__card">
