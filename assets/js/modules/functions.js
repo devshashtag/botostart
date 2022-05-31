@@ -10,7 +10,6 @@ function commafy(num) {
 
 // used for calculate discount
 function calcDiscount(discount, price) {
-  console.log(discount, price);
   // if price equal to 0 then it's free
   // check if discount not empty
   if (+price <= 0 || !discount)
@@ -46,7 +45,6 @@ function courseCards(courseCardsClass, coursesAPI) {
   fetch(coursesAPI)
     .then(response => response.json())
     .then(courses => {
-      console.log(courses);
       courses.forEach(item => {
         const cardTemplate = courseCardTemplate(item);
         courseCardsElm.insertAdjacentHTML('beforeend', cardTemplate);
