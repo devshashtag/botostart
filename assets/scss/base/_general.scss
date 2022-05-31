@@ -109,12 +109,12 @@ section {
   grid-template-columns: 1fr;
   justify-content: center;
   padding: 2rem 4rem;
-  gap: 3rem 2rem;
+  grid-gap: 3rem 2rem;
 
   @include breakpoint(md) {
     grid-template-columns: 1fr 1fr;
 
-    gap: 3rem;
+    grid-gap: 3rem;
     padding: 2rem 5rem;
   }
 
