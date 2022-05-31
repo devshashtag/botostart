@@ -1,20 +1,13 @@
 main.home {
-  background-color: $color-alpha-black-0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  @extend %sections-gap;
 
-  // all sections
-  section {
-    background-color: $color-white-2;
-
-    h2.title {
-      color: $color-gray-0;
-      padding: 2rem;
-      font-size: 2rem;
-      font-weight: 800;
-      text-align: center;
-    }
+  // all sections title
+  section h2.title {
+    color: $color-gray-0;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
   }
 
   // heading
