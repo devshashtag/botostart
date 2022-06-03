@@ -1,0 +1,270 @@
+main.courses {
+  @extend %sections-gap;
+
+  // courses products section
+  .courses__products {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 4rem 2rem 7rem;
+  }
+
+  // courses products childs
+  .products {
+    // products options
+    &__options {
+      background-color: $color-white-0;
+      padding: 15px 1rem;
+      border-radius: 7px;
+
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1rem;
+
+      width: 100%;
+      transition: all 0.5s;
+
+      @include breakpoint(sm) {
+        padding: 15px 2rem;
+        flex-direction: row;
+        max-width: 450px;
+        width: auto;
+        margin-inline: auto;
+      }
+
+      @include breakpoint(md) {
+        margin-inline: unset;
+        max-width: unset;
+      }
+    }
+
+    // products cards
+    &__cards {
+      padding: unset;
+    }
+
+    @include breakpoint(md) {
+      &__cards.view-list {
+        display: flex;
+        flex-direction: column;
+
+        .course__card {
+          display: flex;
+          flex-direction: row;
+          margin: unset;
+        }
+
+        .card__image {
+          line-height: 0;
+
+          img {
+            max-height: 240px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 10px;
+          }
+        }
+
+        .card__body {
+          flex-grow: 1;
+          height: 100%;
+          padding: 1rem 0;
+
+          .card__title {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+  }
+
+  // products options childs
+  .options__view {
+    display: none;
+    gap: 0.5rem;
+
+    @include breakpoint(md) {
+      display: flex;
+    }
+
+    .view-grid,
+    .view-list {
+      @extend %flex-center;
+      color: $color-gray-2;
+      border: 1px solid $color-shadow-0;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+      &.active {
+        border: unset;
+        background-color: $color-blue-3;
+        color: $color-white-0;
+      }
+    }
+
+    i {
+      font-size: 1.1rem;
+      line-height: 0;
+    }
+  }
+
+  // options order
+  .options__order {
+    position: relative;
+    min-width: 200px;
+    height: 40px;
+    z-index: 1;
+
+    @include breakpoint(sm) {
+      margin-left: auto;
+    }
+    // selected item
+    .order__selected {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      border: 1px solid $color-blue-3;
+      padding: 10px 15px;
+      border-radius: 40px;
+      cursor: pointer;
+
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $color-blue-3;
+        color: $color-white-0;
+
+        i {
+          color: $color-gray-8;
+        }
+      }
+
+      .selected {
+        font-family: inherit;
+        font-size: 12px;
+      }
+
+      i {
+        margin: auto 0;
+        font-size: 14px;
+        color: $color-gray-2;
+
+        transition: all 0.3s;
+      }
+    }
+
+    // order dropdown
+    .order__dropdown {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      background-color: $color-white-0;
+      box-shadow: 0 0 6px $color-shadow-0;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+    }
+
+    .dropdown {
+      &__search {
+        width: 100%;
+        padding: 5px 4px;
+
+        input {
+          width: 100%;
+          border: 1px solid $color-gray-8;
+          font-size: 14px;
+          line-height: 2;
+          padding: 2px 5px;
+        }
+      }
+
+      &__options {
+        max-height: 245px;
+        overflow-y: auto;
+
+        button {
+          text-align: right;
+          background-color: $color-white-2;
+          line-height: 2;
+          padding: 6px 10px;
+          font-size: 13px;
+          font-family: inherit;
+          width: 100%;
+
+          &.selected {
+            background-color: $color-white-4;
+          }
+
+          &:not(.selected):hover {
+            cursor: pointer;
+            background-color: $color-white-3;
+          }
+        }
+      }
+    }
+  }
+
+  .options__order.open {
+    .order__selected {
+      background-color: $color-blue-3;
+      color: $color-white-0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+
+      i {
+        color: $color-gray-8;
+        transform: rotate(180deg);
+      }
+    }
+    .order__dropdown {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // options search
+  .options__search {
+    min-width: 200px;
+    border: 1px solid $color-blue-3;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(md) {
+      min-width: 250px;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+    }
+
+    .search-field {
+      flex-grow: 1;
+      font-size: 12px;
+      font-family: inherit;
+      background-color: unset;
+    }
+
+    .search-submit {
+      cursor: pointer;
+      font-size: 15px;
+      color: $color-gray-6;
+      background-color: unset;
+      &:hover {
+        color: $color-blue-3;
+      }
+    }
+  }
+}

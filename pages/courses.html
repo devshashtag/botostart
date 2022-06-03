@@ -112,10 +112,58 @@
   <main class="courses">
     <!-- products -->
     <section class="courses__products">
-      <!-- header -->
-      <div class="products__header"></div>
-      <!-- course cards -->
-      <div class="course-cards"></div>
+      <!-- options -->
+      <div class="products__options">
+        <!-- view -->
+        <div class="options__view">
+          <div class="view-grid active">
+            <i class='fas fa-th-large' aria-hidden="true"></i>
+          </div>
+
+          <div class="view-list">
+            <i class="fas fa-list" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <!-- order -->
+        <div class="options__order">
+          <div class="order__selected">
+            <div class="selected">مرتب سازی پیش فرض</div>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="order__dropdown">
+            <div class="dropdown__search">
+              <input type="text" placeholder="جستجو...">
+            </div>
+            <div class="dropdown__options">
+              <form role="search" action="?" method="get">
+                <button type="submit" name="orderby" value="default" class="selected">مرتب سازی پیشفرض</button>
+                <button type="submit" name="orderby" value="popularity">مرتب سازی بر اساس محبوبیت</button>
+                <button type="submit" name="orderby" value="rating">مرتب سازی بر اساس امتیاز</button>
+                <button type="submit" name="orderby" value="last">مرتب سازی بر اساس آخرین</button>
+                <button type="submit" name="orderby" value="cheapest">مرتب سازی بر اساس ارزان ترین</button>
+                <button type="submit" name="orderby" value="expensive">مرتب سازی بر اساس گرانترین</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div class="options__search">
+          <form role="search" action="/" method="get">
+            <!-- hidden field -->
+            <input type="hidden" name="post_type" value="product">
+            <!-- search field -->
+            <input type="text" class="search-field" placeholder="جستجوی دوره …" name="s">
+            <button class="search-submit" type="submit" value="جستجو">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="products__cards course-cards"></div>
     </section>
     <!-- end products -->
   </main>
