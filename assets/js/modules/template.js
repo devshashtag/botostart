@@ -35,12 +35,12 @@ function courseCardTemplate(item) {
       ${(item.videoUrl) ? `
       <div class="icon video-player" title="نمایش دمو">
         <a href="${item.videoUrl}" rel="nofollow">
-          <i class="fas fa-play"></i>
+          <i class="fas fa-play" aria-hidden="true"></i>
         </a>
       </div>` : ""}
       <div class="icon" title="ثبت نام دوره">
         <a href="?add-to-cart=${item.id}" rel="nofollow">
-          <i class="fas fa-user-plus"></i>
+          <i class="fas fa-user-plus" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -66,7 +66,7 @@ function courseCardTemplate(item) {
       </div>
       <!-- teacher -->
       <div class="card__teacher">
-        <i class="fas fa-chalkboard-teacher"></i>
+        <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
         <a href="${item.teacherProfile}">${item.teacher}</a>
       </div>
     </div>
@@ -75,7 +75,7 @@ function courseCardTemplate(item) {
     <div class="card__footer">
       <!-- card students -->
       <div class="card__students">
-        <i class="fas fa-users"></i>
+        <i class="fas fa-users" aria-hidden="true"></i>
         <span>${commafy(item.students)}</span>
       </div>
       <!-- card price -->
