@@ -15,6 +15,98 @@
 </head>
 
 <body>
+  <!-- header -->
+  <header class="main-header">
+    <div class="header__container">
+      <!-- buttons -->
+      <div class="header__buttons">
+        <div class="navbar-toggle">
+          <span class="toggle-icon"></span>
+        </div>
+        <div class="login-button">
+          <i class="fa fa-user-lock" aria-hidden="true"></i>
+          <div class="login-text">ورود و ثبت نام</div>
+        </div>
+        <div class="cart-button">
+          <i class="fa fa-shopping-bag" aria-hidden="true">
+            <div class="counter">0</div>
+          </i>
+        </div>
+
+        <!-- button contents -->
+        <div class="buttons__content">
+          <!-- login modal -->
+          <div class="login-modal">
+            <div class="login__box">
+              <div class="login__header">
+                <div class="header__text">ورود</div>
+                <div class="login--close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="login__content">
+                <form method="post" action="/">
+                  <label for="username">نام کاربری :</label>
+                  <div class="form-box">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <input type="text" name="username" id="username">
+                  </div>
+                  <label for="password">رمز عبور :</label>
+                  <div class="form-box">
+                    <i class="fas fa-lock-open" aria-hidden="true"></i>
+                    <input type="password" name="password" id="password">
+                  </div>
+                  <div class="form-options">
+                    <label><input name="rememberme" type="checkbox" value="true"> مرا به خاطر داشته باش </label>
+                    <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
+                  </div>
+                  <button class="form-submit" type="submit">ورود</button>
+                </form>
+                <div class="content__register"> هنوز عضو نشده اید؟
+                  <a href="/pages/accounts.html">عضویت در سایت</a>
+                </div>
+              </div>
+            </div>
+            <div class="screen-overlay"></div>
+          </div>
+
+          <!-- cart content -->
+          <div class="cart-content">
+            <div class="cart-sidebar">
+              <p>
+                <img src="/assets/images/global/empty-cart.png" alt="empty cart">
+                هنوز هیچ دوره ای اضافه نکرده اید.
+              </p>
+            </div>
+            <div class="screen-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <div class="header__navbar">
+        <nav>
+          <ul>
+            <li><a href="/">صفحه نخست</a></li>
+            <li><a href="/pages/courses.html">دوره ها</a></li>
+            <li class="active"><a href="/pages/contact.html">تماس با ما</a></li>
+            <li><a href="/pages/about.html">درباره ما</a></li>
+            <li><a href="/pages/cart.html">سبد خرید</a></li>
+          </ul>
+          <hr />
+        </nav>
+        <div class="screen-overlay"></div>
+      </div>
+
+      <!-- logo -->
+      <div class="header__logo">
+        <a href="/">
+          <img src="/assets/icons/logo.svg" alt="logo">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
 
   <!-- scripts -->
   <script src="/assets/js/global.js"></script>
