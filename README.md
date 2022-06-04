@@ -5,6 +5,7 @@ botostart.ir template
 # home-page todo
 
 - [ ] fix home page bugs
+- [ ] remove %input-icon %form-box align it with flex
 
 # npm scripts
 
