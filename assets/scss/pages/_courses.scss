@@ -174,11 +174,12 @@ main.courses {
         padding: 5px 4px;
 
         input {
-          width: 100%;
-          border: 1px solid $color-gray-8;
+          font-family: inherit;
           font-size: 14px;
           line-height: 2;
+          border: 1px solid $color-gray-8;
           padding: 2px 5px;
+          width: 100%;
         }
       }
 
