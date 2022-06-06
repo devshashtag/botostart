@@ -1,6 +1,6 @@
 import { courseCardTemplate } from "/assets/js/modules/template.js";
 
-// used for formating prices
+// formating prices
 function commafy(num) {
   if (num === "free" || num === "") return num;
 
@@ -8,7 +8,7 @@ function commafy(num) {
   ;
 }
 
-// used for calculate discount
+// calculate discount
 function calcDiscount(discount, price) {
   // if price equal to 0 then it's free
   // check if discount not empty
