@@ -13,6 +13,18 @@ section {
   margin: 0 auto;
 }
 
+%sections-gap {
+  background-color: $color-alpha-black-0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  > section {
+    background-color: $color-white-2;
+  }
+}
+
 %no-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -31,18 +43,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-%sections-gap {
-  background-color: $color-alpha-black-0;
-
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  > section {
-    background-color: $color-white-2;
-  }
 }
 
 %header-icon {
