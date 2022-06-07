@@ -6,8 +6,12 @@ botostart.ir template
 
 - [ ] fix home page bugs
 - [ ] remove %input-icon %form-box align it with flex
-- [ ] add screen-loader
-- [ ] add scroll-to-top
+- [ ] screen-loader
+- [ ] scroll-to-top
+
+# courses-page todos
+
+- [ ] courses description
 
 # npm scripts
 
