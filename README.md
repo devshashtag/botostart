@@ -2,6 +2,10 @@
 
 botostart.ir template
 
+# global todo
+
+- [ ] convert px into rem values if possible
+
 # home-page todo
 
 - [ ] fix home page bugs
