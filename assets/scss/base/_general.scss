@@ -25,6 +25,15 @@ section {
   }
 }
 
+%mobile-max-width {
+  max-width: $mobile-max-width;
+  margin: 0 auto;
+
+  @include breakpoint(md) {
+    max-width: unset;
+  }
+}
+
 %no-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
