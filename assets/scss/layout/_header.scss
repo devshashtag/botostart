@@ -8,35 +8,28 @@
   background-color: $color-white-0;
 
   .header__container {
-    display: flex;
     @extend %no-select;
+    @extend %mobile-max-width;
 
+    display: flex;
     height: $header-height;
-    padding: 0 20px;
-
+    padding: 0 10px;
     transition: all 0.5s;
 
-    @include breakpoint(sm) {
-      max-width: 540px;
-      margin: 0 auto;
-    }
-
     @include breakpoint(md) {
-      max-width: 920px;
+      padding: 0 15px;
     }
 
     @include breakpoint(lg) {
+      max-width: $section-max-width;
       flex-direction: row-reverse;
       gap: 4rem;
-      padding: 0 15px;
-      max-width: $section-max-width;
     }
   }
 
   // logo
   .header__logo {
     @extend %flex-center;
-    margin: 0 10px;
     img {
       height: 40px;
     }
