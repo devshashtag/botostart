@@ -6,17 +6,12 @@ main.contact {
     gap: 0;
   }
 
-  section {
-    padding: 2rem 0 4rem;
-  }
-
   // contact-us
   .contact-us {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-right: 2rem;
-    padding-left: 3rem;
+    padding: 2rem 2rem 4rem;
 
     // title
     .contact__header {
