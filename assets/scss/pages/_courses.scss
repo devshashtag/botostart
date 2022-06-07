@@ -12,6 +12,8 @@ main.courses {
   .products {
     // products options
     &__options {
+      @extend %mobile-max-width;
+
       background-color: $color-white-0;
       padding: 15px 1rem;
       border-radius: 7px;
@@ -24,16 +26,8 @@ main.courses {
       transition: all 0.5s;
 
       @include breakpoint(sm) {
-        padding: 15px 2rem;
         flex-direction: row;
-        max-width: 450px;
-        width: auto;
-        margin-inline: auto;
-      }
-
-      @include breakpoint(md) {
-        margin-inline: unset;
-        max-width: unset;
+        padding: 15px 2rem;
       }
     }
 
@@ -239,10 +233,6 @@ main.courses {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @include breakpoint(md) {
-      min-width: 250px;
-    }
 
     form {
       display: flex;
