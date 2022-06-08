@@ -66,22 +66,22 @@ section {
 
 // default button
 %default-button {
-  cursor: pointer;
-  color: $color-white-0;
-  padding: 12px 16px;
-  border-radius: 7px;
   background-color: $color-blue-0;
+  color: $color-white-0;
+  border-radius: 7px;
+  padding: 12px 16px;
+  cursor: pointer;
 }
 
 // form submit
 %form-submit {
   background-color: $color-blue-3;
-  color: $color-white-0;
-  width: 100%;
-  padding: 10px 40px;
-  font-size: 1.4rem;
-  font-family: inherit;
   border-radius: 0.5rem;
+  color: $color-white-0;
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 10px 40px;
+  width: 100%;
   cursor: pointer;
 }
 
