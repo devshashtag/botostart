@@ -3,7 +3,7 @@
   nav {
     width: $navbar-mobile-width;
     background-color: $color-blue-2;
-    transition: all 0.5s;
+    transition: all $transition-1;
     overflow-y: auto;
     z-index: 6;
 
@@ -62,6 +62,7 @@
         padding: 0;
         gap: 1rem;
 
+        // navbar items
         li {
           padding: 4px 5px;
 
@@ -78,15 +79,16 @@
               color: $color-blue-3;
             }
           }
+        }
 
-          &.active {
-            pointer-events: none;
-            border-radius: 3px;
-            border-bottom: 4px solid $color-blue-3;
+        // active item
+        li.active {
+          pointer-events: none;
+          border-radius: 3px;
+          border-bottom: 4px solid $color-blue-3;
 
-            a:hover {
-              color: $color-gray-2;
-            }
+          a:hover {
+            color: $color-gray-2;
           }
         }
       }
