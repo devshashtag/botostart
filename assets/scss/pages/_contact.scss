@@ -72,16 +72,7 @@ main.contact {
       // name, email, text
       input,
       textarea {
-        background-color: $color-white-0;
-        color: $color-gray-3;
-        font-family: inherit;
-        font-size: 1.5rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-
-        @include breakpoint(lg) {
-          font-size: 1.3rem;
-        }
+        @extend %form-input;
       }
 
       // text
