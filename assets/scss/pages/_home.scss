@@ -43,7 +43,7 @@ main.home {
       font-family: inherit;
       font-size: 1.5rem;
       padding: 18px 30px;
-      transition: all 0.5s;
+      transition: all $transition-1;
       &:hover {
         background-color: $color-blue-3;
       }
@@ -190,7 +190,7 @@ main.home {
         align-items: flex-start;
         gap: 1rem;
 
-        transition: all 0.3s;
+        transition: all $transition-0;
 
         padding: 2rem;
         color: $color-white-0;

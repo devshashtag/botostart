@@ -8,7 +8,7 @@
     border-radius: 10px;
 
     box-shadow: 0 2px 8px $color-shadow-0;
-    transition: transform 0.3s ease;
+    transition: transform $transition-0;
 
     &:hover {
       box-shadow: 0 6px 20px $color-shadow-1;
@@ -44,8 +44,8 @@
       right: 15px;
 
       .icon {
-        transition: all 0.2s ease-in-out;
         border-radius: 100%;
+        transition: all $transition-0;
         background-color: $color-alpha-black-2;
 
         &:hover {
@@ -84,7 +84,7 @@
       background-image: url("/assets/images/discount.png");
       color: $color-white-2;
 
-      transition: all 0.3s;
+      transition: all $transition-0;
       transform: rotate(-30deg);
 
       .percent {

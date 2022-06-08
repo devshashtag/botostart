@@ -23,7 +23,7 @@ main.courses {
       gap: 1rem;
 
       width: 100%;
-      transition: all 0.5s;
+      transition: all $transition-1;
 
       @include breakpoint(sm) {
         flex-direction: row;
@@ -123,7 +123,7 @@ main.courses {
       border-radius: 40px;
       cursor: pointer;
 
-      transition: all 0.3s;
+      transition: all $transition-0;
 
       &:hover {
         background-color: $color-blue-3;
@@ -144,7 +144,7 @@ main.courses {
         font-size: 14px;
         color: $color-gray-2;
 
-        transition: all 0.3s;
+        transition: all $transition-0;
       }
     }
 

@@ -14,7 +14,7 @@
 
     width: $toggle-icon-width;
     height: $toggle-icon-height;
-    transition: all 0.5s;
+    transition: all $transition-1;
 
     &::after,
     &::before {
@@ -23,7 +23,7 @@
       background-color: $color-gray-1;
       width: $toggle-icon-width;
       height: $toggle-icon-height;
-      transition: all 0.5s;
+      transition: all $transition-1;
     }
 
     &::before {
