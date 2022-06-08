@@ -91,7 +91,7 @@
           height: 1px;
           background-color: $color-white-0;
 
-          transition: width 0.3s;
+          transition: width $transition-0;
         }
 
         &:hover::before {
