@@ -48,7 +48,7 @@
               </div>
               <!-- content -->
               <div class="login__content">
-                <form method="get" action="">
+                <form method="post" action="">
                   <!-- username -->
                   <label for="username">نام کاربری :</label>
                   <div class="form-box">
@@ -148,7 +148,7 @@
               <input type="text" placeholder="جستجو ...">
             </div>
             <div class="dropdown__options">
-              <form role="search" action="?" method="get">
+              <form method="post" role="search" action="">
                 <button type="submit" name="orderby" value="default" class="selected">مرتب سازی پیشفرض</button>
                 <button type="submit" name="orderby" value="popularity">مرتب سازی بر اساس محبوبیت</button>
                 <button type="submit" name="orderby" value="rating">مرتب سازی بر اساس امتیاز</button>
@@ -162,7 +162,7 @@
 
         <!-- search -->
         <div class="options__search">
-          <form role="search" action="/" method="get">
+          <form method="post" role="search" action="">
             <!-- hidden field -->
             <input type="hidden" name="post_type" value="product">
             <!-- search field -->
