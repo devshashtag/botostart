@@ -34,6 +34,7 @@ section {
   }
 }
 
+// no select
 %no-select {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -48,80 +49,80 @@ section {
   outline: none !important;
 }
 
+// flex center
 %flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+// header-icon
 %header-icon {
   @extend %flex-center;
 
   color: $color-blue-1;
-  font-size: 25px;
-
-  @include breakpoint(lg) {
-    font-size: 30px;
-  }
+  font-size: 2.5rem;
 }
 
+// default button
 %default-button {
   cursor: pointer;
   color: $color-white-0;
   padding: 12px 16px;
   border-radius: 7px;
   background-color: $color-blue-0;
-  // background-image: linear-gradient(300deg, $color-blue-0, $color-blue-3);
 }
 
-%input-icon {
-  @extend %flex-center;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  font-size: 22px;
-  color: $color-gray-8;
-}
-
-%form-input {
-  outline: 0;
-  width: 100%;
-  height: 42px;
-  padding: 8px 10px;
-  border-radius: 50px;
-  line-height: 1.6;
-  border: 1px solid $color-blue-3;
-  -webkit-appearance: none;
-}
-
+// form submit
 %form-submit {
   background-color: $color-blue-3;
   color: $color-white-0;
-  padding: 14px 17px;
-  border-radius: 5px;
-  font-size: 16px;
   width: 100%;
+  padding: 10px 40px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
+// form input
+%form-input {
+  background-color: $color-white-0;
+  color: $color-gray-3;
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-appearance: none;
+
+  @include breakpoint(md) {
+    font-size: 1.3rem;
+  }
+}
+
+// form box
 %form-box {
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 2rem;
+  border: 1px solid $color-blue-3;
 
   i {
-    @extend %input-icon;
+    @extend %flex-center;
+    color: $color-gray-8;
+    font-size: 2rem;
+    width: 5rem;
   }
 
   input[type="text"],
   input[type="password"] {
     @extend %form-input;
-    padding-left: 45px;
+    border-radius: inherit;
   }
 }
 
-// cards
+// cards container
 %cards-container {
   display: grid;
   grid-template-columns: 1fr;
