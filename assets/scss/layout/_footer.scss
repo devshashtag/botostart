@@ -13,20 +13,19 @@
     display: grid;
     grid-auto-columns: 1fr;
     grid-gap: 2rem 3rem;
-
-    padding: 4rem 2rem;
-    color: $color-gray-1;
+    padding: 3rem 2rem;
 
     max-width: $section-max-width;
+    color: $color-gray-1;
     margin: 0 auto;
     width: 100%;
 
     @include breakpoint(sm) {
-      padding: 4rem 5rem;
+      padding: 3rem 5rem;
     }
 
     @include breakpoint(md) {
-      padding: 4rem 2rem;
+      padding: 3.5rem 2rem;
     }
 
     @include breakpoint(lg) {
@@ -41,8 +40,12 @@
     gap: 10px;
 
     margin-bottom: 2rem;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
+
+    @include breakpoint(lg) {
+      margin-bottom: 2.5rem;
+    }
 
     &::after {
       content: "";
@@ -55,19 +58,18 @@
 
   // text
   .footer__text {
-    font-size: 14px;
+    font-size: 1.3rem;
     line-height: 2;
     font-weight: 400;
 
     @include breakpoint(lg) {
       text-align: justify;
-      line-height: 2.5;
     }
 
     img {
-      width: 60px;
       border-radius: 5px;
       cursor: pointer;
+      width: 60px;
     }
   }
 
@@ -76,7 +78,7 @@
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1rem 2rem;
+      grid-gap: 1.5rem;
 
       li {
         display: flex;
@@ -128,14 +130,18 @@
 
   // copyright
   .footer__copyright {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: $color-gray-1;
+
+    @include breakpoint(md) {
+      font-size: 1.3rem;
+    }
   }
 
   // links
   .footer__links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 
     a {
       color: $color-gray-1;
