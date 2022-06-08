@@ -5,6 +5,7 @@ botostart.ir template
 # global todo
 
 - [ ] convert px into rem values if possible
+- [ ] convert all pages title to persian
 
 # home-page todo
 
