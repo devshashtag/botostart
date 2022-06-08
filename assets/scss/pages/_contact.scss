@@ -81,7 +81,7 @@ main.contact {
       }
 
       // submit button
-      button[type="submit"] {
+      .form-submit {
         @extend %form-submit;
 
         @include breakpoint(lg) {
