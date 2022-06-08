@@ -13,7 +13,7 @@
     display: flex;
     height: $header-height;
     padding: 0 10px;
-    transition: all 0.5s;
+    transition: all $transition-1;
 
     @include breakpoint(md) {
       padding: 0 15px;
@@ -109,7 +109,7 @@
       // cart content
       .cart-content {
         // animation
-        transition: all 0.5s ease;
+        transition: all $transition-1;
         visibility: hidden;
 
         .cart-sidebar {
@@ -121,7 +121,7 @@
           text-align: center;
           z-index: 5;
 
-          transition: all 0.5s ease;
+          transition: all $transition-1;
 
           // position
           position: fixed;
