@@ -8,7 +8,6 @@
   background-color: $color-white-0;
 
   .header__container {
-    @extend %no-select;
     @extend %mobile-max-width;
 
     display: flex;
@@ -110,10 +109,11 @@
       // cart content
       .cart-content {
         // animation
-        transition: all 0.5s;
+        transition: all 0.5s ease;
         visibility: hidden;
 
         .cart-sidebar {
+          box-shadow: 0 0 10px 2px $color-shadow-1 inset;
           background-color: $color-white-0;
           padding: 5rem 0;
           font-size: 1.2rem;
@@ -121,14 +121,19 @@
           text-align: center;
           z-index: 5;
 
-          transition: all 0.5s;
+          transition: all 0.5s ease;
 
           // position
           position: fixed;
           top: $header-height;
-          right: calc($shop-width * -1);
-          width: $shop-width;
+          right: 0;
           bottom: 0;
+          width: 100%;
+          transform: translateX(110%);
+
+          @include breakpoint(sm) {
+            width: $shop-width;
+          }
 
           img {
             height: auto;
@@ -143,7 +148,7 @@
           visibility: visible;
 
           .cart-sidebar {
-            transform: translateX(calc($shop-width * -1));
+            transform: translateX(0);
           }
         }
       }
