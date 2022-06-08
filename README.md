@@ -9,7 +9,9 @@ botostart.ir template
 # home-page todo
 
 - [ ] fix home page bugs
-- [ ] remove %input-icon %form-box align it with flex
+  - [x] footer
+  - [x] login-modal
+- [x] remove %input-icon align it with flex
 - [ ] screen-loader
 - [ ] scroll-to-top
 
