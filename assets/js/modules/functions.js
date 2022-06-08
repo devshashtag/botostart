@@ -51,7 +51,6 @@ function courseCards(courseCardsClass, coursesAPI) {
     });
 }
 
-
 export {
   commafy,
   calcDiscount,
