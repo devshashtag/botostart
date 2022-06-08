@@ -37,27 +37,38 @@
         <div class="buttons__content">
           <!-- login modal -->
           <div class="login-modal">
+            <!-- box -->
             <div class="login__box">
+              <!-- header -->
               <div class="login__header">
-                <div class="header__text">ورود</div>
+                <div class="header__title">ورود</div>
                 <div class="login--close">
                   <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
               </div>
+              <!-- content -->
               <div class="login__content">
-                <form method="post" action="/">
+                <form method="get" action="">
+                  <!-- username -->
                   <label for="username">نام کاربری :</label>
                   <div class="form-box">
                     <i class="fas fa-user" aria-hidden="true"></i>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" required>
                   </div>
+                  <!-- password -->
                   <label for="password">رمز عبور :</label>
                   <div class="form-box">
                     <i class="fas fa-lock-open" aria-hidden="true"></i>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                   </div>
+                  <!-- options -->
                   <div class="form-options">
-                    <label><input name="rememberme" type="checkbox" value="true"> مرا به خاطر داشته باش </label>
+                    <!-- remember me -->
+                    <label>
+                      <input name="rememberme" type="checkbox" value="true">
+                      مرا به خاطر داشته باش
+                    </label>
+                    <!-- lost password -->
                     <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
                   </div>
                   <button class="form-submit" type="submit">ورود</button>
