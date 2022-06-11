@@ -1,6 +1,6 @@
 main.about {
   @extend %sections-gap;
-
+  // content
   .about__content {
     padding: 2rem;
     padding-bottom: 6rem;
@@ -9,13 +9,16 @@ main.about {
       padding-bottom: 8rem;
     }
 
+    // title
     .content__title {
       @extend %default-title;
       @extend %mobile-max-width;
     }
 
+    // text
     .content__text {
       @extend %mobile-max-width;
+
       p {
         font-size: 1.3rem;
         font-weight: 400;
@@ -25,8 +28,8 @@ main.about {
         text-align: justify;
 
         @include breakpoint(lg) {
-          line-height: 2;
           font-size: 1.4rem;
+          line-height: 2;
         }
       }
     }
