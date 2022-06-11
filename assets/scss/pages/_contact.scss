@@ -15,7 +15,7 @@ main.contact {
     }
   }
 
-  // section styles
+  // sections
   .contact-us,
   .contact__info {
     @extend %mobile-max-width;
@@ -92,7 +92,7 @@ main.contact {
     }
   }
 
-  // contact info
+  // info
   .contact__info {
     // title
     .info__title {
