@@ -1,0 +1,50 @@
+> botostart
+
++ global
+  x try to convert font-awesome with svg
+    x svg not changed with font size
+  * screen-loader
+  * scroll-to-top
+  * courses description
+  * convert px into rem values if possible
+  * convert all pages title to persian
+
++ pages
+
+  = home
+    x header
+      x sidebar
+      x navbar
+    x heading
+    x courses
+    x articles
+    x footer
+
+  = courses
+    x header
+    x options
+    x courses
+    x footer
+
+  = contact
+    x header
+    x main
+    x footer
+
+  = about
+    x header
+    x main
+    x footer
+
+  = cart
+    x header
+    x main
+    x main empty
+    o main cart
+    x footer
+
++ end
+  o create frontend and complete version of it
+  o write a nodejs backend
+  o create a production branch
+<
