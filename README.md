@@ -2,24 +2,6 @@
 
 botostart.ir template
 
-# global todo
-
-- [ ] convert px into rem values if possible
-- [ ] convert all pages title to persian
-
-# home-page todo
-
-- [ ] fix home page bugs
-  - [x] footer
-  - [x] login-modal
-- [x] remove %input-icon align it with flex
-- [ ] screen-loader
-- [ ] scroll-to-top
-
-# courses-page todos
-
-- [ ] courses description
-
 # npm scripts
 
 ## http server
