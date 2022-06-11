@@ -66,11 +66,21 @@ section {
 
 // default button
 %default-button {
+  cursor: pointer;
   background-color: $color-blue-0;
   color: $color-white-0;
-  border-radius: 7px;
-  padding: 12px 16px;
-  cursor: pointer;
+  border-radius: 0.7rem;
+
+  font-family: inherit;
+  font-size: 1.5rem;
+
+  padding: 1.2rem 1.6rem;
+
+  transition: all $transition-1;
+
+  &:hover {
+    background-color: $color-blue-3;
+  }
 }
 
 %default-title {
