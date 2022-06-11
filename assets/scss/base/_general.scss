@@ -73,6 +73,14 @@ section {
   cursor: pointer;
 }
 
+%default-title {
+  color: $color-blue-2;
+  font-size: 1.9rem;
+  font-weight: 900;
+  font-family: inherit;
+  padding: 1rem 0;
+}
+
 // form submit
 %form-submit {
   background-color: $color-blue-3;
