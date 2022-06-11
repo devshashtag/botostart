@@ -1,0 +1,41 @@
+main.cart {
+  @extend %sections-gap;
+
+  // empty
+  .cart__empty {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    height: calc(100vh - $header-height);
+    max-height: $heading-max-width;
+    min-height: $heading-min-width;
+
+    // active
+    &.active {
+      display: flex;
+    }
+
+    // icon
+    i {
+      color: $color-gray-6;
+      font-size: 10rem;
+    }
+
+    // text
+    .text {
+      color: $color-gray-2;
+      font-size: 1.6rem;
+    }
+
+    // return
+    .return {
+      @extend %default-button;
+      padding: 1.2rem 2rem;
+      font-size: 1.3rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
