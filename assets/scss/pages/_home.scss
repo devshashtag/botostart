@@ -13,8 +13,8 @@ main.home {
   // heading
   .home__heading {
     height: calc(100vh - $header-height);
-    max-height: $heading-max-width;
-    min-height: $heading-min-width;
+    max-height: $heading-max-height;
+    min-height: $heading-min-height;
 
     background-repeat: no-repeat;
     background-position: center 10%;

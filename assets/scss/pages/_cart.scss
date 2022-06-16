@@ -10,8 +10,8 @@ main.cart {
     gap: 2rem;
 
     height: calc(100vh - $header-height);
-    max-height: $heading-max-width;
-    min-height: $heading-min-width;
+    max-height: $heading-max-height;
+    min-height: $heading-min-height;
 
     // active
     &.active {
