@@ -3,11 +3,16 @@
 + global
   x try to convert font-awesome with svg
     x svg not changed with font size
+  x add all pages to manager
   * screen-loader
   * scroll-to-top
   * courses description
   * convert px into rem values if possible
   * convert all pages title to persian
+  * navbar dropdown
+
++ placeholders
+  * form-input
 
 + pages
 
@@ -42,6 +47,50 @@
     x main empty
     o main cart
     x footer
+
+  = accounts
+    o header
+    o main
+    o footer
+
+  = lost-password
+    o header
+    o main
+    o footer
+
+  = articles
+    o header
+    o main
+    o footer
+
+  = article
+    o header
+    o main
+    o pagination
+    o footer
+
+  = course
+    o header
+    o sidebar
+    o main
+    o related courses
+    o comment
+    o footer
+
+  = 404
+    o header
+    o main
+    o footer
+
+  = teacher
+    o header
+    o main
+    o footer
+
+  = dashboard
+    o header
+    o main
+    o footer
 
 + end
   o create frontend and complete version of it
