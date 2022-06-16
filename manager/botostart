@@ -8,7 +8,7 @@
   * scroll-to-top
   * courses description
   * convert px into rem values if possible
-  * convert all pages title to persian
+  x convert all pages title to persian
   * navbar dropdown
 
 + placeholders
@@ -93,7 +93,7 @@
     o footer
 
 + end
-  o create frontend and complete version of it
+  o create a frontend version
   o write a nodejs backend
   o create a production branch
 <
