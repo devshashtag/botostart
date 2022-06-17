@@ -1,99 +1,99 @@
 > botostart
 
-+ global
-  x try to convert font-awesome with svg
-    x svg not changed with font size
-  x add all pages to manager
-  * screen-loader
-  * scroll-to-top
-  * courses description
-  * convert px into rem values if possible
-  x convert all pages title to persian
-  * navbar dropdown
+= global
+  ! try to convert font-awesome with svg
+    ? svg not changed with font size
+  + add all pages to manager
+  - screen-loader
+  - scroll-to-top
+  - courses description
+  - convert px into rem values if possible
+  + convert all pages title to persian
+  - navbar dropdown
 
-+ placeholders
-  * form-input
+= placeholders
+  - form-input
 
-+ pages
+= pages
 
-  = home
-    x header
-      x sidebar
-      x navbar
-    x heading
-    x courses
-    x articles
-    x footer
+  + home
+    + header
+      + sidebar
+      + navbar
+    + heading
+    + courses
+    + articles
+    + footer
 
-  = courses
-    x header
-    x options
-    x courses
-    x footer
+  + courses
+    + header
+    + options
+    + courses
+    + footer
 
-  = contact
-    x header
-    x main
-    x footer
+  + contact
+    + header
+    + main
+    + footer
 
-  = about
-    x header
-    x main
-    x footer
+  + about
+    + header
+    + main
+    + footer
 
   = cart
-    x header
-    x main
-    x main empty
-    o main cart
-    x footer
+    + header
+    + main
+    + main empty
+    - main cart
+    + footer
 
   = accounts
-    o header
-    o main
-    o footer
+    - header
+    - main
+    - footer
 
   = lost-password
-    o header
-    o main
-    o footer
+    - header
+    - main
+    - footer
 
   = articles
-    o header
-    o main
-    o footer
+    - header
+    - main
+    - footer
 
   = article
-    o header
-    o main
-    o pagination
-    o footer
+    - header
+    - main
+    - pagination
+    - footer
 
   = course
-    o header
-    o sidebar
-    o main
-    o related courses
-    o comment
-    o footer
+    - header
+    - sidebar
+    - main
+    - related courses
+    - comment
+    - footer
 
-  = 404
-    o header
-    o main
-    o footer
+  + 404
+    + header
+    + main
+    + footer
 
-  = teacher
-    o header
-    o main
-    o footer
+  + teacher
+    + header
+    + main
+    + footer
 
   = dashboard
-    o header
-    o main
-    o footer
+    - header
+    - main
+    - footer
 
-+ end
-  o create a frontend version
-  o write a nodejs backend
-  o create a production branch
+= end
+  - create a frontend version
+  - write a nodejs backend
+  - create a production branch
 <
