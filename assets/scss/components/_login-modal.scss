@@ -21,7 +21,7 @@
     border-radius: 1rem;
     margin: 5vh auto;
 
-    max-width: $modal-max-width;
+    max-width: $modal-max-width-login;
 
     @include breakpoint(sm) {
       margin: 10vh auto 0 auto;
