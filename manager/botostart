@@ -12,7 +12,7 @@
   - navbar dropdown
 
 = placeholders
-  - form-input
+  - removed form-input if no needed more than one
 
 = pages
 
@@ -49,33 +49,33 @@
     + footer
 
   = accounts
-    - header
+    + header
     - main
-    - footer
+    + footer
 
-  = lost-password
-    - header
-    - main
-    - footer
+  + lost-password
+    + header
+    + main
+    + footer
 
   = articles
-    - header
+    + header
     - main
-    - footer
+    + footer
 
   = article
-    - header
+    + header
     - main
     - pagination
-    - footer
+    + footer
 
   = course
-    - header
+    + header
     - sidebar
     - main
     - related courses
     - comment
-    - footer
+    + footer
 
   + 404
     + header
@@ -88,9 +88,9 @@
     + footer
 
   = dashboard
-    - header
+    + header
     - main
-    - footer
+    + footer
 
 = end
   - create a frontend version
