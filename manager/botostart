@@ -50,9 +50,9 @@
     - main cart
     + footer
 
-  = accounts
+  + accounts
     + header
-    - main
+    + main
     + footer
 
   + lost-password
