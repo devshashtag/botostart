@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   // animation
-  transition: all 0.2s;
+  transition: all $transition-0;
   visibility: hidden;
   opacity: 0;
 
@@ -107,15 +107,8 @@
 
       // remember me
       label {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+        @extend %remember-me;
         font-size: 1.2rem;
-
-        input[type="checkbox"],
-        & {
-          cursor: pointer;
-        }
       }
 
       // lost password
