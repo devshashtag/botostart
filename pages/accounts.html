@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+
   <!-- font awesome -->
   <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
@@ -124,6 +127,100 @@
   </header>
   <!-- end header -->
 
+  <!-- accounts -->
+  <main class="accounts">
+    <!-- account content -->
+    <section class="account__content">
+      <!-- modal -->
+      <div class="account__modal">
+        <!-- register -->
+        <div class="account__register active">
+          <!-- title -->
+          <h2 class="account__title">عضویت در سایت</h2>
+          <!-- form -->
+          <form class="account__form" method="post" action="">
+            <!-- email -->
+            <div class="account__box">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" name="email" placeholder="آدرس ایمیل" required>
+            </div>
+            <!-- password -->
+            <div class="account__box">
+              <i class="fas fa-unlock-alt"></i>
+              <input type="password" name="password" placeholder="رمز عبور" required>
+            </div>
+            <!-- submit -->
+            <button class="account__submit" type="submit"> عضویت
+              <i class="fa fa-user-lock" aria-hidden="true"></i>
+            </button>
+          </form>
+          <!-- account form-changer -->
+          <div class="account__form-changer">
+            قبلا ثبت نام کرده اید؟
+            <button id="showLogin">وارد شوید</button>
+          </div>
+        </div>
+
+        <!-- login -->
+        <div class="account__login">
+          <!-- title -->
+          <h2 class="account__title">ورود به حساب کاربری</h2>
+          <!-- form -->
+          <form class="account__form" method="post" action="">
+            <!-- username -->
+            <div class="account__box">
+              <i class="fas fa-user" aria-hidden="true"></i>
+              <input type="text" name="username" placeholder="نام کاربری یا آدرس ایمیل" required>
+            </div>
+            <!-- password -->
+            <div class="account__box">
+              <i class="fas fa-unlock-alt"></i>
+              <input type="password" name="password" placeholder="رمز عبور" required>
+            </div>
+            <!-- options -->
+            <div class="account__options">
+              <!-- remember me -->
+              <label>
+                <input name="rememberme" type="checkbox" value="true">
+                مرا به خاطر داشته باش
+              </label>
+              <!-- lost-password -->
+              <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
+            </div>
+            <!-- submit -->
+            <button class="account__submit" type="submit">ورود
+              <i class="fa fa-sign-in-alt" aria-hidden="true"></i>
+            </button>
+          </form>
+          <!-- account form-changer -->
+          <div class="account__form-changer"> کاربر جدید هستید؟
+            <button id="showRegister">ثبت نام</button>
+          </div>
+        </div>
+
+        <!-- separator-->
+        <div class="account__separator"></div>
+
+        <!-- warnings -->
+        <div class="account__warnings">
+          <b>سلام کاربر عزیز؛</b>
+          <ul>
+            <li>لطفا از مرورگرهای مطمئن و بروز مانند گوگل کروم و فایرفاکس استفاده کنید.</li>
+            <li>لطفا کلمه عبور خود را در فواصل زمانی کوتاه تغییر دهید.</li>
+            <li>ما هرگز اطلاعات محرمانه شما را از طریق ایمیل درخواست نمی کنیم. در صورت رخداد این مورد، سریعا اطلاع دهید.
+            </li>
+            <li>
+              لطفا به آدرس صفحه توجه داشته باشید که بر روی دامنه اصلی سایت ما باشد. در غیر این صورت اکیدا توصیه می‌شود
+              از وارد کردن اطلاعات ورود خودداری فرمایید.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- end accounts -->
+
   <!-- footer -->
   <footer class="main-footer">
     <!-- container -->
@@ -193,6 +290,7 @@
   <!-- end footer -->
 
   <!-- scripts -->
+  <script src="/assets/js/pages/accounts.js"></script>
   <script src="/assets/js/global.js"></script>
 </body>
 
