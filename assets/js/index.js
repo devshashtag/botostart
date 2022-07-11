@@ -1,7 +1,8 @@
-import { courseCards } from '/assets/js/modules/functions.js';
+import { displayTemplate } from "/assets/js/modules/template.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-  const courseCardsClass = ".home__courses > .course-cards";
+  const courseCardsElm = document.querySelector(".home__courses > .course-cards");
   const coursesAPI = "/assets/js/data/home-courses.json";
-  courseCards(courseCardsClass, coursesAPI);
+
+  displayTemplate(coursesAPI, courseCardsElm, 'course');
 });

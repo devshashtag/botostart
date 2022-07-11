@@ -1,19 +1,37 @@
 import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
 
 // display template
-function displayTemplate(API, displayElm, template) {
+function displayTemplate(API, displayElm, templateType) {
+  let template;
+
   if (!displayElm) {
     console.log("display element is undefined");
     return;
   }
 
+  switch (templateType) {
+    case 'article':
+      template = articlePostTemplate;
+      break;
+    case 'course':
+      template = courseCardTemplate;
+      break;
+    default:
+      console.log(`template ${templateType} not found !`);
+      return;
+  }
+
   // fetch and display
-  fetch(API).then(response => response.json())
-    .then(jsonData => {
-      jsonData.forEach(item => {
-        displayElm.insertAdjacentHTML('beforeend', template(item));
-      });
+  fetch(API).then(response => response.json()).then(jsonData => {
+    let templateHtml = '';
+
+    jsonData.forEach(item => {
+      templateHtml += template(item);
     });
+
+    displayElm.insertAdjacentHTML('beforeend', templateHtml);
+  });
+
 }
 
 function courseCardTemplate(card) {
@@ -117,12 +135,15 @@ function articlePostTemplate(post) {
         <img src="${post.imageUrl}" alt="${post.imageAlt}">
       </a>
     </div>
-    <!-- title -->
-    <div class="post__title">
-      <a href="${post.url}">${post.title}</a>
+    <!-- body -->
+    <div class="post__body">
+      <!-- title -->
+      <div class="post__title">
+        <a href="${post.url}">${post.title}</a>
+      </div>
+      <!-- description -->
+      <div class="post__description">${post.description}</div>
     </div>
-    <!-- description -->
-    <div class="post__description">${post.description}</div>
     <!-- read more -->
     <button class="post__read-more">
       <a href="${post.url}">بیشتر بخوانید</a>
@@ -130,8 +151,4 @@ function articlePostTemplate(post) {
   </article>`;
 }
 
-export {
-  displayTemplate,
-  courseCardTemplate,
-  articlePostTemplate,
-};
+export { displayTemplate };
