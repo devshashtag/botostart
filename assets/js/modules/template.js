@@ -1,17 +1,17 @@
 import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
 
-function courseCardTemplate(item) {
-  const discount = commafy(calcDiscount(item.discount, item.price));
+function courseCardTemplate(card) {
+  const discount = commafy(calcDiscount(card.discount, card.price));
   const isFree = (discount === "free") ? true : false;
   const templateFooterDiscount = `<div class="discount">${isFree ? "– رایگان!" : discount}</div>`;
 
   // price
-  if (+item.price === 0 && !discount) {
-    item.price = "رایگان!";
+  if (+card.price === 0 && !discount) {
+    card.price = "رایگان!";
   }
 
   // rating
-  let rating = item.rating;
+  let rating = card.rating;
   if (rating > 5) rating = 5;
   else if (rating < 0) rating = 0;
 
@@ -26,20 +26,20 @@ function courseCardTemplate(item) {
   <div class="card__header">
     <!-- card image -->
     <div class="card__image">
-      <a href="${item.url}">
-        <img src="${item.imageUrl}" alt="${item.imageAlt}">
+      <a href="${card.url}">
+        <img src="${card.imageUrl}" alt="${card.imageAlt}">
       </a>
     </div>
     <!-- card icons -->
     <div class="card__icons">
-      ${(item.videoUrl) ? `
+      ${(card.videoUrl) ? `
       <div class="icon video-player" title="نمایش دمو">
-        <a href="${item.videoUrl}" rel="nofollow">
+        <a href="${card.videoUrl}" rel="nofollow">
           <i class="fas fa-play" aria-hidden="true"></i>
         </a>
       </div>` : ""}
       <div class="icon" title="ثبت نام دوره">
-        <a href="?add-to-cart=${item.id}" rel="nofollow">
+        <a href="?add-to-cart=${card.id}" rel="nofollow">
           <i class="fas fa-user-plus" aria-hidden="true"></i>
         </a>
       </div>
@@ -47,7 +47,7 @@ function courseCardTemplate(item) {
     ${discount ? `
     <!--card discount -->
     <div class="card__discount">
-      <div class="percent">${item.discount}</div>
+      <div class="percent">${card.discount}</div>
       <div class="text">تخفیف</div>
     </div>`: ""}
   </div>
@@ -55,7 +55,7 @@ function courseCardTemplate(item) {
   <div class="card__body">
     <!-- card name -->
     <div class="card__title">
-      <a href="${item.url}">${item.title}</a>
+      <a href="${card.url}">${card.title}</a>
     </div>
 
     <!-- card details -->
@@ -67,7 +67,7 @@ function courseCardTemplate(item) {
       <!-- teacher -->
       <div class="card__teacher">
         <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
-        <a href="${item.teacherProfile}">${item.teacher}</a>
+        <a href="${card.teacherProfile}">${card.teacher}</a>
       </div>
     </div>
 
@@ -76,12 +76,12 @@ function courseCardTemplate(item) {
       <!-- card students -->
       <div class="card__students">
         <i class="fas fa-users" aria-hidden="true"></i>
-        <span>${commafy(item.students)}</span>
+        <span>${commafy(card.students)}</span>
       </div>
       <!-- card price -->
       <div class="card__price${isFree ? " free" : ""}">
         ${discount ? templateFooterDiscount : ""}
-        <div class="price">${commafy(item.price)}</div>
+        <div class="price">${commafy(card.price)}</div>
       </div>
     </div>
   </div>
