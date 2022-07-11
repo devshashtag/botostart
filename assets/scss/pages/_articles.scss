@@ -1,0 +1,136 @@
+main.articles {
+  @extend %sections-gap;
+
+  // blog
+  .article__blog {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 0 6rem;
+  }
+
+  // posts
+  .article__posts {
+    @extend %cards-container;
+    padding: 3rem 1rem;
+
+    @include breakpoint(sm) {
+      padding: 3rem 2rem;
+    }
+  }
+
+  // post
+  .article__post {
+    @extend %mobile-max-width;
+
+    background-color: $color-white-2;
+    border-radius: 0.5rem;
+
+    box-shadow: 0 2px 10px $color-shadow-0;
+    transition: transform $transition-0;
+
+    &:hover {
+      box-shadow: 0 2px 10px $color-shadow-1;
+      transform: translateY(-2px);
+    }
+
+    // image
+    .post__image img {
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+    }
+
+    // body
+    .post__body {
+      padding: 1rem;
+
+      min-width: 90vw;
+
+      @include breakpoint(md) {
+        min-width: unset;
+      }
+    }
+
+    // title
+    .post__title {
+      min-height: 5rem;
+
+      a {
+        font-size: 1.3rem;
+        color: $color-gray-0;
+      }
+    }
+
+    // description
+    .post__description {
+      font-size: 1.3rem;
+      color: $color-gray-2;
+      font-weight: 300;
+
+      @include breakpoint(lg) {
+        font-size: 1.1rem;
+      }
+    }
+
+    // read more
+    .post__read-more {
+      width: 100%;
+
+      a {
+        display: block;
+
+        font-family: inherit;
+        font-size: 1.3rem;
+        background-color: $color-shadow-1;
+        color: $color-gray-2;
+        padding: 1.2rem 1rem;
+
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+
+        transition: all $transition-0;
+      }
+    }
+
+    // hover read more
+    &:hover .post__read-more a {
+      background-color: $color-blue-3;
+      color: $color-white-0;
+    }
+  }
+
+  // pagination
+  .article__pagination {
+    @extend %flex-center;
+
+    padding: 2rem 1rem;
+
+    ul {
+      display: flex;
+      gap: 1rem;
+    }
+
+    li {
+      a {
+        @extend %flex-center;
+        background-color: $color-white-3;
+        font-size: 1.4rem;
+        color: $color-gray-0;
+        box-shadow: 0 1px 2px $color-shadow-0;
+        border-radius: 0.3rem;
+        width: 40px;
+        height: 40px;
+        transition: color $transition-0;
+        i {
+          font-size: 1.2rem;
+        }
+      }
+      &.active a,
+      a:hover {
+        color: $color-white-0;
+        background-color: $color-blue-1;
+        box-shadow: 0 0 2px $color-shadow-1;
+      }
+    }
+  }
+}

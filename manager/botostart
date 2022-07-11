@@ -60,9 +60,9 @@
     + main
     + footer
 
-  = articles
+  + articles
     + header
-    - main
+    + main
     + footer
 
   = article
