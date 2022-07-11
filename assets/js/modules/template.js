@@ -1,5 +1,21 @@
 import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
 
+// display template
+function displayTemplate(API, displayElm, template) {
+  if (!displayElm) {
+    console.log("display element is undefined");
+    return;
+  }
+
+  // fetch and display
+  fetch(API).then(response => response.json())
+    .then(jsonData => {
+      jsonData.forEach(item => {
+        displayElm.insertAdjacentHTML('beforeend', template(item));
+      });
+    });
+}
+
 function courseCardTemplate(card) {
   const discount = commafy(calcDiscount(card.discount, card.price));
   const isFree = (discount === "free") ? true : false;
@@ -91,4 +107,31 @@ function courseCardTemplate(card) {
   return templateCourseCard;
 }
 
-export { courseCardTemplate };
+function articlePostTemplate(post) {
+  return `
+  <!-- post -->
+  <article class="article__post" data-post-id="${post.id}">
+    <!-- image -->
+    <div class="post__image">
+      <a href="${post.url}">
+        <img src="${post.imageUrl}" alt="${post.imageAlt}">
+      </a>
+    </div>
+    <!-- title -->
+    <div class="post__title">
+      <a href="${post.url}">${post.title}</a>
+    </div>
+    <!-- description -->
+    <div class="post__description">${post.description}</div>
+    <!-- read more -->
+    <button class="post__read-more">
+      <a href="${post.url}">بیشتر بخوانید</a>
+    </button>
+  </article>`;
+}
+
+export {
+  displayTemplate,
+  courseCardTemplate,
+  articlePostTemplate,
+};

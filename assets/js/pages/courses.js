@@ -1,10 +1,13 @@
-import { courseCards } from '/assets/js/modules/functions.js';
+import {
+  displayTemplate,
+  courseCardTemplate
+} from "/assets/js/modules/template.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   // courses cards
-  const courseCardsClass = ".courses__products > .course-cards";
+  const courseCardsElm = document.querySelector(".courses__products > .course-cards");
   const coursesAPI = "/assets/js/data/product-courses.json";
-  courseCards(courseCardsClass, coursesAPI);
+  displayTemplate(coursesAPI, courseCardsElm, courseCardTemplate);
 
   // options order
   const orderSelected = document.querySelector(".options__order > .order__selected");

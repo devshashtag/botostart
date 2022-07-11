@@ -1,5 +1,3 @@
-import { courseCardTemplate } from "/assets/js/modules/template.js";
-
 // formating prices
 function commafy(num) {
   if (num === "free" || num === "") return num;
@@ -32,27 +30,7 @@ function calcDiscount(discount, price) {
   return "";
 }
 
-// courses functions
-function courseCards(courseCardsClass, coursesAPI) {
-  if (!courseCardsClass) {
-    console.log("courseCardsClass is undefined");
-    return;
-  }
-
-  const courseCardsElm = document.querySelector(courseCardsClass);
-
-  fetch(coursesAPI)
-    .then(response => response.json())
-    .then(courses => {
-      courses.forEach(item => {
-        const cardTemplate = courseCardTemplate(item);
-        courseCardsElm.insertAdjacentHTML('beforeend', cardTemplate);
-      });
-    });
-}
-
 export {
   commafy,
-  calcDiscount,
-  courseCards
+  calcDiscount
 };
