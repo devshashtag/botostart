@@ -66,12 +66,14 @@
   + articles
     + header
     + main
+    + pagination
     + footer
 
   = article
     + header
     - main
-    - pagination
+    - related articles
+    - comment
     + footer
 
   = course
