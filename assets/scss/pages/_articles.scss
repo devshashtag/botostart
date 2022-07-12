@@ -17,6 +17,10 @@ main.articles {
     @include breakpoint(sm) {
       padding: 3rem 2rem;
     }
+
+    @include breakpoint(lg) {
+      padding: 3rem;
+    }
   }
 
   // post
@@ -32,6 +36,12 @@ main.articles {
     &:hover {
       box-shadow: 0 2px 10px $color-shadow-1;
       transform: translateY(-2px);
+
+      // hover read more
+      .post__read-more a {
+        background-color: $color-blue-3;
+        color: $color-white-0;
+      }
     }
 
     // image
@@ -56,15 +66,15 @@ main.articles {
       min-height: 5rem;
 
       a {
-        font-size: 1.3rem;
         color: $color-gray-0;
+        font-size: 1.3rem;
       }
     }
 
     // description
     .post__description {
-      font-size: 1.3rem;
       color: $color-gray-2;
+      font-size: 1.3rem;
       font-weight: 300;
 
       @include breakpoint(lg) {
@@ -79,10 +89,11 @@ main.articles {
       a {
         display: block;
 
-        font-family: inherit;
-        font-size: 1.3rem;
         background-color: $color-shadow-1;
         color: $color-gray-2;
+
+        font-family: inherit;
+        font-size: 1.3rem;
         padding: 1.2rem 1rem;
 
         border-bottom-right-radius: 0.5rem;
@@ -90,12 +101,6 @@ main.articles {
 
         transition: all $transition-0;
       }
-    }
-
-    // hover read more
-    &:hover .post__read-more a {
-      background-color: $color-blue-3;
-      color: $color-white-0;
     }
   }
 
