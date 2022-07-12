@@ -94,10 +94,6 @@
     + main
     + footer
 
-  = dashboard
-    + header
-    - main
-    + footer
 
 = end
   - create a frontend version
