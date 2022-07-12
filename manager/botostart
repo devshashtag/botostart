@@ -15,9 +15,13 @@
   - removed form-input if no needed more than one
   - convert any form-box to parent__box
   - convert any form-submit to parent__submit
+  - move placeholders into another file if needed
 
 = todo
   - forms autocomplete
+  - create a frontend version
+  - create a production branch
+  - format all files with eslint
 
 = pages
 
@@ -93,10 +97,4 @@
     + header
     + main
     + footer
-
-
-= end
-  - create a frontend version
-  - write a nodejs backend
-  - create a production branch
 <
