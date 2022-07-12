@@ -106,36 +106,6 @@ main.articles {
 
   // pagination
   .article__pagination {
-    @extend %flex-center;
-
-    padding: 2rem 1rem;
-
-    ul {
-      display: flex;
-      gap: 1rem;
-    }
-
-    li {
-      a {
-        @extend %flex-center;
-        background-color: $color-white-3;
-        font-size: 1.4rem;
-        color: $color-gray-0;
-        box-shadow: 0 1px 2px $color-shadow-0;
-        border-radius: 0.3rem;
-        width: 40px;
-        height: 40px;
-        transition: color $transition-0;
-        i {
-          font-size: 1.2rem;
-        }
-      }
-      &.active a,
-      a:hover {
-        color: $color-white-0;
-        background-color: $color-blue-1;
-        box-shadow: 0 0 2px $color-shadow-1;
-      }
-    }
+    @extend %pagination;
   }
 }
