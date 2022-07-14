@@ -77,7 +77,7 @@
 
   = article
     + header
-    - article post
+    + article post
     - article related
     - article comments
     - article sidebar

@@ -9,7 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
   <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <title>مقالات</title>
 </head>
@@ -108,7 +108,7 @@
             <li><a href="/pages/about.html">درباره ما</a></li>
             <li><a href="/pages/cart.html">سبد خرید</a></li>
           </ul>
-          <hr />
+          <hr>
         </nav>
         <!-- screen overlay-->
         <div class="screen-overlay"></div>
@@ -123,6 +123,473 @@
     </div>
   </header>
   <!-- end header -->
+
+  <!-- article -->
+  <div class="main__article">
+    <!-- container -->
+    <div class="article__container">
+      <!-- content -->
+      <main class="article__content">
+        <!-- post -->
+        <article class="article__post">
+          <!-- title -->
+          <h1 class="article__title">آشنایی با صفات عناصر input در HTML</h1>
+
+          <!-- line -->
+          <hr>
+
+          <!-- info -->
+          <div class="article__info">
+            <!-- time -->
+            <div class="time">
+              <i class="far fa-clock" aria-hidden="true"></i>01 فروردین 1400
+            </div>
+            <!-- author -->
+            <div class="info-author">
+              <i class="fa fa-user-alt" aria-hidden="true"></i> ارسال شده توسط
+              <a href="/pages/teacher.html#author">نویسنده</a>
+            </div>
+            <!-- category -->
+            <div class="info-category">
+              <i class="far fa-folder" aria-hidden="true"></i>
+              <a href="/pages/articles.html">مقالات</a>
+            </div>
+            <!-- view -->
+            <div class="info-view">
+              <i class="far fa-eye" aria-hidden="true"></i>241 بازدید
+            </div>
+          </div>
+
+          <!-- image -->
+          <div class="article__image">
+            <img src="/assets/images/articles/article-html-inputs.png" alt="html inputs">
+          </div>
+
+          <p>
+            صفت ها اطلاعات اضافی را در مورد عنصر اچ تی ام ال فراهم می آورند. در فصل های قبلی به بعضی از این صفات اشاره
+            کرده و کاربرد آنها را توضیح
+            دادیم. ما در این مقاله قصد داریم صفت های مربوط به عناصر <b>input</b> را به طور کامل به شما عزیزان آمورش
+            دهیم،
+            همراه <b>sitename</b> باشید.
+          </p>
+
+          <!-- heading -->
+          <h2>صفت value</h2>
+
+          <p>
+            مقدار اولیه برای یک فیلد ورودی از طریق این صفت مشخص می شود. در مثال زیر مقدار اولیه برای فیلد ورودی
+            <b>firstname</b> مقدار <b>John</b> تعیین شده است :
+          </p>
+
+          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="">
+              first name :<br>
+              <input type="text" name="firstname" value="John">
+            </form>
+          </code>
+
+          <!-- heading -->
+          <h2>صفت readonly</h2>
+
+          <p>بعضی اوقات فیلد های ورودی صرفا برای نمایش یک مقدار به کاربر استفاده می شوند و نباید مقدار آنها توسط کاربر
+            قابل تغییر باشد.</p>
+
+          <p>برای رسیدن به این حالت از صفت <b>readonly</b> استفاده می کنیم :</p>
+
+          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="">
+              first name:<br>
+              <input type="text" name="firstname" value="John" readonly>
+            </form>
+          </code>
+
+          <!-- heading -->
+          <h2>صفت disabled</h2>
+
+          <p>
+            برای نمایش یک فیلد ورودی در حالتی که غیر فعال است از صفت <b>disabled</b> استفاده می کنیم. فیلد های
+            <b>input</b> در حالت غیر فعال ، غیر
+            قابل کلیک و غیر قابل انتخاب بوده و مقادیر آنها در هنگام <b>submit</b> به سمت سرور ارسال نمی شود.
+          </p>
+
+          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="">
+              first name:<br>
+              <input type="text" name="firstname" value="John" disabled>
+            </form>
+          </code>
+
+          <p>
+            <b>نکته</b> : به نحوه ی به کاربردن صفت <b>disabled</b> در مثال دقت کنید. بر خلاف دیگر صفات که از قاعده ی نام
+            /
+            مقدار استفاده می کنند برای
+            استفاده از این صفت به به کاربردن نام آن به تنهایی کافی است.
+          </p>
+
+          <!-- heading -->
+          <h2>صفت maxlength در input</h2>
+
+          <p>حداکثر تعداد کاراکتری که میتوان در یک فیلد ورودی تایپ کرد توسط صفت <b>maxlength</b> تعیین می شود.</p>
+
+          <p>در مثال زیر حداکثر تعداد کارکتر برای فیلد <b>firstname</b> مقدار 10 تعیین شده است.</p>
+
+          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="">
+              first name:<br>
+              <input type="text" name="firstname" maxlength="10">
+            </form>
+          </code>
+
+          <p>
+            دقت داشته باشید که صفت <b>maxlength</b> هشداری را برای زمانی که کاربر از مقدار مجاز تعداد کارکتر عبور کند
+            فراهم نمی آورد و این وظیفه ی شما
+            به عنوان برنامه نویس است که با استفاده از زبان <b>JavaScript</b> این هشدار را برای کاربر فراهم کنید.
+          </p>
+
+          <!-- heading -->
+          <h2>صفات در HTML۵</h2>
+
+          <p>زبان HTML5 صفات زیر را به عنصر <b>&lt;input&gt;</b> اضافه کرده است :</p>
+
+          <ul>
+            <li>autocomplete</li>
+            <li>autofocus</li>
+            <li>form</li>
+            <li>formaction</li>
+            <li>formenctype</li>
+            <li>formmethod</li>
+            <li>formnovalidate</li>
+            <li>formtarget</li>
+            <li>height and width</li>
+            <li>list</li>
+            <li>min and max</li>
+            <li>multiple</li>
+            <li>pattern (regexp)</li>
+            <li>placeholder</li>
+            <li>required</li>
+            <li>step</li>
+          </ul>
+
+          <p>و البته صفاتی را هم برای عنصر <b>&lt;form&gt;</b> فراهم آورده است :</p>
+
+          <ul>
+            <li>autocomplete</li>
+            <li>novalidate</li>
+          </ul>
+
+          <p>که در ادامه به بعضی از آنها خواهیم پرداخت.</p>
+
+          <!-- heading -->
+          <h2>صفت autocomplete</h2>
+
+          <p>
+            در صفاتی که در قسمت قبل به آنها اشاره کردیم ، صفت <b>autocomplete</b> هم برای عنصر <b>&lt;input&gt;</b> و هم
+            برای عنصر
+            <b>&lt;form&gt;</b> وجود دارد.
+          </p>
+
+          <p>
+            صفت <b>autocomplete</b> مشخص می کند که قابلیت تکمیل خودکار برای عناصر <b>&lt;input&gt;</b> و یا
+            <b>&lt;form&gt;</b> وجود داشته باشد یا
+            خیر.
+          </p>
+
+          <p>
+            قابلیت تکمیل خودکار به این معنا است که اگر کاربری قبلا مقدار هایی را در عناصری مانند <b>&lt;input&gt;</b>
+            وارد کرده باشد، بار بعدی مرورگر براساس مقادیر قبلی می تواند فیلد ها را پر کند.
+          </p>
+
+          <p>
+            وقتی از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می کنیم <b>autocomplete</b> به تمام عناصر
+            <b>&lt;input&gt;</b> داخل فرم اعمال می
+            شود.
+          </p>
+
+          <p>در این حالت میتوان عنصری خاص را با مقدار <b>"autocomplete="off</b> از بقیه متمایز کرد.</p>
+
+          <p>نمونه مثال زیر نحوه ی استفاده از صفت autocomplete را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php" autocomplete="on">
+              first name: <input type="text" name="fname"><br>
+              last name: <input type="text" name="lname"><br>
+              E-mail: <input type="email" name="email" autocomplete="off"><br>
+              <input type="submit">
+            </form>
+          </code>
+
+          <p>
+            در بعضی از مرورگر ها ممکن است برای استفاده از قابلیت تکمیل خودکار نیاز به فعال کردن عملکرد
+            <b>autocomplete</b> باشد.
+          </p>
+
+          <!-- heading -->
+          <h2>صفت novalidate</h2>
+
+          <p>از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می شود.</p>
+
+          <p>
+            فرم ها با استفاده از زبان جاوااسکریپت می توانند قبل از این که به سمت سرور ارسال شوند، اعتبارسنجی شوند. برای
+            جلوگیری از این عمل می توان از
+            صفت <b>novalidate</b> در فرم استفاده کرد.
+          </p>
+
+          <p>نمونه کد زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php" novalidate>
+              E-mail: <input type="email" name="user_email">
+              <input type="submit">
+            </form>
+          </code>
+
+          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت autofocus</h2>
+
+          <p>
+            گاهی اوقات نیاز است وقتی کاربر صفحه ای را باز می کند مستقیما فیلد ورودی انتخاب شده باشد. یعنی کاربر نیاز
+            نداشته باشد برای تایپ در فیلد
+            ورودی ابتدا آن را انتخاب کند.
+          </p>
+
+          <p>برای رسیدن به چنین امکانی از صفت <b>autofocus</b> استفاده می کنیم.</p>
+
+          <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            first name: <input type="text" name="fname" autofocus>
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت form</h2>
+
+          <p>صفت <b>form</b> که برای عناصر <b>input</b> استفاده می شود مشخص می کند که عنصر مورد نظر متعلق به کدام فرم
+            است.
+          </p>
+
+          <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php" id="form1">
+              first name: <input type="text" name="fname"><br>
+              <input type="submit" value="Submit">
+            </form>
+
+            last name: <input type="text" name="lname" form="form1">
+          </code>
+
+          <p>در مثال بالا فیلد ورودی <b>lname</b> متعلق به فرم <b>form1</b> است. این قابلیت در <b>اینترنت اکسپلورر</b>
+            پشتیبانی
+            نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت formaction در input</h2>
+
+          <p>صفت <b>formaction</b> آدرسی از یک صفحه را مشخص می کند که وقتی فرم به سمت سرور ارسال می شود کنترل
+            <b>input</b>
+            توسط آن پردازش می شود.
+          </p>
+
+          <p>صفت <b>formaction</b> صفت <b>action</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
+
+          <p>صفت <b>formaction</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
+
+          <p>در نمونه مثال زیر عنصر فرم دارای دو دکمه ی <b>submit</b> با دو اکشن مختلف است :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php">
+              first name: <input type="text" name="fname"><br>
+              last name: <input type="text" name="lname"><br>
+              <input type="submit" value="Submit">
+              <input type="submit" formaction="/action_page2.php" value="Submit as admin">
+            </form>
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت formenctype</h2>
+
+          <p>
+            صفت <b>formenctype</b> مشخص می کند که هنگام <b>submit</b> ، داده های فرم چگونه باید انکد شود (تنها برای فرم
+            هایی که از صفت
+            <b>"method="post</b> استفاده می کنند).
+          </p>
+
+          <p>صفت <b>formenctype</b> صفت <b>enctype</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
+
+          <p>صفت <b>formenctype</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
+
+          <p>
+            در نمونه مثال زیر وقتی روی دکمه ی سابمیت اولی کلیک شود داده ها به روش پیش فرض انکد شده، درحالی که با کلیک
+            روی
+            دکمه ی سابمیت دوم، داده ها
+            به عنوان <b>"multipart/form-data"</b> انکد می شوند.
+          </p>
+
+          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page_binary.asp" method="post">
+              first name: <input type="text" name="fname"><br>
+              <input type="submit" value="Submit">
+              <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+            </form>
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت formmethod در input</h2>
+
+          <p>
+            صفت <b>formmethod</b> روش <a href="/pages/articles/article.html#html">اچ تی ام ال</a> را برای ارسال داده های
+            فرم به یک آدرس مشخص تعریف می
+            کند.
+          </p>
+
+          <p>صفت <b>formmethod</b> صفت <b>method</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> میکند.</p>
+
+          <p>صفت <b>formmethod</b> با صفت های <b>“type=”submit و “type=”image</b> استفاده می شود.</p>
+
+          <p>
+            در نمونه مثال زیر در هنگام استفاده از دکمه ی سابمیت اول داده ها به روش <b>get</b> ارسال می شود ، در حالی که
+            دکمه ی سابمیت دوم داده ها را
+            به روش <b>post</b> ارسال می کند.
+          </p>
+
+          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php" method="get">
+              first name: <input type="text" name="fname"><br>
+              last name: <input type="text" name="lname"><br>
+              <input type="submit" value="submit">
+              <input type="submit" formmethod="post" formaction="action_page_post.asp" value="submit using post">
+            </form>
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت formnovalidate</h2>
+
+          <p>
+            صفت <b>formnovalidate</b> صفت <b>novalidate</b> فرم را لغو می کند. این صفت با استفاده از صفت
+            <b>“type=”submit</b> می تواند مورد استفاده
+            قرار گیرد.
+          </p>
+
+          <p>در نمونه مثال زیر یک فرم با دو دکمه <b>submit</b> را نشان می دهد (یکی اعتبارسنجی می کند و دیگری نه) :</p>
+
+          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php">
+              e-mail: <input type="email" name="userid"><br>
+              <input type="submit" value="submit">
+              <input type="submit" formnovalidate value="submit without validation">
+            </form>
+          </code>
+
+          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت formtarget در input</h2>
+
+          <p>صفت <b>formtarget</b> مشخص می کند که پاسخ فرم ارسالی به سمت سرور در کجا نمایش داده شود.</p>
+
+          <p>صفت <b>formtarget</b> مقدار صفت <b>target</b> عنصر فرم را لغو می کند.</p>
+
+          <p>در نمونه کد زیر یک فرم با دو دکمه سابمیت را نشان می دهد که از دو <b>target</b> مختلف استفاده می کند :</p>
+
+          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            <form action="/action_page.php">
+              first name: <input type="text" name="fname"><br>
+              last name: <input type="text" name="lname"><br>
+              <input type="submit" value="submit as normal">
+              <input type="submit" formtarget="_blank" value="submit to a new window">
+            </form>
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت placeholder</h2>
+
+          <p>از صفت <b>placeholder</b> برای نمایش متنی در فیلد ورودی قبل از ورود داده های کاربر استفاده می شود.</p>
+
+          <p>مقدار این صفت هنگام تایپ اولین کارکتر توسط کارکتر از بین می رود.</p>
+
+          <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            first name: <input type="text" name="fname" placeholder="first name">
+          </code>
+
+          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <!-- heading -->
+          <h2>صفت required در input</h2>
+
+          <p>صفت <b>required</b> مشخص می کند که فیلد ورودی قبل از ارسال به سمت سرور حتما باید دارای مقداری باشد.</p>
+
+          <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
+
+          <!-- code example -->
+          <code class="code-example">
+            username: <input type="text" name="usrname" required>
+          </code>
+
+          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+          <p>امیدوارم که مقاله آشنایی با صفات عناصر input در html برای شما عزیزان مفید بوده باشد.</p>
+
+
+        </article>
+
+        <!-- related -->
+        <section class="article__related"></section>
+
+        <!-- comments -->
+        <section class="article__comments"></section>
+      </main>
+
+      <!-- sidebar -->
+      <div class="article__sidebar">
+
+      </div>
+    </div>
+  </div>
+  <!-- end article -->
 
   <!-- footer -->
   <footer class="main-footer">
@@ -184,6 +651,7 @@
 
   <!-- scripts -->
   <script src="/assets/js/global.js"></script>
+  <script src="/assets/js/pages/article.js"></script>
 </body>
 
 </html>
