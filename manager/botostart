@@ -10,6 +10,9 @@
   - convert px into rem values if possible
   + convert all pages title to persian
   - navbar dropdown
+  - format all files with eslint
+  - add lang="fa-IR" to all pages
+  - conert all <div class="counter">0</div> to span
 
 = placeholders
   - removed form-input if no needed more than one
@@ -21,7 +24,6 @@
   - forms autocomplete
   - create a frontend version
   - create a production branch
-  - format all files with eslint
 
 = pages
 
