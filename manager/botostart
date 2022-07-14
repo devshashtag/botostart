@@ -77,9 +77,10 @@
 
   = article
     + header
-    - main
-    - related articles
-    - comment
+    - article post
+    - article related
+    - article comments
+    - article sidebar
     + footer
 
   = course
