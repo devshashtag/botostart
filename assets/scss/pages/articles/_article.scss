@@ -60,17 +60,13 @@
     .article__title {
       font-size: 1.8rem;
       font-weight: 500;
-      padding: 1rem;
+      padding: 2rem 1rem;
+
+      border-bottom: 1px solid $color-white-4;
 
       @include breakpoint(sm) {
         font-size: 2rem;
       }
-    }
-
-    // line
-    hr {
-      height: 1px;
-      background-color: $color-white-4;
     }
 
     // info
@@ -80,7 +76,7 @@
       flex-wrap: wrap;
       gap: 1.5rem;
 
-      padding-top: 1rem;
+      padding: 1rem 0;
       font-size: 1.1rem;
 
       color: $color-gray-4;
@@ -103,8 +99,6 @@
 
     // image
     .article__image {
-      padding: 1rem 0;
-
       img {
         border-radius: 0.5rem;
       }
@@ -206,14 +200,6 @@
         }
       }
     }
-  }
-
-  // related
-  .article__related {
-  }
-
-  // comments
-  .article__comments {
   }
 
   // sidebar
