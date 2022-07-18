@@ -1,0 +1,207 @@
+section.carousel-post {
+  // header
+  .carousel__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    height: 7rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid $color-gray-8;
+
+    // icon
+    i {
+      font-size: 2rem;
+      color: $color-gray-7;
+    }
+
+    // title
+    .carousel__title {
+      @extend %flex-center;
+
+      height: 100%;
+      font-size: 1.5rem;
+      color: $color-gray-0;
+      border-bottom: 2px solid $color-blue-2;
+      margin-bottom: -2px;
+    }
+  }
+
+  // container
+  .carousel__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+
+    // posts
+    .carousel__posts {
+      display: flex;
+      gap: 1rem;
+
+      width: 100%;
+      padding: 2rem 0;
+
+      overflow-x: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+
+    // post
+    .carousel__post {
+      background-color: $color-white-0;
+      border-radius: 1rem;
+
+      box-shadow: 0 0 7px 0px $color-shadow-0;
+      transition: all $transition-1;
+
+      min-width: 100%;
+
+      @include breakpoint(md) {
+        min-width: calc((100% - 1.5rem) / 2);
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+      }
+
+      @include breakpoint(lg) {
+        min-width: calc((100% - 2rem) / 3);
+      }
+
+      &:hover {
+        box-shadow: 0 6px 20px $color-shadow-1;
+      }
+
+      // image
+      .post__image img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+      // content
+      .post__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 1rem;
+      }
+
+      // title
+      .post__title {
+        font-size: 1.2rem;
+
+        @include breakpoint(sm) {
+          font-size: 1.5rem;
+        }
+
+        @include breakpoint(md) {
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+
+        a {
+          color: $color-gray-1;
+        }
+      }
+
+      // text
+      .post__text {
+        color: $color-gray-2;
+        line-height: 2;
+
+        font-size: 1.2rem;
+
+        @include breakpoint(sm) {
+          font-size: 1.3rem;
+        }
+
+        @include breakpoint(md) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    // controls
+    .carousel__next,
+    .carousel__prev {
+      cursor: pointer;
+
+      position: absolute;
+      top: calc(50% - 2rem);
+
+      // animation
+      visibility: hidden;
+      opacity: 0;
+      transition: all $transition-0;
+
+      i {
+        @extend %flex-center;
+
+        height: 4.5rem;
+        width: 4.5rem;
+
+        background-color: $color-alpha-black-1;
+        color: $color-white-0;
+
+        border-radius: 100%;
+        font-size: 2rem;
+
+        &:hover {
+          color: $color-white-1;
+        }
+      }
+    }
+
+    &:hover .carousel__next,
+    &:hover .carousel__prev {
+      transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .carousel__next {
+      left: 1rem;
+      transform: translateX(-1rem);
+    }
+
+    .carousel__prev {
+      right: 1rem;
+      transform: translateX(1rem);
+    }
+
+    .carousel__selector {
+      @extend %flex-center;
+      gap: 1rem;
+
+      .selector {
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: $color-white-3;
+        transition: all $transition-0;
+
+        &.active {
+          background-color: $color-alpha-blue-0;
+
+          @include breakpoint(md) {
+            width: 2rem;
+          }
+
+          @include breakpoint(lg) {
+            width: 2.5rem;
+          }
+        }
+
+        &:hover:not(.active) {
+          background-color: $color-gray-6;
+        }
+      }
+    }
+  }
+}
