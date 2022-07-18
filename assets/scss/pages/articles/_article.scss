@@ -39,12 +39,10 @@
       background-color: $color-white-0;
       color: $color-gray-2;
 
-      padding: 1rem 1rem 2rem;
       border-radius: 1rem;
       font-size: 1.3rem;
 
       @include breakpoint(sm) {
-        padding: 1rem 2rem 3rem;
         font-size: 1.5rem;
       }
     }
@@ -55,6 +53,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    padding: 1rem 1rem 2rem;
+
+    @include breakpoint(sm) {
+      padding: 1rem 2rem 3rem;
+    }
 
     // title
     .article__title {
@@ -190,7 +194,7 @@
       &[type='submit'] {
         cursor: pointer;
         border-radius: 2px;
-        padding: 0.5rem;
+        padding: 0.5rem 2rem;
         color: $color-gray-1;
         border: 1px solid $color-white-2;
 
@@ -209,6 +213,7 @@
     width: 100%;
 
     border: 1px solid blue;
+    padding: 5rem;
 
     @include breakpoint(lg) {
       width: unset;
