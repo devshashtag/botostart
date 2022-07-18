@@ -1,18 +1,18 @@
-@import "home";
-@import "about";
-@import "cart";
-@import "404";
-@import "contact";
-@import "teacher";
+@import 'home';
+@import 'about';
+@import 'cart';
+@import '404';
+@import 'contact';
+@import 'teacher';
 
 // courses
-@import "courses";
-@import "courses/course";
+@import 'courses';
+@import 'courses/course';
 
 // articles
-@import "articles";
-@import "articles/article";
+@import 'articles';
+@import 'articles/article';
 
 // accounts
-@import "accounts";
-@import "accounts/lost-password";
+@import 'accounts';
+@import 'accounts/lost-password';

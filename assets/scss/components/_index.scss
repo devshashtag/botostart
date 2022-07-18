@@ -1,5 +1,8 @@
-@import "navbar-toggle";
-@import "screen-overlay";
-@import "login-modal";
+@import 'navbar-toggle';
+@import 'screen-overlay';
+@import 'login-modal';
 // course-cards
-@import "course-cards";
+@import 'course-cards';
+
+// articles/article, courses/course
+@import 'carousel-post';
