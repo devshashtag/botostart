@@ -5,7 +5,7 @@ const WINDOW_SIZE = { sm: 576, md: 768, lg: 992 };
 const defaultSelector = 1;
 
 // element selectors
-const carousels = document.querySelectorAll('section.carousel-post');
+const carousels = document.querySelectorAll('section.post-carousel');
 
 // selector template
 const selectorTemplate = (active) => `<div class="selector${active ? ' active' : ''}"></div>`;
@@ -52,7 +52,7 @@ function updateSelectors() {
 
       selector.insertAdjacentHTML('beforeend', selectorTemplate(active));
     }
-    // reset carousel-posts scrollbar
+    // reset posts-carousel scrollbar
     posts.scrollTo(0, 0);
   }
 }
