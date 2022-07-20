@@ -24,6 +24,8 @@ main.contact {
     flex-direction: column;
     gap: 2rem;
 
+    width: 100%;
+
     padding: 2rem 2rem 4rem;
   }
 
@@ -63,7 +65,7 @@ main.contact {
         font-size: 1.4rem;
 
         &.required::after {
-          content: "*";
+          content: '*';
           color: $color-pink-0;
           padding-inline: 0.5rem;
         }
