@@ -722,6 +722,164 @@
             <div class="carousel__selector"></div>
           </div>
         </section>
+
+        <!-- post-comments -->
+        <section class="post-comments">
+          <!-- header -->
+          <header class="comments__header">
+            <!-- icon -->
+            <i class="far fa-comment-alt" aria-hidden="true"></i>
+            <!-- title -->
+            <div class="comments__title">نظرات</div>
+          </header>
+
+          <!-- list -->
+          <div class="comments__list">
+            <!-- comment -->
+            <div class="comments__comment">
+              <!--header -->
+              <div class="comment__header">
+                <!-- image -->
+                <div class="comment__image">
+                  <a href="/pages/teacher.html">
+                    <img src="/assets/images/global/user-profile.png" alt="user image">
+                  </a>
+                </div>
+                <!-- author -->
+                <div class="comment__author">امیر حسینی
+                  <span class="author__tag student">( دانشجوی دوره )</span>
+                </div>
+                <!-- time -->
+                <div class="comment__time">جولای 7, 2022</div>
+                <!-- reply -->
+                <button class="comment__reply">پاسخ</button>
+              </div>
+              <!-- text -->
+              <p class="comment__text">
+                سلام و عرض ادب<br>
+                این آموزش کامل هست ؟
+              </p>
+              <!-- reply -->
+              <div class="comment__reply">
+                <!-- comment -->
+                <div class="comments__comment">
+                  <!--header -->
+                  <div class="comment__header">
+                    <!-- image -->
+                    <div class="comment__image">
+                      <a href="/pages/teacher.html">
+                        <img src="/assets/images/global/user-profile.png" alt="user image">
+                      </a>
+                    </div>
+                    <!-- author -->
+                    <div class="comment__author">علی رحیمی
+                      <span class="author__tag admin">( مدیریت )</span>
+                    </div>
+                    <!-- time -->
+                    <div class="comment__time">جولای 7, 2022</div>
+                    <!-- reply -->
+                    <button class="comment__reply">پاسخ</button>
+                  </div>
+                  <!-- text -->
+                  <p class="comment__text">
+                    سلام و عرض ادب<br>
+                    تاجایی که امکانش بود مباحث کلی مطرح شده
+                  </p>
+                </div>
+                <!-- end comment -->
+              </div>
+            </div>
+            <!-- end comment -->
+
+            <!-- comment -->
+            <div class="comments__comment">
+              <!--header -->
+              <div class="comment__header">
+                <!-- image -->
+                <div class="comment__image">
+                  <a href="/pages/teacher.html">
+                    <img src="/assets/images/global/user-profile.png" alt="user image">
+                  </a>
+                </div>
+                <!-- author -->
+                <div class="comment__author">زهرا کریمی
+                  <span class="author__tag student">( دانشجوی دوره )</span>
+                </div>
+                <!-- time -->
+                <div class="comment__time">جولای 8, 2022</div>
+                <!-- reply -->
+                <button class="comment__reply">پاسخ</button>
+              </div>
+              <!-- text -->
+              <p class="comment__text">
+                سلام خسته نباشید.<br>
+                ممنون از آموزش خوبتون
+              </p>
+              <!-- reply -->
+              <div class="comment__reply"></div>
+            </div>
+            <!-- end comment -->
+          </div>
+
+          <!-- pagination -->
+          <nav class="comments__pagination">
+            <ul>
+              <li>
+                <a href="#prev">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li><a href="#1">1</a></li>
+              <li><a href="#load-more">...</a></li>
+              <li><a href="#7">7</a></li>
+              <li><a href="#8">8</a></li>
+              <li><a href="#9">9</a></li>
+              <li class="active"><a href="#10">10</a></li>
+            </ul>
+          </nav>
+
+          <!-- rules -->
+          <div class="comments__rules">
+            <!-- title -->
+            <h4 class="rules__title">قوانین ثبت دیدگاه</h4>
+            <!-- rules list -->
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+          <!-- form -->
+          <div class="comments__form">
+            <h4 class="form__title">
+              نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت گذاری شده اند
+              <span class="form__mark">*</span>
+            </h4>
+
+            <!-- form -->
+            <form method="post" action="">
+              <!-- text -->
+              <label for="text">
+                دیدگاه شما <span class="form__mark">*</span>
+              </label>
+              <textarea name="text" id="text" cols="30" rows="7" required></textarea>
+              <!-- box -->
+              <div class="form__box">
+                <!-- name -->
+                <label>
+                  نام <span class="form__mark">*</span>
+                  <input type="text" name="name" id="name" required>
+                </label>
+                <!-- email -->
+                <label class="required">
+                  ایمیل <span class="form__mark">*</span>
+                  <input type="email" name="email" id="email" required>
+                </label>
+              </div>
+              <!-- submit -->
+              <button class="form-submit" type="submit">ارسال</button>
+            </form>
+          </div>
+        </section>
       </main>
 
       <!-- sidebar -->
