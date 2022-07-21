@@ -573,13 +573,13 @@
 
         <!-- post carousel -->
         <section class="post-carousel">
-          <!-- header -->
-          <header class="carousel__header">
+          <!-- tab -->
+          <div class="carousel__tab">
             <!-- icon -->
             <i class="far fa-newspaper" aria-hidden="true"></i>
             <!-- title -->
-            <div class="carousel__title">مطالب زیر را حتما مطالعه کنید</div>
-          </header>
+            <h3 class="carousel__title">مطالب زیر را حتما مطالعه کنید</h3>
+          </div>
 
           <!-- container -->
           <div class="carousel__container">
@@ -725,13 +725,13 @@
 
         <!-- post-comments -->
         <section class="post-comments">
-          <!-- header -->
-          <header class="comments__header">
+          <!-- tab -->
+          <div class="comments__tab">
             <!-- icon -->
             <i class="far fa-comment-alt" aria-hidden="true"></i>
             <!-- title -->
-            <div class="comments__title">نظرات</div>
-          </header>
+            <h3 class="comments__title">نظرات</h3>
+          </div>
 
           <!-- list -->
           <div class="comments__list">
@@ -883,7 +883,69 @@
       </main>
 
       <!-- sidebar -->
-      <div class="article__sidebar"></div>
+      <div class="article__sidebar">
+        <!-- container -->
+        <div class="sidebar__container">
+          <!-- search -->
+          <div class="sidebar__search">
+            <div class="search__form">
+              <form method="get" role="search" action="">
+                <!-- search field -->
+                <input type="text" placeholder="ورود واژه کلیدی ..." name="s" required>
+                <!-- submit -->
+                <button type="submit" value="جستجو">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- category -->
+          <div class="sidebar__category">
+            <h3 class="sidebar__tab">دسته ها</h3>
+            <!-- list -->
+            <ul class="category__list">
+              <li><a href="/pages/articles.html#redux">ریداکس</a></li>
+              <li><a href="/pages/articles.html#react">ریکت</a></li>
+              <li><a href="/pages/articles.html#articles">مقالات</a></li>
+            </ul>
+          </div>
+
+          <!-- recent articles -->
+          <div class="sidebar__recent-articles">
+            <h3 class="sidebar__tab">جدید ترین مقاله ها</h3>
+            <!-- list -->
+            <ul class="articles__list">
+              <li>
+                <a href="/pages/articles/article.html#nodejs">
+                  چند دلیل مهم که باید Node.js رو یاد بگیری
+                </a>
+              </li>
+              <li>
+                <a href="/pages/articles/article.html#react-libraries">
+                  بهترین libraries برای react در سال 2021
+                </a>
+              </li>
+              <li>
+                <a href="/pages/articles/article.html#react-component">
+                  آموزش کامپوننت ها در react و بررسی آن
+                </a>
+              </li>
+              <li>
+                <a href="/pages/articles/article.html#react-redux">
+                  آموزش اتصال به react و redux به صورت کامل
+                </a>
+              </li>
+              <li>
+                <a href="/pages/articles/article.html#react-mistakes">
+                  اشتباهات react و آشنایی با رایج ترین آنها در ری
+                  اکت
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end article -->
@@ -948,7 +1010,7 @@
 
   <!-- scripts -->
   <script src="/assets/js/global.js"></script>
-  <script src="/assets/js/pages/article.js"></script>
+  <script type="module" src="/assets/js/pages/article.js"></script>
   <script src="/assets/js/modules/carousel.js"></script>
 </body>
 

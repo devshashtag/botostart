@@ -1,3 +1,5 @@
+import sidebarSmoothScroll from '/assets/js/modules/sidebar.js';
+
 // functions
 // clear extra indent from code
 function clearIndent(code) {
@@ -10,7 +12,6 @@ function clearIndent(code) {
     else
       return line.replace(/^ */, '');
   }).join('\n');
-
 }
 
 // remove autofocus attr from elements
@@ -18,18 +19,21 @@ function preventAutofocus(code) {
   return code.replaceAll(' autofocus=""', '');
 }
 
-
 // events
 window.addEventListener("DOMContentLoaded", function () {
-  let codeExamples = document.querySelectorAll('article.article__post .code-example');
+  // sidebar
+  const sidebar = document.querySelector('.article__sidebar');
+  sidebarSmoothScroll(sidebar);
+
+  const codeExamples = document.querySelectorAll('article.article__post .code-example');
 
   // display examples, outputs
   for (const code of codeExamples) {
     // skip empty code blocks
     if (!code.innerHTML.trim()) continue;
 
-    let htmlCode = clearIndent(code.innerHTML);
-    let htmlSafeCode = preventAutofocus(htmlCode);
+    const htmlCode = clearIndent(code.innerHTML);
+    const htmlSafeCode = preventAutofocus(htmlCode);
 
     let errorMsg = '';
 
@@ -37,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
       errorMsg = '<p><b>نکته: </b>در این مقاله از autofocus جلو گیری میشود. برای دیدن نتیجه کد را سیستم خودتان امتحان کنید</p>';
     }
 
-    let htmlOutput = `
+    const htmlOutput = `
   <!-- code output -->
   <p>خروجی :</p>
 
