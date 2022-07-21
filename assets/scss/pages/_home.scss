@@ -44,6 +44,11 @@ main.home {
       padding: 1.5rem 2.5rem;
     }
 
+    @include breakpoint(sm) {
+      background-position: center 20%;
+      padding-top: 40vh;
+    }
+
     @include breakpoint(lg) {
       background-position: 5rem 40%;
       background-size: 38%;
