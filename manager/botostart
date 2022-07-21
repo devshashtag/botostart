@@ -11,7 +11,7 @@
   + convert all pages title to persian
   - navbar dropdown
   - format all files with eslint
-  - add lang="fa-IR" to all pages
+  + add lang="fa-IR" to all pages
   - conert all <div class="counter">0</div> to span
 
 = placeholders
