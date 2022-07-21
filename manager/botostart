@@ -25,6 +25,8 @@
   - create a frontend version
   - create a production branch
   - fix teacher image styles
+  - courses search filter
+  - rewrite home page heading with flex and img
 
 = pages
 
@@ -76,12 +78,12 @@
     + pagination
     + footer
 
-  = article
+  + article
     + header
     + article post
     + article related
-    - article comments
-    - article sidebar
+    + article comments
+    + article sidebar
     + footer
 
   = course
