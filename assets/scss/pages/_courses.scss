@@ -5,39 +5,37 @@ main.courses {
   .courses__products {
     display: grid;
     grid-gap: 3rem;
-    padding: 4rem 2rem 7rem;
+    padding: 4rem 2rem;
   }
 
   // courses products childs
-  .products {
-    // products options
-    &__options {
-      @extend %mobile-max-width;
+  // options
+  .products__options {
+    @extend %mobile-max-width;
 
-      background-color: $color-white-0;
-      padding: 15px 1rem;
-      border-radius: 7px;
+    background-color: $color-white-0;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
 
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
 
-      width: 100%;
-      transition: all $transition-1;
+    width: 100%;
+    transition: all $transition-1;
 
-      @include breakpoint(sm) {
-        flex-direction: row;
-        padding: 15px 2rem;
-      }
+    @include breakpoint(sm) {
+      flex-direction: row;
+      padding: 1.5rem 2rem;
     }
+  }
 
-    // products cards
-    &__cards {
-      padding: unset;
-    }
+  // cards
+  .products__cards {
+    padding: unset;
 
     @include breakpoint(md) {
-      &__cards.view-list {
+      &.view-list {
         display: flex;
         flex-direction: column;
 
@@ -51,9 +49,9 @@ main.courses {
           line-height: 0;
 
           img {
-            max-height: 240px;
+            max-height: 24rem;
             border-top-left-radius: 0;
-            border-bottom-right-radius: 10px;
+            border-bottom-right-radius: 1rem;
           }
         }
 
@@ -85,8 +83,8 @@ main.courses {
       color: $color-gray-2;
       border: 1px solid $color-shadow-0;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
+      width: 4rem;
+      height: 4rem;
       cursor: pointer;
 
       &.active {
@@ -105,22 +103,24 @@ main.courses {
   // options order
   .options__order {
     position: relative;
-    min-width: 200px;
-    height: 40px;
+    min-width: 20rem;
+    height: 3.5rem;
     z-index: 1;
 
     @include breakpoint(sm) {
       margin-left: auto;
     }
+
     // selected item
     .order__selected {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 1rem;
 
       border: 1px solid $color-blue-3;
-      padding: 10px 15px;
-      border-radius: 40px;
+      padding: 1rem 1.5rem;
+      border-radius: 3rem;
+
       cursor: pointer;
 
       transition: all $transition-0;
@@ -140,122 +140,95 @@ main.courses {
       }
 
       i {
-        margin: auto 0;
-        font-size: 14px;
+        font-size: 1.3rem;
         color: $color-gray-2;
 
         transition: all $transition-0;
       }
     }
 
-    // order dropdown
+    // dropdown
     .order__dropdown {
       position: absolute;
       top: 100%;
       width: 100%;
       background-color: $color-white-0;
-      box-shadow: 0 0 6px $color-shadow-0;
-      transition: all $transition-0 ease-in-out;
-      transform: translateY(-50px);
+      box-shadow: 0 0 0.5rem $color-shadow-0;
+      transition: all $transition-0;
+      transform: translateY(-5rem);
       opacity: 0;
       visibility: hidden;
       z-index: -1;
     }
 
-    .dropdown {
-      &__search {
+    // search
+    .dropdown__search {
+      width: 100%;
+      padding: 5px 4px;
+
+      input {
+        font-family: inherit;
+        font-size: 1.3rem;
+        line-height: 2;
+        border: 1px solid $color-gray-8;
+        padding: 2px 5px;
         width: 100%;
-        padding: 5px 4px;
-
-        input {
-          font-family: inherit;
-          font-size: 14px;
-          line-height: 2;
-          border: 1px solid $color-gray-8;
-          padding: 2px 5px;
-          width: 100%;
-        }
       }
+    }
 
-      &__options {
-        max-height: 245px;
-        overflow-y: auto;
+    // options
+    .dropdown__options {
+      max-height: 24rem;
+      overflow-y: auto;
 
-        button {
-          text-align: right;
-          background-color: $color-white-2;
-          line-height: 2;
-          padding: 6px 10px;
-          font-size: 13px;
-          font-family: inherit;
-          width: 100%;
+      button {
+        background-color: $color-white-2;
 
-          &.selected {
-            background-color: $color-white-4;
-          }
+        font-size: 1.1rem;
+        font-family: inherit;
+        line-height: 2;
 
-          &:not(.selected):hover {
-            cursor: pointer;
-            background-color: $color-white-3;
-          }
+        text-align: right;
+
+        padding: 0.5rem 1rem;
+        width: 100%;
+
+        &.selected {
+          background-color: $color-white-4;
+        }
+
+        &:not(.selected):hover {
+          cursor: pointer;
+          background-color: $color-white-3;
         }
       }
     }
-  }
 
-  .options__order.open {
-    .order__selected {
-      background-color: $color-blue-3;
-      color: $color-white-0;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
+    &.open {
+      // selected
+      .order__selected {
+        background-color: $color-blue-3;
+        color: $color-white-0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
-      i {
-        color: $color-gray-8;
-        transform: rotate(180deg);
+        i {
+          color: $color-gray-8;
+          transform: rotate(180deg);
+        }
       }
-    }
-    .order__dropdown {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
+
+      // dropdown
+      .order__dropdown {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
   // options search
   .options__search {
-    min-width: 20rem;
-    border: 1px solid $color-blue-3;
-    border-radius: 30px;
-    height: 40px;
-    padding: 0 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    form {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      gap: 5px;
-    }
-
-    .search-field {
-      flex-grow: 1;
-      font-size: 12px;
-      font-family: inherit;
-      background-color: unset;
-    }
-
-    .search-submit {
-      cursor: pointer;
-      font-size: 15px;
-      color: $color-gray-6;
-      background-color: unset;
-      &:hover {
-        color: $color-blue-3;
-      }
-    }
+    @extend %search-box;
   }
 }
