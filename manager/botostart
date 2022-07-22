@@ -13,14 +13,7 @@
   - format all files with eslint
   + add lang="fa-IR" to all pages
   - conert all <div class="counter">0</div> to span
-
-= placeholders
-  - removed form-input if no needed more than one
-  - convert any form-box to parent__box
-  - convert any form-submit to parent__submit
-  - move placeholders into another file if needed
-
-= todo
+  - rename %sections-gap to %main-layout
   - forms autocomplete
   - create a frontend version
   - create a production branch
@@ -28,8 +21,15 @@
   - courses search filter
   - rewrite home page heading with flex and img
 
-= pages
 
+= placeholders
+  - removed form-input if no needed more than one
+  - convert any form-box to parent__box
+  - convert any form-submit to parent__submit
+  - move placeholders into another file if needed
+
+
+= pages
   + home
     + header
       + sidebar
@@ -80,18 +80,18 @@
 
   + article
     + header
-    + article post
-    + article related
-    + article comments
+    + main post
+    + main related
+    + main comments
     + article sidebar
     + footer
 
   = course
     + header
-    - sidebar
-    - main
-    - related courses
-    - comment
+    + main post
+    - main related
+    - main comments
+    - course sidebar
     + footer
 
   + 404
