@@ -1,55 +1,14 @@
 .main__article {
-  background-color: $color-white-2;
-
-  // container
-  .article__container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    max-width: $section-max-width;
-    margin: 0 auto;
-    width: 100%;
-
-    padding: 3rem 1rem;
-
-    @include breakpoint(md) {
-      padding: 3rem 2rem;
-    }
-
-    @include breakpoint(lg) {
-      flex-direction: row;
-    }
-  }
+  @extend %container-layout;
 
   // content
   main.article__content {
-    @extend %mobile-max-width;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    // solved code examples width issues
+    // fixed code-examples width issues
     overflow-x: hidden;
-
-    > article,
-    > section {
-      background-color: $color-white-0;
-      color: $color-gray-2;
-
-      border-radius: 1rem;
-      font-size: 1.3rem;
-
-      @include breakpoint(sm) {
-        font-size: 1.5rem;
-      }
-    }
   }
 
   // post
-  .article__post {
+  article.article__post {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -139,20 +98,22 @@
 
     // lists
     ul {
-      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
       direction: ltr;
+
+      font-size: 1.4rem;
 
       li {
         display: flex;
-        align-items: center;
-        gap: 0.8rem;
+        gap: 1rem;
+        line-height: 2;
 
         &::before {
-          content: '';
+          content: '\2022';
           display: inline-block;
-          padding: 2px;
-          border-radius: 50%;
-          background-color: $color-pink-0;
+          color: $color-pink-0;
         }
       }
     }

@@ -15,13 +15,3 @@ li {
 a {
   text-decoration: none;
 }
-
-html {
-  direction: rtl;
-  scroll-behavior: smooth;
-}
-
-.translated-rtl * {
-  // when page translated reset styles
-  letter-spacing: 0 !important;
-}
