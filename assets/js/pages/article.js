@@ -22,7 +22,7 @@ function preventAutofocus(code) {
 // events
 window.addEventListener("DOMContentLoaded", function () {
   // sidebar
-  const sidebar = document.querySelector('.article__sidebar');
+  const sidebar = document.querySelector('.post-sidebar');
   sidebarSmoothScroll(sidebar);
 
   const codeExamples = document.querySelectorAll('article.article__post .code-example');
