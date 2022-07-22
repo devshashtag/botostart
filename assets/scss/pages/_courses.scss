@@ -83,8 +83,8 @@ main.courses {
       color: $color-gray-2;
       border: 1px solid $color-shadow-0;
       border-radius: 50%;
-      width: 4rem;
-      height: 4rem;
+      width: $options-height;
+      height: $options-height;
       cursor: pointer;
 
       &.active {
@@ -104,7 +104,6 @@ main.courses {
   .options__order {
     position: relative;
     min-width: 20rem;
-    height: 3.5rem;
     z-index: 1;
 
     @include breakpoint(sm) {
@@ -114,12 +113,14 @@ main.courses {
     // selected item
     .order__selected {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: 1rem;
 
       border: 1px solid $color-blue-3;
       padding: 1rem 1.5rem;
       border-radius: 3rem;
+      height: $options-height;
 
       cursor: pointer;
 
@@ -144,6 +145,7 @@ main.courses {
         color: $color-gray-2;
 
         transition: all $transition-0;
+        line-height: 0;
       }
     }
 
@@ -230,5 +232,6 @@ main.courses {
   // options search
   .options__search {
     @extend %search-box;
+    height: $options-height;
   }
 }
