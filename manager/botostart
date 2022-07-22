@@ -89,7 +89,7 @@
   = course
     + header
     + main post
-    - main related
+    + main related
     - main comments
     - course sidebar
     + footer
