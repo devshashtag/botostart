@@ -1,0 +1,170 @@
+.main__course {
+  @extend %container-layout;
+
+  main.course__content {
+    // image
+    .course__image img {
+      border-radius: 0.5rem;
+    }
+
+    // post
+    .course__post {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      padding: 1rem;
+
+      @include breakpoint(sm) {
+        padding: 2rem;
+      }
+
+      // header
+      > h3 {
+        font-size: 1.5rem;
+        color: $color-blue-0;
+
+        &:not(:first-child) {
+          margin-top: 1rem;
+        }
+      }
+
+      // paragraph
+      > p {
+        line-height: 2;
+      }
+
+      // links
+      a {
+        color: $color-blue-2;
+
+        &:hover {
+          color: $color-blue-3;
+        }
+      }
+
+      // lists
+      > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+          display: flex;
+          gap: 1rem;
+          line-height: 2;
+
+          &::before {
+            content: '\2022';
+            display: inline-block;
+            color: $color-pink-0;
+          }
+        }
+      }
+
+      // sections
+      .course__sections {
+        background-color: $color-blue-7;
+        border-radius: 1rem;
+        padding: 0 1rem;
+        margin: 2rem 0;
+
+        // scetions header
+        h3 {
+          padding: 2rem 1rem;
+          border-bottom: 2px solid $color-blue-9;
+          font-size: 1.5rem;
+          color: $color-gray-2;
+        }
+
+        // section
+        details {
+          &[open] {
+            summary {
+              background-color: $color-white-0;
+            }
+
+            + details[open] {
+              margin-top: 1rem;
+            }
+          }
+
+          &:last-of-type {
+            margin-bottom: 1rem;
+          }
+
+          // content
+          .content {
+            background-color: $color-blue-8;
+
+            padding: 2rem 1rem;
+            font-size: 1.3rem;
+            line-height: 1.5;
+          }
+        }
+
+        // title
+        summary {
+          cursor: pointer;
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 1rem;
+
+          padding: 1rem;
+          border-bottom: 1px solid $color-blue-9;
+          min-height: 5rem;
+
+          // remove arrow
+          list-style: none;
+
+          &::marker,
+          &::-webkit-details-marker {
+            display: none;
+          }
+
+          &:hover {
+            background-color: $color-white-0;
+          }
+
+          // title
+          h4 {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          &:hover > h4 {
+            color: $color-blue-1;
+          }
+
+          // subtitle
+          p {
+            font-size: 1.3rem;
+            font-weight: 300;
+          }
+
+          // tags
+          .tag-free,
+          .tag-private {
+            color: $color-white-0;
+            font-size: 1.2rem;
+            padding: 0.2rem 0;
+            min-width: 6rem;
+            border-radius: 0.3rem;
+            text-align: center;
+            margin: 0 0.5rem;
+          }
+
+          .tag-free {
+            background-color: $color-green-0;
+          }
+
+          .tag-private {
+            background-color: $color-pink-0;
+          }
+        }
+      }
+    }
+  }
+}
