@@ -1,28 +1,33 @@
-export default function sidebarSmoothScroll(sidebar) {
+export default function sidebarSmoothScroll(sidebar, callback) {
   const sidebarContainer = sidebar.querySelector('.sidebar__container');
+  const padding = 20;
+  const lgSize = 992;
 
   // heights
   const headerHeight = document.querySelector('header.main-header').offsetHeight || 0;
-  const containerHeight = sidebarContainer.offsetHeight;
-  const lgSize = 992;
+  let headerHeightPadding = headerHeight + padding;
 
   let oldScroll;
 
   window.onscroll = function (e) {
-    let isScrollUp = oldScroll > window.scrollY;
-    oldScroll = window.scrollY;
+    const containerHeight = sidebarContainer.offsetHeight;
+    let isScrollUp = oldScroll > this.scrollY;
+    oldScroll = this.scrollY;
 
-    if (window.scrollY <= sidebar.offsetTop ||
-      containerHeight <= (window.innerHeight - headerHeight) ||
-      window.innerWidth <= lgSize) {
+    // run extra function to onscroll event
+    if (callback) callback();
+
+    // dont scroll until its visible
+    if (this.scrollY <= sidebar.offsetTop - headerHeightPadding ||
+      containerHeight <= (this.innerHeight - headerHeightPadding) ||
+      this.innerWidth <= lgSize) {
       sidebarContainer.style.top = '';
       return;
     }
 
-    sidebarContainer.style.top = `calc(100vh - ${containerHeight}px - 2rem)`;
-
     if (isScrollUp)
-      sidebarContainer.style.top = `calc(${headerHeight}px + 1rem)`;
-
+      sidebarContainer.style.top = `${headerHeightPadding}px`;
+    else
+      sidebarContainer.style.top = `calc(100vh - ${containerHeight + padding}px)`;
   }
 }

@@ -20,6 +20,8 @@
   - fix teacher image styles
   - courses search filter
   - rewrite home page heading with flex and img
+  - use samp for output articles
+  + convert sidebars to aside
 
 
 = placeholders
@@ -91,7 +93,7 @@
     + main post
     + main related
     + main comments
-    - course sidebar
+    + course sidebar
     + footer
 
   + 404

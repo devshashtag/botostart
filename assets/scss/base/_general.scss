@@ -288,9 +288,8 @@ main > section {
 
   form {
     display: flex;
-    align-items: center;
     width: 100%;
-    gap: 5px;
+    gap: 0.5rem;
   }
 
   input[type='text'] {
@@ -305,6 +304,10 @@ main > section {
     font-size: 1.4rem;
     color: $color-gray-6;
     background-color: unset;
+
+    i {
+      vertical-align: bottom;
+    }
 
     &:hover {
       color: $color-blue-3;
