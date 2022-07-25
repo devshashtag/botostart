@@ -35,8 +35,10 @@ main.teacher {
     @extend %flex-center;
 
     img {
-      height: 120px;
-      width: 120px;
+      height: 12rem;
+      width: 12rem;
+      border: 0.1rem solid $color-white-0;
+      outline: 1px solid $color-white-4;
       border-radius: 50%;
     }
   }
@@ -95,7 +97,7 @@ main.teacher {
 
       &::before,
       &::after {
-        content: "";
+        content: '';
         border: 1px solid $color-gray-7;
         display: inline-block;
         margin: auto 0;
