@@ -1,236 +1,263 @@
 <!DOCTYPE html>
 <html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/botostart/assets/icons/favicon.ico" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+    <!-- font awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      rel="stylesheet"
+    />
 
-  <!-- font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="/botostart/assets/css/styles.css" />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>مدرس دوره</title>
+  </head>
 
-  <title>مدرس دوره</title>
-</head>
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <div class="header__container">
+        <!-- buttons -->
+        <div class="header__buttons">
+          <div class="navbar-toggle">
+            <span class="toggle-icon"></span>
+          </div>
+          <div class="login-button">
+            <i class="fa fa-user-lock" aria-hidden="true"></i>
+            <div class="login-text">ورود و ثبت نام</div>
+          </div>
+          <div class="cart-button">
+            <i class="fa fa-shopping-bag" aria-hidden="true">
+              <div class="counter">0</div>
+            </i>
+          </div>
 
-<body>
-  <!-- header -->
-  <header class="main-header">
-    <div class="header__container">
-      <!-- buttons -->
-      <div class="header__buttons">
-        <div class="navbar-toggle">
-          <span class="toggle-icon"></span>
-        </div>
-        <div class="login-button">
-          <i class="fa fa-user-lock" aria-hidden="true"></i>
-          <div class="login-text">ورود و ثبت نام</div>
-        </div>
-        <div class="cart-button">
-          <i class="fa fa-shopping-bag" aria-hidden="true">
-            <div class="counter">0</div>
-          </i>
-        </div>
-
-        <!-- button contents -->
-        <div class="buttons__content">
-          <!-- login modal -->
-          <div class="login-modal">
-            <!-- box -->
-            <div class="login__box">
-              <!-- header -->
-              <div class="login__header">
-                <div class="header__title">ورود</div>
-                <div class="login--close">
-                  <i class="fa fa-times" aria-hidden="true"></i>
+          <!-- button contents -->
+          <div class="buttons__content">
+            <!-- login modal -->
+            <div class="login-modal">
+              <!-- box -->
+              <div class="login__box">
+                <!-- header -->
+                <div class="login__header">
+                  <div class="header__title">ورود</div>
+                  <div class="login--close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <!-- content -->
+                <div class="login__content">
+                  <!-- form -->
+                  <form method="post" action="">
+                    <!-- username -->
+                    <label for="username">نام کاربری :</label>
+                    <div class="form-box">
+                      <i class="fas fa-user" aria-hidden="true"></i>
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        required
+                      />
+                    </div>
+                    <!-- password -->
+                    <label for="password">رمز عبور :</label>
+                    <div class="form-box">
+                      <i class="fas fa-lock-open" aria-hidden="true"></i>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                      />
+                    </div>
+                    <!-- options -->
+                    <div class="form-options">
+                      <!-- remember me -->
+                      <label>
+                        <input name="rememberme" type="checkbox" value="true" />
+                        مرا به خاطر داشته باش
+                      </label>
+                      <!-- lost password -->
+                      <a href="/botostart/pages/accounts/lost-password.html"
+                        >رمز عبور را فراموش کرده اید؟</a
+                      >
+                    </div>
+                    <button class="form-submit" type="submit">ورود</button>
+                  </form>
+                  <!-- contact register -->
+                  <div class="content__register">
+                    هنوز عضو نشده اید؟
+                    <a href="/botostart/pages/accounts.html">عضویت در سایت</a>
+                  </div>
                 </div>
               </div>
-              <!-- content -->
-              <div class="login__content">
-                <!-- form -->
-                <form method="post" action="">
-                  <!-- username -->
-                  <label for="username">نام کاربری :</label>
-                  <div class="form-box">
-                    <i class="fas fa-user" aria-hidden="true"></i>
-                    <input type="text" name="username" id="username" required>
-                  </div>
-                  <!-- password -->
-                  <label for="password">رمز عبور :</label>
-                  <div class="form-box">
-                    <i class="fas fa-lock-open" aria-hidden="true"></i>
-                    <input type="password" name="password" id="password" required>
-                  </div>
-                  <!-- options -->
-                  <div class="form-options">
-                    <!-- remember me -->
-                    <label>
-                      <input name="rememberme" type="checkbox" value="true">
-                      مرا به خاطر داشته باش
-                    </label>
-                    <!-- lost password -->
-                    <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
-                  </div>
-                  <button class="form-submit" type="submit">ورود</button>
-                </form>
-                <!-- contact register -->
-                <div class="content__register"> هنوز عضو نشده اید؟
-                  <a href="/pages/accounts.html">عضویت در سایت</a>
-                </div>
+              <!-- screen overlay-->
+              <div class="screen-overlay"></div>
+            </div>
+
+            <!-- cart content -->
+            <div class="cart-content">
+              <div class="cart-sidebar">
+                <p>
+                  <img
+                    src="/botostart/assets/images/global/empty-cart.png"
+                    alt="empty cart"
+                  />
+                  هنوز هیچ دوره ای اضافه نکرده اید.
+                </p>
               </div>
+              <!-- screen overlay-->
+              <div class="screen-overlay"></div>
             </div>
-            <!-- screen overlay-->
-            <div class="screen-overlay"></div>
-          </div>
-
-          <!-- cart content -->
-          <div class="cart-content">
-            <div class="cart-sidebar">
-              <p>
-                <img src="/assets/images/global/empty-cart.png" alt="empty cart">
-                هنوز هیچ دوره ای اضافه نکرده اید.
-              </p>
-            </div>
-            <!-- screen overlay-->
-            <div class="screen-overlay"></div>
           </div>
         </div>
-      </div>
 
-      <!-- navbar -->
-      <div class="header__navbar">
-        <nav>
-          <ul>
-            <li><a href="/">صفحه نخست</a></li>
-            <li><a href="/pages/courses.html">دوره ها</a></li>
-            <li><a href="/pages/contact.html">تماس با ما</a></li>
-            <li><a href="/pages/about.html">درباره ما</a></li>
-            <li><a href="/pages/cart.html">سبد خرید</a></li>
-          </ul>
-          <hr />
-        </nav>
-        <!-- screen overlay-->
-        <div class="screen-overlay"></div>
-      </div>
-
-      <!-- logo -->
-      <div class="header__logo">
-        <a href="/">
-          <img src="/assets/icons/logo.svg" alt="logo">
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- end header -->
-
-  <!-- teacher -->
-  <main class="teacher">
-    <!-- info -->
-    <section class="teacher__info">
-      <!-- heading -->
-      <div class="teacher__heading">درباره مدرس</div>
-      <!-- container -->
-      <div class="teacher__container">
-        <!-- photo -->
-        <div class="teacher__photo">
-          <img src="/assets/images/teacher/teacher.png" alt="teacher">
-        </div>
-        <!-- intro -->
-        <div class="teacher__intro">
-          سال 95 بود که با ورود به دانشگاه برنامه نویسی رو شروع کردم. همیشه خلق یک چیز جدید منو خوشحال میکنه
-        </div>
-        <!-- quote -->
-        <div class="teacher__quote">
-          <span>
-            عاشق جاوا اسکریپت.<br> هر زمانی کمکی از دستم بر بیاد حتما بهم بگید
-          </span>
-          <i class="fa fa-quote-left" aria-hidden="true"></i>
-        </div>
-        <!-- links -->
-        <div class="teacher__links">
-          <div class="links__heading">شبکه های اجتماعی</div>
-          <div class="links__icons">
-            <a href="https://instagram.com/example">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://t.me/example">
-              <i class="fab fa-telegram" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:example@gmail.com">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- end teacher -->
-
-  <!-- footer -->
-  <footer class="main-footer">
-    <!-- container -->
-    <div class="footer__container">
-      <!-- footer content -->
-      <div class="footer__content">
-        <!-- column 1 -->
-        <div class="footer__column">
-          <h3 class="footer__title">درباره sitename</h3>
-          <div class="footer__text">
-            ما در sitename در تلاشیم بستری فراهم کنیم که علاقه مندان به برنامه نویسی بتوانند مطالب به روز حوزه برنامه
-            نویسی را یاد بگیرند.
-          </div>
-        </div>
-        <!-- column 2 -->
-        <div class="footer__column">
-          <h3 class="footer__title">فهرست سفارشی</h3>
-          <div class="footer__menu">
+        <!-- navbar -->
+        <div class="header__navbar">
+          <nav>
             <ul>
-              <li><a href="/">صفحه نخست</a></li>
-              <li><a href="/pages/courses.html">دوره ها</a></li>
-              <li><a href="/pages/contact.html"> تماس با ما </a></li>
-              <li><a href="/pages/about.html"> درباره ما </a></li>
-              <li><a href="/pages/cart.html"> سبد خرید </a></li>
+              <li><a href="/botostart">صفحه نخست</a></li>
+              <li><a href="/botostart/pages/courses.html">دوره ها</a></li>
+              <li><a href="/botostart/pages/contact.html">تماس با ما</a></li>
+              <li><a href="/botostart/pages/about.html">درباره ما</a></li>
+              <li><a href="/botostart/pages/cart.html">سبد خرید</a></li>
             </ul>
-          </div>
+            <hr />
+          </nav>
+          <!-- screen overlay-->
+          <div class="screen-overlay"></div>
         </div>
-        <!-- column 3 -->
-        <div class="footer__column">
-          <h3 class="footer__title">پرداخت آسان</h3>
-          <div class="footer__text">
-            <img src="/assets/icons/zarin-pal.svg" alt="zarin-pal">
-          </div>
+
+        <!-- logo -->
+        <div class="header__logo">
+          <a href="/botostart">
+            <img src="/botostart/assets/icons/logo.svg" alt="logo" />
+          </a>
         </div>
       </div>
+    </header>
+    <!-- end header -->
 
-      <!-- footer bottom -->
-      <div class="footer__bottom">
-        <div class="footer__wrapper">
-          <!-- copyright -->
-          <div class="footer__copyright">
-            تمامی حقوق برای سایت sitename محفوظ می باشد.
+    <!-- teacher -->
+    <main class="teacher">
+      <!-- info -->
+      <section class="teacher__info">
+        <!-- heading -->
+        <div class="teacher__heading">درباره مدرس</div>
+        <!-- container -->
+        <div class="teacher__container">
+          <!-- photo -->
+          <div class="teacher__photo">
+            <img
+              src="/botostart/assets/images/teacher/teacher.png"
+              alt="teacher"
+            />
+          </div>
+          <!-- intro -->
+          <div class="teacher__intro">
+            سال 95 بود که با ورود به دانشگاه برنامه نویسی رو شروع کردم. همیشه
+            خلق یک چیز جدید منو خوشحال میکنه
+          </div>
+          <!-- quote -->
+          <div class="teacher__quote">
+            <span>
+              عاشق جاوا اسکریپت.<br />
+              هر زمانی کمکی از دستم بر بیاد حتما بهم بگید
+            </span>
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
           </div>
           <!-- links -->
-          <div class="footer__links">
-            <a href="https://instagram.com/example">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://t.me/example">
-              <i class="fab fa-telegram" aria-hidden="true"></i>
-            </a>
+          <div class="teacher__links">
+            <div class="links__heading">شبکه های اجتماعی</div>
+            <div class="links__icons">
+              <a href="https://instagram.com/example">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://t.me/example">
+                <i class="fab fa-telegram" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:example@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end teacher -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <!-- container -->
+      <div class="footer__container">
+        <!-- footer content -->
+        <div class="footer__content">
+          <!-- column 1 -->
+          <div class="footer__column">
+            <h3 class="footer__title">درباره sitename</h3>
+            <div class="footer__text">
+              ما در sitename در تلاشیم بستری فراهم کنیم که علاقه مندان به برنامه
+              نویسی بتوانند مطالب به روز حوزه برنامه نویسی را یاد بگیرند.
+            </div>
+          </div>
+          <!-- column 2 -->
+          <div class="footer__column">
+            <h3 class="footer__title">فهرست سفارشی</h3>
+            <div class="footer__menu">
+              <ul>
+                <li><a href="/botostart">صفحه نخست</a></li>
+                <li><a href="/botostart/pages/courses.html">دوره ها</a></li>
+                <li>
+                  <a href="/botostart/pages/contact.html"> تماس با ما </a>
+                </li>
+                <li><a href="/botostart/pages/about.html"> درباره ما </a></li>
+                <li><a href="/botostart/pages/cart.html"> سبد خرید </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- column 3 -->
+          <div class="footer__column">
+            <h3 class="footer__title">پرداخت آسان</h3>
+            <div class="footer__text">
+              <img
+                src="/botostart/assets/icons/zarin-pal.svg"
+                alt="zarin-pal"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="footer__wrapper">
+            <!-- copyright -->
+            <div class="footer__copyright">
+              تمامی حقوق برای سایت sitename محفوظ می باشد.
+            </div>
+            <!-- links -->
+            <div class="footer__links">
+              <a href="https://instagram.com/example">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://t.me/example">
+                <i class="fab fa-telegram" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- end footer -->
+    </footer>
+    <!-- end footer -->
 
-  <!-- scripts -->
-  <script src="/assets/js/global.js"></script>
-</body>
-
+    <!-- scripts -->
+    <script src="/botostart/assets/js/global.js"></script>
+  </body>
 </html>

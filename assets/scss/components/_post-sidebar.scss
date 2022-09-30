@@ -23,7 +23,7 @@ aside.post-sidebar {
 
     transition: top $transition-1;
 
-    div[class^='sidebar__'] {
+    div[class^="sidebar__"] {
       background-color: $color-white-0;
       color: $color-gray-2;
 
@@ -41,7 +41,7 @@ aside.post-sidebar {
     border-bottom: 2px solid $color-white-2;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 0;
@@ -93,7 +93,7 @@ aside.post-sidebar {
         transition: all $transition-0 ease;
 
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           right: -0.5rem;
@@ -195,7 +195,7 @@ aside.post-sidebar {
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;
@@ -283,12 +283,12 @@ aside.post-sidebar {
       .rating {
         direction: ltr;
         overflow-x: hidden;
-        background-image: url('/assets/icons/star-empty.svg');
+        background-image: url("/botostart/assets/icons/star-empty.svg");
         height: 18px;
         width: 90px;
 
         > div {
-          background-image: url('/assets/icons/star-fill.svg');
+          background-image: url("/botostart/assets/icons/star-fill.svg");
           height: 100%;
         }
       }
@@ -301,7 +301,7 @@ aside.post-sidebar {
 
     // infos
     .details__main,
-    [class^='info-'] {
+    [class^="info-"] {
       display: flex;
       gap: 1rem;
       padding: 1rem;

@@ -1,4 +1,4 @@
-import { displayTemplate } from "/assets/js/modules/template.js";
+import { displayTemplate } from "/botostart/assets/js/modules/template.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   // courses cards
@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const viewList = document.querySelector(".options__view > .view-list");
 
   // display courses
-  const coursesAPI = "/assets/js/data/product-courses.json";
+  const coursesAPI = "/botostart/assets/js/data/product-courses.json";
   displayTemplate(coursesAPI, courseCardsElm, 'course');
 
   // order select dropdown

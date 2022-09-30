@@ -1,4 +1,4 @@
-import sidebarSmoothScroll from '/assets/js/modules/sidebar.js';
+import sidebarSmoothScroll from '/botostart/assets/js/modules/sidebar.js';
 
 const lgSize = 992;
 

@@ -1,4 +1,4 @@
-import { commafy, calcDiscount } from '/assets/js/modules/functions.js';
+import { commafy, calcDiscount } from '/botostart/assets/js/modules/functions.js';
 
 // display template
 function displayTemplate(API, displayElm, templateType) {
