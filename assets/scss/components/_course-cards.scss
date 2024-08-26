@@ -81,7 +81,7 @@
       justify-content: center;
       align-items: center;
 
-      background-image: url("/assets/images/discount.png");
+      background-image: url('/assets/images/discount.png');
       color: $color-white-2;
 
       transition: all $transition-0;
@@ -135,12 +135,12 @@
       .card__rating {
         direction: ltr;
         overflow-x: hidden;
-        background-image: url("/assets/icons/star-empty.svg");
+        background-image: url('/assets/icons/star-empty.svg');
         height: 18px;
         width: 90px;
 
         .rating {
-          background-image: url("/assets/icons/star-fill.svg");
+          background-image: url('/assets/icons/star-fill.svg');
           height: 100%;
         }
       }
@@ -204,7 +204,7 @@
         padding: 5px 10px;
 
         &::before {
-          content: " ";
+          content: ' ';
           position: absolute;
           top: calc(50% - 5px);
           right: -4px;
@@ -215,7 +215,7 @@
         }
 
         &::after {
-          content: "";
+          content: '';
 
           position: absolute;
           left: 3px;

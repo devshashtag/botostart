@@ -18,7 +18,7 @@
 
     &::after,
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $color-gray-1;
       width: $toggle-icon-width;
