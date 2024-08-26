@@ -1,1015 +1,963 @@
 <!DOCTYPE html>
 <html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>مقالات</title>
+  </head>
 
-  <title>مقالات</title>
-</head>
-
-<body>
-  <!-- header -->
-  <header class="main-header">
-    <div class="header__container">
-      <!-- buttons -->
-      <div class="header__buttons">
-        <div class="navbar-toggle">
-          <span class="toggle-icon"></span>
-        </div>
-        <div class="login-button">
-          <i class="fa fa-user-lock" aria-hidden="true"></i>
-          <div class="login-text">ورود و ثبت نام</div>
-        </div>
-        <div class="cart-button">
-          <i class="fa fa-shopping-bag" aria-hidden="true">
-            <div class="counter">0</div>
-          </i>
-        </div>
-
-        <!-- button contents -->
-        <div class="buttons__content">
-          <!-- login modal -->
-          <div class="login-modal">
-            <!-- box -->
-            <div class="login__box">
-              <!-- header -->
-              <div class="login__header">
-                <div class="header__title">ورود</div>
-                <div class="login--close">
-                  <i class="fa fa-times" aria-hidden="true"></i>
-                </div>
-              </div>
-              <!-- content -->
-              <div class="login__content">
-                <!-- form -->
-                <form method="post" action="">
-                  <!-- username -->
-                  <label for="username">نام کاربری :</label>
-                  <div class="form-box">
-                    <i class="fas fa-user" aria-hidden="true"></i>
-                    <input type="text" name="username" id="username" required>
-                  </div>
-                  <!-- password -->
-                  <label for="password">رمز عبور :</label>
-                  <div class="form-box">
-                    <i class="fas fa-lock-open" aria-hidden="true"></i>
-                    <input type="password" name="password" id="password" required>
-                  </div>
-                  <!-- options -->
-                  <div class="form-options">
-                    <!-- remember me -->
-                    <label>
-                      <input name="rememberme" type="checkbox" value="true">
-                      مرا به خاطر داشته باش
-                    </label>
-                    <!-- lost password -->
-                    <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
-                  </div>
-                  <button class="form-submit" type="submit">ورود</button>
-                </form>
-                <!-- contact register -->
-                <div class="content__register"> هنوز عضو نشده اید؟
-                  <a href="/pages/accounts.html">عضویت در سایت</a>
-                </div>
-              </div>
-            </div>
-            <!-- screen overlay-->
-            <div class="screen-overlay"></div>
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <div class="header__container">
+        <!-- buttons -->
+        <div class="header__buttons">
+          <div class="navbar-toggle">
+            <span class="toggle-icon"></span>
+          </div>
+          <div class="login-button">
+            <i class="fa fa-user-lock" aria-hidden="true"></i>
+            <div class="login-text">ورود و ثبت نام</div>
+          </div>
+          <div class="cart-button">
+            <i class="fa fa-shopping-bag" aria-hidden="true">
+              <div class="counter">0</div>
+            </i>
           </div>
 
-          <!-- cart content -->
-          <div class="cart-content">
-            <div class="cart-sidebar">
-              <p>
-                <img src="/assets/images/global/empty-cart.png" alt="empty cart">
-                هنوز هیچ دوره ای اضافه نکرده اید.
-              </p>
-            </div>
-            <!-- screen overlay-->
-            <div class="screen-overlay"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- navbar -->
-      <div class="header__navbar">
-        <nav>
-          <ul>
-            <li><a href="/">صفحه نخست</a></li>
-            <li><a href="/pages/courses.html">دوره ها</a></li>
-            <li><a href="/pages/contact.html">تماس با ما</a></li>
-            <li><a href="/pages/about.html">درباره ما</a></li>
-            <li><a href="/pages/cart.html">سبد خرید</a></li>
-          </ul>
-          <hr>
-        </nav>
-        <!-- screen overlay-->
-        <div class="screen-overlay"></div>
-      </div>
-
-      <!-- logo -->
-      <div class="header__logo">
-        <a href="/">
-          <img src="/assets/icons/logo.svg" alt="logo">
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- end header -->
-
-  <!-- article -->
-  <div class="main__article">
-    <!-- container -->
-    <div class="article__container">
-      <!-- content -->
-      <main class="article__content">
-        <!-- post -->
-        <article class="article__post">
-          <!-- title -->
-          <h1 class="article__title">آشنایی با صفات عناصر input در HTML</h1>
-
-          <!-- info -->
-          <div class="article__info">
-            <!-- time -->
-            <div class="time">
-              <i class="far fa-clock" aria-hidden="true"></i>01 فروردین 1400
-            </div>
-            <!-- author -->
-            <div class="info-author">
-              <i class="fa fa-user-alt" aria-hidden="true"></i> ارسال شده توسط
-              <a href="/pages/teacher.html#author">نویسنده</a>
-            </div>
-            <!-- category -->
-            <div class="info-category">
-              <i class="far fa-folder" aria-hidden="true"></i>
-              <a href="/pages/articles.html">مقالات</a>
-            </div>
-            <!-- view -->
-            <div class="info-view">
-              <i class="far fa-eye" aria-hidden="true"></i>241 بازدید
-            </div>
-          </div>
-
-          <!-- image -->
-          <div class="article__image">
-            <img src="/assets/images/articles/article-html-inputs.png" alt="html inputs">
-          </div>
-
-          <p>
-            صفت ها اطلاعات اضافی را در مورد عنصر اچ تی ام ال فراهم می آورند. در فصل های قبلی به بعضی از این صفات اشاره
-            کرده و کاربرد آنها را توضیح
-            دادیم. ما در این مقاله قصد داریم صفت های مربوط به عناصر <b>input</b> را به طور کامل به شما عزیزان آمورش
-            دهیم،
-            همراه <b>sitename</b> باشید.
-          </p>
-
-          <!-- heading -->
-          <h2>صفت value</h2>
-
-          <p>
-            مقدار اولیه برای یک فیلد ورودی از طریق این صفت مشخص می شود. در مثال زیر مقدار اولیه برای فیلد ورودی
-            <b>firstname</b> مقدار <b>John</b> تعیین شده است :
-          </p>
-
-          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="">
-              first name :<br>
-              <input type="text" name="firstname" value="John">
-            </form>
-          </code>
-
-          <!-- heading -->
-          <h2>صفت readonly</h2>
-
-          <p>بعضی اوقات فیلد های ورودی صرفا برای نمایش یک مقدار به کاربر استفاده می شوند و نباید مقدار آنها توسط کاربر
-            قابل تغییر باشد.</p>
-
-          <p>برای رسیدن به این حالت از صفت <b>readonly</b> استفاده می کنیم :</p>
-
-          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="">
-              first name:<br>
-              <input type="text" name="firstname" value="John" readonly>
-            </form>
-          </code>
-
-          <!-- heading -->
-          <h2>صفت disabled</h2>
-
-          <p>
-            برای نمایش یک فیلد ورودی در حالتی که غیر فعال است از صفت <b>disabled</b> استفاده می کنیم. فیلد های
-            <b>input</b> در حالت غیر فعال ، غیر
-            قابل کلیک و غیر قابل انتخاب بوده و مقادیر آنها در هنگام <b>submit</b> به سمت سرور ارسال نمی شود.
-          </p>
-
-          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="">
-              first name:<br>
-              <input type="text" name="firstname" value="John" disabled>
-            </form>
-          </code>
-
-          <p>
-            <b>نکته</b> : به نحوه ی به کاربردن صفت <b>disabled</b> در مثال دقت کنید. بر خلاف دیگر صفات که از قاعده ی نام
-            /
-            مقدار استفاده می کنند برای
-            استفاده از این صفت به به کاربردن نام آن به تنهایی کافی است.
-          </p>
-
-          <!-- heading -->
-          <h2>صفت maxlength در input</h2>
-
-          <p>حداکثر تعداد کاراکتری که میتوان در یک فیلد ورودی تایپ کرد توسط صفت <b>maxlength</b> تعیین می شود.</p>
-
-          <p>در مثال زیر حداکثر تعداد کارکتر برای فیلد <b>firstname</b> مقدار 10 تعیین شده است.</p>
-
-          <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="">
-              first name:<br>
-              <input type="text" name="firstname" maxlength="10">
-            </form>
-          </code>
-
-          <p>
-            دقت داشته باشید که صفت <b>maxlength</b> هشداری را برای زمانی که کاربر از مقدار مجاز تعداد کارکتر عبور کند
-            فراهم نمی آورد و این وظیفه ی شما
-            به عنوان برنامه نویس است که با استفاده از زبان <b>JavaScript</b> این هشدار را برای کاربر فراهم کنید.
-          </p>
-
-          <!-- heading -->
-          <h2>صفات در HTML۵</h2>
-
-          <p>زبان HTML5 صفات زیر را به عنصر <b>&lt;input&gt;</b> اضافه کرده است :</p>
-
-          <ul>
-            <li>autocomplete</li>
-            <li>autofocus</li>
-            <li>form</li>
-            <li>formaction</li>
-            <li>formenctype</li>
-            <li>formmethod</li>
-            <li>formnovalidate</li>
-            <li>formtarget</li>
-            <li>height and width</li>
-            <li>list</li>
-            <li>min and max</li>
-            <li>multiple</li>
-            <li>pattern (regexp)</li>
-            <li>placeholder</li>
-            <li>required</li>
-            <li>step</li>
-          </ul>
-
-          <p>و البته صفاتی را هم برای عنصر <b>&lt;form&gt;</b> فراهم آورده است :</p>
-
-          <ul>
-            <li>autocomplete</li>
-            <li>novalidate</li>
-          </ul>
-
-          <p>که در ادامه به بعضی از آنها خواهیم پرداخت.</p>
-
-          <!-- heading -->
-          <h2>صفت autocomplete</h2>
-
-          <p>
-            در صفاتی که در قسمت قبل به آنها اشاره کردیم ، صفت <b>autocomplete</b> هم برای عنصر <b>&lt;input&gt;</b> و هم
-            برای عنصر
-            <b>&lt;form&gt;</b> وجود دارد.
-          </p>
-
-          <p>
-            صفت <b>autocomplete</b> مشخص می کند که قابلیت تکمیل خودکار برای عناصر <b>&lt;input&gt;</b> و یا
-            <b>&lt;form&gt;</b> وجود داشته باشد یا
-            خیر.
-          </p>
-
-          <p>
-            قابلیت تکمیل خودکار به این معنا است که اگر کاربری قبلا مقدار هایی را در عناصری مانند <b>&lt;input&gt;</b>
-            وارد کرده باشد، بار بعدی مرورگر براساس مقادیر قبلی می تواند فیلد ها را پر کند.
-          </p>
-
-          <p>
-            وقتی از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می کنیم <b>autocomplete</b> به تمام عناصر
-            <b>&lt;input&gt;</b> داخل فرم اعمال می
-            شود.
-          </p>
-
-          <p>در این حالت میتوان عنصری خاص را با مقدار <b>"autocomplete="off</b> از بقیه متمایز کرد.</p>
-
-          <p>نمونه مثال زیر نحوه ی استفاده از صفت autocomplete را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php" autocomplete="on">
-              first name: <input type="text" name="fname"><br>
-              last name: <input type="text" name="lname"><br>
-              E-mail: <input type="email" name="email" autocomplete="off"><br>
-              <input type="submit">
-            </form>
-          </code>
-
-          <p>
-            در بعضی از مرورگر ها ممکن است برای استفاده از قابلیت تکمیل خودکار نیاز به فعال کردن عملکرد
-            <b>autocomplete</b> باشد.
-          </p>
-
-          <!-- heading -->
-          <h2>صفت novalidate</h2>
-
-          <p>از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می شود.</p>
-
-          <p>
-            فرم ها با استفاده از زبان جاوااسکریپت می توانند قبل از این که به سمت سرور ارسال شوند، اعتبارسنجی شوند. برای
-            جلوگیری از این عمل می توان از
-            صفت <b>novalidate</b> در فرم استفاده کرد.
-          </p>
-
-          <p>نمونه کد زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php" novalidate>
-              E-mail: <input type="email" name="user_email">
-              <input type="submit">
-            </form>
-          </code>
-
-          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت autofocus</h2>
-
-          <p>
-            گاهی اوقات نیاز است وقتی کاربر صفحه ای را باز می کند مستقیما فیلد ورودی انتخاب شده باشد. یعنی کاربر نیاز
-            نداشته باشد برای تایپ در فیلد
-            ورودی ابتدا آن را انتخاب کند.
-          </p>
-
-          <p>برای رسیدن به چنین امکانی از صفت <b>autofocus</b> استفاده می کنیم.</p>
-
-          <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            first name: <input type="text" name="fname" autofocus>
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت form</h2>
-
-          <p>صفت <b>form</b> که برای عناصر <b>input</b> استفاده می شود مشخص می کند که عنصر مورد نظر متعلق به کدام فرم
-            است.
-          </p>
-
-          <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php" id="form1">
-              first name: <input type="text" name="fname"><br>
-              <input type="submit" value="Submit">
-            </form>
-
-            last name: <input type="text" name="lname" form="form1">
-          </code>
-
-          <p>در مثال بالا فیلد ورودی <b>lname</b> متعلق به فرم <b>form1</b> است. این قابلیت در <b>اینترنت اکسپلورر</b>
-            پشتیبانی
-            نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت formaction در input</h2>
-
-          <p>صفت <b>formaction</b> آدرسی از یک صفحه را مشخص می کند که وقتی فرم به سمت سرور ارسال می شود کنترل
-            <b>input</b>
-            توسط آن پردازش می شود.
-          </p>
-
-          <p>صفت <b>formaction</b> صفت <b>action</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
-
-          <p>صفت <b>formaction</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
-
-          <p>در نمونه مثال زیر عنصر فرم دارای دو دکمه ی <b>submit</b> با دو اکشن مختلف است :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php">
-              first name: <input type="text" name="fname"><br>
-              last name: <input type="text" name="lname"><br>
-              <input type="submit" value="Submit">
-              <input type="submit" formaction="/action_page2.php" value="Submit as admin">
-            </form>
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت formenctype</h2>
-
-          <p>
-            صفت <b>formenctype</b> مشخص می کند که هنگام <b>submit</b> ، داده های فرم چگونه باید انکد شود (تنها برای فرم
-            هایی که از صفت
-            <b>"method="post</b> استفاده می کنند).
-          </p>
-
-          <p>صفت <b>formenctype</b> صفت <b>enctype</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
-
-          <p>صفت <b>formenctype</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
-
-          <p>
-            در نمونه مثال زیر وقتی روی دکمه ی سابمیت اولی کلیک شود داده ها به روش پیش فرض انکد شده، درحالی که با کلیک
-            روی
-            دکمه ی سابمیت دوم، داده ها
-            به عنوان <b>"multipart/form-data"</b> انکد می شوند.
-          </p>
-
-          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page_binary.asp" method="post">
-              first name: <input type="text" name="fname"><br>
-              <input type="submit" value="Submit">
-              <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
-            </form>
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت formmethod در input</h2>
-
-          <p>
-            صفت <b>formmethod</b> روش <a href="/pages/articles/article.html#html">اچ تی ام ال</a> را برای ارسال داده های
-            فرم به یک آدرس مشخص تعریف می
-            کند.
-          </p>
-
-          <p>صفت <b>formmethod</b> صفت <b>method</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> میکند.</p>
-
-          <p>صفت <b>formmethod</b> با صفت های <b>“type=”submit و “type=”image</b> استفاده می شود.</p>
-
-          <p>
-            در نمونه مثال زیر در هنگام استفاده از دکمه ی سابمیت اول داده ها به روش <b>get</b> ارسال می شود ، در حالی که
-            دکمه ی سابمیت دوم داده ها را
-            به روش <b>post</b> ارسال می کند.
-          </p>
-
-          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php" method="get">
-              first name: <input type="text" name="fname"><br>
-              last name: <input type="text" name="lname"><br>
-              <input type="submit" value="submit">
-              <input type="submit" formmethod="post" formaction="action_page_post.asp" value="submit using post">
-            </form>
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت formnovalidate</h2>
-
-          <p>
-            صفت <b>formnovalidate</b> صفت <b>novalidate</b> فرم را لغو می کند. این صفت با استفاده از صفت
-            <b>“type=”submit</b> می تواند مورد استفاده
-            قرار گیرد.
-          </p>
-
-          <p>در نمونه مثال زیر یک فرم با دو دکمه <b>submit</b> را نشان می دهد (یکی اعتبارسنجی می کند و دیگری نه) :</p>
-
-          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php">
-              e-mail: <input type="email" name="userid"><br>
-              <input type="submit" value="submit">
-              <input type="submit" formnovalidate value="submit without validation">
-            </form>
-          </code>
-
-          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت formtarget در input</h2>
-
-          <p>صفت <b>formtarget</b> مشخص می کند که پاسخ فرم ارسالی به سمت سرور در کجا نمایش داده شود.</p>
-
-          <p>صفت <b>formtarget</b> مقدار صفت <b>target</b> عنصر فرم را لغو می کند.</p>
-
-          <p>در نمونه کد زیر یک فرم با دو دکمه سابمیت را نشان می دهد که از دو <b>target</b> مختلف استفاده می کند :</p>
-
-          <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            <form action="/action_page.php">
-              first name: <input type="text" name="fname"><br>
-              last name: <input type="text" name="lname"><br>
-              <input type="submit" value="submit as normal">
-              <input type="submit" formtarget="_blank" value="submit to a new window">
-            </form>
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت placeholder</h2>
-
-          <p>از صفت <b>placeholder</b> برای نمایش متنی در فیلد ورودی قبل از ورود داده های کاربر استفاده می شود.</p>
-
-          <p>مقدار این صفت هنگام تایپ اولین کارکتر توسط کارکتر از بین می رود.</p>
-
-          <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            first name: <input type="text" name="fname" placeholder="first name">
-          </code>
-
-          <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <!-- heading -->
-          <h2>صفت required در input</h2>
-
-          <p>صفت <b>required</b> مشخص می کند که فیلد ورودی قبل از ارسال به سمت سرور حتما باید دارای مقداری باشد.</p>
-
-          <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
-
-          <!-- code example -->
-          <code class="code-example">
-            username: <input type="text" name="usrname" required>
-          </code>
-
-          <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
-
-          <p>امیدوارم که مقاله آشنایی با صفات عناصر input در html برای شما عزیزان مفید بوده باشد.</p>
-        </article>
-
-        <!-- post-carousel -->
-        <section class="post-carousel">
-          <!-- tab -->
-          <div class="carousel__tab">
-            <!-- icon -->
-            <i class="far fa-newspaper" aria-hidden="true"></i>
-            <!-- title -->
-            <h3 class="carousel__title">مطالب زیر را حتما مطالعه کنید</h3>
-          </div>
-
-          <!-- container -->
-          <div class="carousel__container">
-            <!-- posts -->
-            <div class="carousel__posts">
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#nodejs">
-                    <img src="/assets/images/articles/nodejs.png" alt="nodejs">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#nodejs">چند دلیل مهم که باید Node.js رو یاد بگیری</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">دلتون میخواد Node.js رو یاد بگیرید؟ توی این مقاله دلایل مهمی ذکر شده که
-                    باید...</div>
-                </div>
-              </article>
-
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#html-styles">
-                    <img src="/assets/images/articles/html-styles.png" alt="html-styles">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#html-styles">Style ها در HTML و آشنایی با آن</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">ما در این مقاله قصد داریم به بعضی از مثال های رایجی که برای صفت style ...وجود
-                    دارد بپردازیم</div>
-                </div>
-              </article>
-
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#react-component">
-                    <img src="/assets/images/articles/react-component.jpg" alt="react-component">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#react-component">آموزش کامپوننت ها در react و بررسی آن</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">ما در این مقاله قصد داریم چگونگی استفاده از کامپوننت ها در React را به صورت...
-                  </div>
-                </div>
-              </article>
-
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#react-redux">
-                    <img src="/assets/images/articles/react-redux.jpeg" alt="react-redux">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#react-redux">آموزش اتصال به react و redux به صورت کامل</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">ما در این آموزش قصد داریم اتصال به React و Redux را به صورت کامل...</div>
-                </div>
-              </article>
-
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#react-mistakes">
-                    <img src="/assets/images/articles/react-mistakes.jpg" alt="react-mistakes">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#react-mistakes">اشتباهات react و آشنایی با رایج ترین آنها در
-                      react</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">کتابخانه react در حال حاضر یکی از بزرگ ترین کتابخانه های طراحی front-end است
-                    و...</div>
-                </div>
-              </article>
-
-              <!-- post -->
-              <article class="carousel__post">
-                <!-- image -->
-                <div class="post__image">
-                  <a href="/pages/articles/article.html#html-examples">
-                    <img src="/assets/images/articles/html-examples.jpg" alt="html-examples">
-                  </a>
-                </div>
-                <!-- content -->
-                <div class="post__content">
-                  <!-- title -->
-                  <h2 class="post__title">
-                    <a href="/pages/articles/article.html#html-examples">مثال های پر کاربرد در Basic Examples | HTML در
-                      اچ تی ام ال</a>
-                  </h2>
-                  <!-- text -->
-                  <div class="post__text">ما در این مقاله قصد داریم مثال های پر کاربرد اچ تی ام ال را به صورت کامل بررسی
-                    کنیم...</div>
-                </div>
-              </article>
-            </div>
-
-            <!-- controls -->
-            <!-- next -->
-            <div class="carousel__next">
-              <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </div>
-            <!-- previous -->
-            <div class="carousel__prev">
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-            <!-- selector -->
-            <div class="carousel__selector"></div>
-          </div>
-        </section>
-
-        <!-- post-comments -->
-        <section class="post-comments">
-          <!-- tab -->
-          <div class="comments__tab">
-            <!-- icon -->
-            <i class="far fa-comment-alt" aria-hidden="true"></i>
-            <!-- title -->
-            <h3 class="comments__title">نظرات</h3>
-          </div>
-
-          <!-- list -->
-          <div class="comments__list">
-            <!-- comment -->
-            <div class="comments__comment">
-              <!--header -->
-              <div class="comment__header">
-                <!-- image -->
-                <div class="comment__image">
-                  <a href="/pages/teacher.html">
-                    <img src="/assets/images/global/user-profile.png" alt="user image">
-                  </a>
-                </div>
-                <!-- author -->
-                <div class="comment__author">امیر حسینی
-                  <span class="author__tag student">( دانشجوی دوره )</span>
-                </div>
-                <!-- time -->
-                <div class="comment__time">7 مرداد 1400</div>
-                <!-- reply -->
-                <button class="comment__reply">پاسخ</button>
-              </div>
-              <!-- text -->
-              <p class="comment__text">
-                سلام و عرض ادب<br>
-                این آموزش کامل هست ؟
-              </p>
-              <!-- reply -->
-              <div class="comment__reply">
-                <!-- comment -->
-                <div class="comments__comment">
-                  <!--header -->
-                  <div class="comment__header">
-                    <!-- image -->
-                    <div class="comment__image">
-                      <a href="/pages/teacher.html">
-                        <img src="/assets/images/global/user-profile.png" alt="user image">
-                      </a>
-                    </div>
-                    <!-- author -->
-                    <div class="comment__author">مدیر سایت
-                      <span class="author__tag admin">( مدیریت )</span>
-                    </div>
-                    <!-- time -->
-                    <div class="comment__time">7 مرداد 1400</div>
-                    <!-- reply -->
-                    <button class="comment__reply">پاسخ</button>
-                  </div>
-                  <!-- text -->
-                  <p class="comment__text">
-                    سلام و عرض ادب<br>
-                    تاجایی که امکانش بود مباحث کلی مطرح شده
-                  </p>
-                </div>
-                <!-- end comment -->
-              </div>
-            </div>
-            <!-- end comment -->
-
-            <!-- comment -->
-            <div class="comments__comment">
-              <!--header -->
-              <div class="comment__header">
-                <!-- image -->
-                <div class="comment__image">
-                  <a href="/pages/teacher.html">
-                    <img src="/assets/images/global/user-profile.png" alt="user image">
-                  </a>
-                </div>
-                <!-- author -->
-                <div class="comment__author">زهرا کریمی
-                  <span class="author__tag student">( دانشجوی دوره )</span>
-                </div>
-                <!-- time -->
-                <div class="comment__time">8 مرداد 1400</div>
-                <!-- reply -->
-                <button class="comment__reply">پاسخ</button>
-              </div>
-              <!-- text -->
-              <p class="comment__text">
-                سلام خسته نباشید.<br>
-                ممنون از آموزش خوبتون
-              </p>
-              <!-- reply -->
-              <div class="comment__reply"></div>
-            </div>
-            <!-- end comment -->
-          </div>
-
-          <!-- pagination -->
-          <nav class="comments__pagination">
-            <ul>
-              <li>
-                <a href="#prev">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li><a href="#1">1</a></li>
-              <li><a href="#load-more">...</a></li>
-              <li><a href="#7">7</a></li>
-              <li><a href="#8">8</a></li>
-              <li><a href="#9">9</a></li>
-              <li class="active"><a href="#10">10</a></li>
-            </ul>
-          </nav>
-
-          <!-- rules -->
-          <div class="comments__rules">
-            <!-- title -->
-            <h4 class="rules__title">قوانین ثبت دیدگاه</h4>
-            <!-- rules list -->
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-
-          <!-- form -->
-          <div class="comments__form">
-            <h4 class="form__title">
-              نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت گذاری شده اند
-              <span class="form__mark">*</span>
-            </h4>
-
-            <!-- form -->
-            <form method="post" action="">
-              <!-- text -->
-              <label for="text">
-                دیدگاه شما <span class="form__mark">*</span>
-              </label>
-              <textarea name="text" id="text" cols="30" rows="7" required></textarea>
+          <!-- button contents -->
+          <div class="buttons__content">
+            <!-- login modal -->
+            <div class="login-modal">
               <!-- box -->
-              <div class="form__box">
-                <!-- name -->
-                <label>
-                  نام <span class="form__mark">*</span>
-                  <input type="text" name="name" id="name" required>
-                </label>
-                <!-- email -->
-                <label class="required">
-                  ایمیل <span class="form__mark">*</span>
-                  <input type="email" name="email" id="email" required>
-                </label>
+              <div class="login__box">
+                <!-- header -->
+                <div class="login__header">
+                  <div class="header__title">ورود</div>
+                  <div class="login--close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <!-- content -->
+                <div class="login__content">
+                  <!-- form -->
+                  <form method="post" action="">
+                    <!-- username -->
+                    <label for="username">نام کاربری :</label>
+                    <div class="form-box">
+                      <i class="fas fa-user" aria-hidden="true"></i>
+                      <input type="text" name="username" id="username" required />
+                    </div>
+                    <!-- password -->
+                    <label for="password">رمز عبور :</label>
+                    <div class="form-box">
+                      <i class="fas fa-lock-open" aria-hidden="true"></i>
+                      <input type="password" name="password" id="password" required />
+                    </div>
+                    <!-- options -->
+                    <div class="form-options">
+                      <!-- remember me -->
+                      <label>
+                        <input name="rememberme" type="checkbox" value="true" />
+                        مرا به خاطر داشته باش
+                      </label>
+                      <!-- lost password -->
+                      <a href="/pages/accounts/lost-password.html">رمز عبور را فراموش کرده اید؟</a>
+                    </div>
+                    <button class="form-submit" type="submit">ورود</button>
+                  </form>
+                  <!-- contact register -->
+                  <div class="content__register">
+                    هنوز عضو نشده اید؟
+                    <a href="/pages/accounts.html">عضویت در سایت</a>
+                  </div>
+                </div>
               </div>
-              <!-- submit -->
-              <button class="form-submit" type="submit">ارسال</button>
-            </form>
-          </div>
-        </section>
-      </main>
+              <!-- screen overlay-->
+              <div class="screen-overlay"></div>
+            </div>
 
-      <!-- post-sidebar -->
-      <aside class="post-sidebar">
-        <!-- container -->
-        <div class="sidebar__container">
-          <!-- search -->
-          <div class="sidebar__search">
-            <div class="search__form">
-              <form method="get" role="search" action="">
-                <!-- search field -->
-                <input type="text" placeholder="ورود واژه کلیدی ..." name="s" required>
-                <!-- submit -->
-                <button type="submit" value="جستجو">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
+            <!-- cart content -->
+            <div class="cart-content">
+              <div class="cart-sidebar">
+                <p>
+                  <img src="/assets/images/global/empty-cart.png" alt="empty cart" />
+                  هنوز هیچ دوره ای اضافه نکرده اید.
+                </p>
+              </div>
+              <!-- screen overlay-->
+              <div class="screen-overlay"></div>
             </div>
           </div>
-
-          <!-- category -->
-          <div class="sidebar__category">
-            <h3 class="sidebar__tab">دسته ها</h3>
-            <!-- list -->
-            <ul class="category__list">
-              <li><a href="/pages/articles.html#redux">ریداکس</a></li>
-              <li><a href="/pages/articles.html#react">ریکت</a></li>
-              <li><a href="/pages/articles.html#articles">مقالات</a></li>
-            </ul>
-          </div>
-
-          <!-- recent articles -->
-          <div class="sidebar__articles">
-            <h3 class="sidebar__tab">جدید ترین مقاله ها</h3>
-            <!-- list -->
-            <ul class="articles__list">
-              <li>
-                <a href="/pages/articles/article.html#nodejs">
-                  چند دلیل مهم که باید Node.js رو یاد بگیری
-                </a>
-              </li>
-              <li>
-                <a href="/pages/articles/article.html#react-libraries">
-                  بهترین libraries برای react در سال 2021
-                </a>
-              </li>
-              <li>
-                <a href="/pages/articles/article.html#react-component">
-                  آموزش کامپوننت ها در react و بررسی آن
-                </a>
-              </li>
-              <li>
-                <a href="/pages/articles/article.html#react-redux">
-                  آموزش اتصال به react و redux به صورت کامل
-                </a>
-              </li>
-              <li>
-                <a href="/pages/articles/article.html#react-mistakes">
-                  اشتباهات react و آشنایی با رایج ترین آنها در ری
-                  اکت
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </aside>
-    </div>
-  </div>
-  <!-- end article -->
 
-  <!-- footer -->
-  <footer class="main-footer">
-    <!-- container -->
-    <div class="footer__container">
-      <!-- footer content -->
-      <div class="footer__content">
-        <!-- column 1 -->
-        <div class="footer__column">
-          <h3 class="footer__title">درباره sitename</h3>
-          <div class="footer__text">
-            ما در sitename در تلاشیم بستری فراهم کنیم که علاقه مندان به برنامه نویسی بتوانند مطالب به روز حوزه برنامه
-            نویسی را یاد بگیرند.
-          </div>
-        </div>
-        <!-- column 2 -->
-        <div class="footer__column">
-          <h3 class="footer__title">فهرست سفارشی</h3>
-          <div class="footer__menu">
+        <!-- navbar -->
+        <div class="header__navbar">
+          <nav>
             <ul>
               <li><a href="/">صفحه نخست</a></li>
               <li><a href="/pages/courses.html">دوره ها</a></li>
-              <li><a href="/pages/contact.html"> تماس با ما </a></li>
-              <li><a href="/pages/about.html"> درباره ما </a></li>
-              <li><a href="/pages/cart.html"> سبد خرید </a></li>
+              <li><a href="/pages/contact.html">تماس با ما</a></li>
+              <li><a href="/pages/about.html">درباره ما</a></li>
+              <li><a href="/pages/cart.html">سبد خرید</a></li>
             </ul>
-          </div>
+            <hr />
+          </nav>
+          <!-- screen overlay-->
+          <div class="screen-overlay"></div>
         </div>
-        <!-- column 3 -->
-        <div class="footer__column">
-          <h3 class="footer__title">پرداخت آسان</h3>
-          <div class="footer__text">
-            <img src="/assets/icons/zarin-pal.svg" alt="zarin-pal">
-          </div>
+
+        <!-- logo -->
+        <div class="header__logo">
+          <a href="/">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
         </div>
       </div>
+    </header>
+    <!-- end header -->
 
-      <!-- footer bottom -->
-      <div class="footer__bottom">
-        <div class="footer__wrapper">
-          <!-- copyright -->
-          <div class="footer__copyright">
-            تمامی حقوق برای سایت sitename محفوظ می باشد.
+    <!-- article -->
+    <div class="main__article">
+      <!-- container -->
+      <div class="article__container">
+        <!-- content -->
+        <main class="article__content">
+          <!-- post -->
+          <article class="article__post">
+            <!-- title -->
+            <h1 class="article__title">آشنایی با صفات عناصر input در HTML</h1>
+
+            <!-- info -->
+            <div class="article__info">
+              <!-- time -->
+              <div class="time"><i class="far fa-clock" aria-hidden="true"></i>01 فروردین 1400</div>
+              <!-- author -->
+              <div class="info-author">
+                <i class="fa fa-user-alt" aria-hidden="true"></i> ارسال شده توسط
+                <a href="/pages/teacher.html#author">نویسنده</a>
+              </div>
+              <!-- category -->
+              <div class="info-category">
+                <i class="far fa-folder" aria-hidden="true"></i>
+                <a href="/pages/articles.html">مقالات</a>
+              </div>
+              <!-- view -->
+              <div class="info-view"><i class="far fa-eye" aria-hidden="true"></i>241 بازدید</div>
+            </div>
+
+            <!-- image -->
+            <div class="article__image">
+              <img src="/assets/images/articles/article-html-inputs.png" alt="html inputs" />
+            </div>
+
+            <p>
+              صفت ها اطلاعات اضافی را در مورد عنصر اچ تی ام ال فراهم می آورند. در فصل های قبلی به بعضی از این صفات اشاره کرده و کاربرد آنها را توضیح
+              دادیم. ما در این مقاله قصد داریم صفت های مربوط به عناصر <b>input</b> را به طور کامل به شما عزیزان آمورش دهیم، همراه
+              <b>sitename</b> باشید.
+            </p>
+
+            <!-- heading -->
+            <h2>صفت value</h2>
+
+            <p>
+              مقدار اولیه برای یک فیلد ورودی از طریق این صفت مشخص می شود. در مثال زیر مقدار اولیه برای فیلد ورودی
+              <b>firstname</b> مقدار <b>John</b> تعیین شده است :
+            </p>
+
+            <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="">
+                first name :<br />
+                <input type="text" name="firstname" value="John" />
+              </form>
+            </code>
+
+            <!-- heading -->
+            <h2>صفت readonly</h2>
+
+            <p>بعضی اوقات فیلد های ورودی صرفا برای نمایش یک مقدار به کاربر استفاده می شوند و نباید مقدار آنها توسط کاربر قابل تغییر باشد.</p>
+
+            <p>برای رسیدن به این حالت از صفت <b>readonly</b> استفاده می کنیم :</p>
+
+            <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="">
+                first name:<br />
+                <input type="text" name="firstname" value="John" readonly />
+              </form>
+            </code>
+
+            <!-- heading -->
+            <h2>صفت disabled</h2>
+
+            <p>
+              برای نمایش یک فیلد ورودی در حالتی که غیر فعال است از صفت <b>disabled</b> استفاده می کنیم. فیلد های <b>input</b> در حالت غیر فعال ، غیر
+              قابل کلیک و غیر قابل انتخاب بوده و مقادیر آنها در هنگام <b>submit</b> به سمت سرور ارسال نمی شود.
+            </p>
+
+            <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="">
+                first name:<br />
+                <input type="text" name="firstname" value="John" disabled />
+              </form>
+            </code>
+
+            <p>
+              <b>نکته</b> : به نحوه ی به کاربردن صفت <b>disabled</b> در مثال دقت کنید. بر خلاف دیگر صفات که از قاعده ی نام / مقدار استفاده می کنند
+              برای استفاده از این صفت به به کاربردن نام آن به تنهایی کافی است.
+            </p>
+
+            <!-- heading -->
+            <h2>صفت maxlength در input</h2>
+
+            <p>حداکثر تعداد کاراکتری که میتوان در یک فیلد ورودی تایپ کرد توسط صفت <b>maxlength</b> تعیین می شود.</p>
+
+            <p>در مثال زیر حداکثر تعداد کارکتر برای فیلد <b>firstname</b> مقدار 10 تعیین شده است.</p>
+
+            <p>به نمونه مثالی که در زیر ذکر شده است توجه کنید :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="">
+                first name:<br />
+                <input type="text" name="firstname" maxlength="10" />
+              </form>
+            </code>
+
+            <p>
+              دقت داشته باشید که صفت <b>maxlength</b> هشداری را برای زمانی که کاربر از مقدار مجاز تعداد کارکتر عبور کند فراهم نمی آورد و این وظیفه ی
+              شما به عنوان برنامه نویس است که با استفاده از زبان <b>JavaScript</b> این هشدار را برای کاربر فراهم کنید.
+            </p>
+
+            <!-- heading -->
+            <h2>صفات در HTML۵</h2>
+
+            <p>زبان HTML5 صفات زیر را به عنصر <b>&lt;input&gt;</b> اضافه کرده است :</p>
+
+            <ul>
+              <li>autocomplete</li>
+              <li>autofocus</li>
+              <li>form</li>
+              <li>formaction</li>
+              <li>formenctype</li>
+              <li>formmethod</li>
+              <li>formnovalidate</li>
+              <li>formtarget</li>
+              <li>height and width</li>
+              <li>list</li>
+              <li>min and max</li>
+              <li>multiple</li>
+              <li>pattern (regexp)</li>
+              <li>placeholder</li>
+              <li>required</li>
+              <li>step</li>
+            </ul>
+
+            <p>و البته صفاتی را هم برای عنصر <b>&lt;form&gt;</b> فراهم آورده است :</p>
+
+            <ul>
+              <li>autocomplete</li>
+              <li>novalidate</li>
+            </ul>
+
+            <p>که در ادامه به بعضی از آنها خواهیم پرداخت.</p>
+
+            <!-- heading -->
+            <h2>صفت autocomplete</h2>
+
+            <p>
+              در صفاتی که در قسمت قبل به آنها اشاره کردیم ، صفت <b>autocomplete</b> هم برای عنصر <b>&lt;input&gt;</b> و هم برای عنصر
+              <b>&lt;form&gt;</b> وجود دارد.
+            </p>
+
+            <p>
+              صفت <b>autocomplete</b> مشخص می کند که قابلیت تکمیل خودکار برای عناصر <b>&lt;input&gt;</b> و یا <b>&lt;form&gt;</b> وجود داشته باشد یا
+              خیر.
+            </p>
+
+            <p>
+              قابلیت تکمیل خودکار به این معنا است که اگر کاربری قبلا مقدار هایی را در عناصری مانند <b>&lt;input&gt;</b>
+              وارد کرده باشد، بار بعدی مرورگر براساس مقادیر قبلی می تواند فیلد ها را پر کند.
+            </p>
+
+            <p>
+              وقتی از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می کنیم <b>autocomplete</b> به تمام عناصر <b>&lt;input&gt;</b> داخل فرم اعمال می
+              شود.
+            </p>
+
+            <p>در این حالت میتوان عنصری خاص را با مقدار <b>"autocomplete="off</b> از بقیه متمایز کرد.</p>
+
+            <p>نمونه مثال زیر نحوه ی استفاده از صفت autocomplete را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php" autocomplete="on">
+                first name: <input type="text" name="fname" /><br />
+                last name: <input type="text" name="lname" /><br />
+                E-mail: <input type="email" name="email" autocomplete="off" /><br />
+                <input type="submit" />
+              </form>
+            </code>
+
+            <p>
+              در بعضی از مرورگر ها ممکن است برای استفاده از قابلیت تکمیل خودکار نیاز به فعال کردن عملکرد
+              <b>autocomplete</b> باشد.
+            </p>
+
+            <!-- heading -->
+            <h2>صفت novalidate</h2>
+
+            <p>از این صفت برای عنصر <b>&lt;form&gt;</b> استفاده می شود.</p>
+
+            <p>
+              فرم ها با استفاده از زبان جاوااسکریپت می توانند قبل از این که به سمت سرور ارسال شوند، اعتبارسنجی شوند. برای جلوگیری از این عمل می توان
+              از صفت <b>novalidate</b> در فرم استفاده کرد.
+            </p>
+
+            <p>نمونه کد زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php" novalidate>
+                E-mail: <input type="email" name="user_email" />
+                <input type="submit" />
+              </form>
+            </code>
+
+            <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت autofocus</h2>
+
+            <p>
+              گاهی اوقات نیاز است وقتی کاربر صفحه ای را باز می کند مستقیما فیلد ورودی انتخاب شده باشد. یعنی کاربر نیاز نداشته باشد برای تایپ در فیلد
+              ورودی ابتدا آن را انتخاب کند.
+            </p>
+
+            <p>برای رسیدن به چنین امکانی از صفت <b>autofocus</b> استفاده می کنیم.</p>
+
+            <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example"> first name: <input type="text" name="fname" autofocus /> </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت form</h2>
+
+            <p>صفت <b>form</b> که برای عناصر <b>input</b> استفاده می شود مشخص می کند که عنصر مورد نظر متعلق به کدام فرم است.</p>
+
+            <p>نمونه مثال زیر نحوه ی استفاده از این صفت را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php" id="form1">
+                first name: <input type="text" name="fname" /><br />
+                <input type="submit" value="Submit" />
+              </form>
+
+              last name: <input type="text" name="lname" form="form1" />
+            </code>
+
+            <p>در مثال بالا فیلد ورودی <b>lname</b> متعلق به فرم <b>form1</b> است. این قابلیت در <b>اینترنت اکسپلورر</b> پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت formaction در input</h2>
+
+            <p>
+              صفت <b>formaction</b> آدرسی از یک صفحه را مشخص می کند که وقتی فرم به سمت سرور ارسال می شود کنترل
+              <b>input</b>
+              توسط آن پردازش می شود.
+            </p>
+
+            <p>صفت <b>formaction</b> صفت <b>action</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
+
+            <p>صفت <b>formaction</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
+
+            <p>در نمونه مثال زیر عنصر فرم دارای دو دکمه ی <b>submit</b> با دو اکشن مختلف است :</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php">
+                first name: <input type="text" name="fname" /><br />
+                last name: <input type="text" name="lname" /><br />
+                <input type="submit" value="Submit" />
+                <input type="submit" formaction="/action_page2.php" value="Submit as admin" />
+              </form>
+            </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت formenctype</h2>
+
+            <p>
+              صفت <b>formenctype</b> مشخص می کند که هنگام <b>submit</b> ، داده های فرم چگونه باید انکد شود (تنها برای فرم هایی که از صفت
+              <b>"method="post</b> استفاده می کنند).
+            </p>
+
+            <p>صفت <b>formenctype</b> صفت <b>enctype</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> می کند.</p>
+
+            <p>صفت <b>formenctype</b> با صفت های <b>"type="submit و "type="image</b> استفاده می شود.</p>
+
+            <p>
+              در نمونه مثال زیر وقتی روی دکمه ی سابمیت اولی کلیک شود داده ها به روش پیش فرض انکد شده، درحالی که با کلیک روی دکمه ی سابمیت دوم، داده ها
+              به عنوان <b>"multipart/form-data"</b> انکد می شوند.
+            </p>
+
+            <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page_binary.asp" method="post">
+                first name: <input type="text" name="fname" /><br />
+                <input type="submit" value="Submit" />
+                <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data" />
+              </form>
+            </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت formmethod در input</h2>
+
+            <p>
+              صفت <b>formmethod</b> روش <a href="/pages/articles/article.html#html">اچ تی ام ال</a> را برای ارسال داده های فرم به یک آدرس مشخص تعریف
+              می کند.
+            </p>
+
+            <p>صفت <b>formmethod</b> صفت <b>method</b> عنصر <b>&lt;form&gt;</b> را <b>override</b> میکند.</p>
+
+            <p>صفت <b>formmethod</b> با صفت های <b>“type=”submit و “type=”image</b> استفاده می شود.</p>
+
+            <p>
+              در نمونه مثال زیر در هنگام استفاده از دکمه ی سابمیت اول داده ها به روش <b>get</b> ارسال می شود ، در حالی که دکمه ی سابمیت دوم داده ها را
+              به روش <b>post</b> ارسال می کند.
+            </p>
+
+            <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php" method="get">
+                first name: <input type="text" name="fname" /><br />
+                last name: <input type="text" name="lname" /><br />
+                <input type="submit" value="submit" />
+                <input type="submit" formmethod="post" formaction="action_page_post.asp" value="submit using post" />
+              </form>
+            </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت formnovalidate</h2>
+
+            <p>
+              صفت <b>formnovalidate</b> صفت <b>novalidate</b> فرم را لغو می کند. این صفت با استفاده از صفت <b>“type=”submit</b> می تواند مورد استفاده
+              قرار گیرد.
+            </p>
+
+            <p>در نمونه مثال زیر یک فرم با دو دکمه <b>submit</b> را نشان می دهد (یکی اعتبارسنجی می کند و دیگری نه) :</p>
+
+            <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php">
+                e-mail: <input type="email" name="userid" /><br />
+                <input type="submit" value="submit" />
+                <input type="submit" formnovalidate value="submit without validation" />
+              </form>
+            </code>
+
+            <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت formtarget در input</h2>
+
+            <p>صفت <b>formtarget</b> مشخص می کند که پاسخ فرم ارسالی به سمت سرور در کجا نمایش داده شود.</p>
+
+            <p>صفت <b>formtarget</b> مقدار صفت <b>target</b> عنصر فرم را لغو می کند.</p>
+
+            <p>در نمونه کد زیر یک فرم با دو دکمه سابمیت را نشان می دهد که از دو <b>target</b> مختلف استفاده می کند :</p>
+
+            <p>به نمونه مثالی که در ذیل ذکر شده است توجه کنید:</p>
+
+            <!-- code example -->
+            <code class="code-example">
+              <form action="/action_page.php">
+                first name: <input type="text" name="fname" /><br />
+                last name: <input type="text" name="lname" /><br />
+                <input type="submit" value="submit as normal" />
+                <input type="submit" formtarget="_blank" value="submit to a new window" />
+              </form>
+            </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت placeholder</h2>
+
+            <p>از صفت <b>placeholder</b> برای نمایش متنی در فیلد ورودی قبل از ورود داده های کاربر استفاده می شود.</p>
+
+            <p>مقدار این صفت هنگام تایپ اولین کارکتر توسط کارکتر از بین می رود.</p>
+
+            <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example"> first name: <input type="text" name="fname" placeholder="first name" /> </code>
+
+            <p>این صفت در مرورگر <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <!-- heading -->
+            <h2>صفت required در input</h2>
+
+            <p>صفت <b>required</b> مشخص می کند که فیلد ورودی قبل از ارسال به سمت سرور حتما باید دارای مقداری باشد.</p>
+
+            <p>در نمونه مثال زیر نحو ه ی استفاده از این صفت را نشان می دهد :</p>
+
+            <!-- code example -->
+            <code class="code-example"> username: <input type="text" name="usrname" required /> </code>
+
+            <p>این صفت در <b>مرورگر سافاری</b> و <b>اینترنت اکسپلورر 9</b> و نسخه های قدیمی تر آن پشتیبانی نمی شود.</p>
+
+            <p>امیدوارم که مقاله آشنایی با صفات عناصر input در html برای شما عزیزان مفید بوده باشد.</p>
+          </article>
+
+          <!-- post-carousel -->
+          <section class="post-carousel">
+            <!-- tab -->
+            <div class="carousel__tab">
+              <!-- icon -->
+              <i class="far fa-newspaper" aria-hidden="true"></i>
+              <!-- title -->
+              <h3 class="carousel__title">مطالب زیر را حتما مطالعه کنید</h3>
+            </div>
+
+            <!-- container -->
+            <div class="carousel__container">
+              <!-- posts -->
+              <div class="carousel__posts">
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#nodejs">
+                      <img src="/assets/images/articles/nodejs.png" alt="nodejs" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#nodejs">چند دلیل مهم که باید Node.js رو یاد بگیری</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">دلتون میخواد Node.js رو یاد بگیرید؟ توی این مقاله دلایل مهمی ذکر شده که باید...</div>
+                  </div>
+                </article>
+
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#html-styles">
+                      <img src="/assets/images/articles/html-styles.png" alt="html-styles" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#html-styles">Style ها در HTML و آشنایی با آن</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">ما در این مقاله قصد داریم به بعضی از مثال های رایجی که برای صفت style ...وجود دارد بپردازیم</div>
+                  </div>
+                </article>
+
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#react-component">
+                      <img src="/assets/images/articles/react-component.jpg" alt="react-component" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#react-component">آموزش کامپوننت ها در react و بررسی آن</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">ما در این مقاله قصد داریم چگونگی استفاده از کامپوننت ها در React را به صورت...</div>
+                  </div>
+                </article>
+
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#react-redux">
+                      <img src="/assets/images/articles/react-redux.jpeg" alt="react-redux" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#react-redux">آموزش اتصال به react و redux به صورت کامل</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">ما در این آموزش قصد داریم اتصال به React و Redux را به صورت کامل...</div>
+                  </div>
+                </article>
+
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#react-mistakes">
+                      <img src="/assets/images/articles/react-mistakes.jpg" alt="react-mistakes" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#react-mistakes">اشتباهات react و آشنایی با رایج ترین آنها در react</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">کتابخانه react در حال حاضر یکی از بزرگ ترین کتابخانه های طراحی front-end است و...</div>
+                  </div>
+                </article>
+
+                <!-- post -->
+                <article class="carousel__post">
+                  <!-- image -->
+                  <div class="post__image">
+                    <a href="/pages/articles/article.html#html-examples">
+                      <img src="/assets/images/articles/html-examples.jpg" alt="html-examples" />
+                    </a>
+                  </div>
+                  <!-- content -->
+                  <div class="post__content">
+                    <!-- title -->
+                    <h2 class="post__title">
+                      <a href="/pages/articles/article.html#html-examples">مثال های پر کاربرد در Basic Examples | HTML در اچ تی ام ال</a>
+                    </h2>
+                    <!-- text -->
+                    <div class="post__text">ما در این مقاله قصد داریم مثال های پر کاربرد اچ تی ام ال را به صورت کامل بررسی کنیم...</div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- controls -->
+              <!-- next -->
+              <div class="carousel__next">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+              <!-- previous -->
+              <div class="carousel__prev">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+              <!-- selector -->
+              <div class="carousel__selector"></div>
+            </div>
+          </section>
+
+          <!-- post-comments -->
+          <section class="post-comments">
+            <!-- tab -->
+            <div class="comments__tab">
+              <!-- icon -->
+              <i class="far fa-comment-alt" aria-hidden="true"></i>
+              <!-- title -->
+              <h3 class="comments__title">نظرات</h3>
+            </div>
+
+            <!-- list -->
+            <div class="comments__list">
+              <!-- comment -->
+              <div class="comments__comment">
+                <!--header -->
+                <div class="comment__header">
+                  <!-- image -->
+                  <div class="comment__image">
+                    <a href="/pages/teacher.html">
+                      <img src="/assets/images/global/user-profile.png" alt="user image" />
+                    </a>
+                  </div>
+                  <!-- author -->
+                  <div class="comment__author">
+                    امیر حسینی
+                    <span class="author__tag student">( دانشجوی دوره )</span>
+                  </div>
+                  <!-- time -->
+                  <div class="comment__time">7 مرداد 1400</div>
+                  <!-- reply -->
+                  <button class="comment__reply">پاسخ</button>
+                </div>
+                <!-- text -->
+                <p class="comment__text">
+                  سلام و عرض ادب<br />
+                  این آموزش کامل هست ؟
+                </p>
+                <!-- reply -->
+                <div class="comment__reply">
+                  <!-- comment -->
+                  <div class="comments__comment">
+                    <!--header -->
+                    <div class="comment__header">
+                      <!-- image -->
+                      <div class="comment__image">
+                        <a href="/pages/teacher.html">
+                          <img src="/assets/images/global/user-profile.png" alt="user image" />
+                        </a>
+                      </div>
+                      <!-- author -->
+                      <div class="comment__author">
+                        مدیر سایت
+                        <span class="author__tag admin">( مدیریت )</span>
+                      </div>
+                      <!-- time -->
+                      <div class="comment__time">7 مرداد 1400</div>
+                      <!-- reply -->
+                      <button class="comment__reply">پاسخ</button>
+                    </div>
+                    <!-- text -->
+                    <p class="comment__text">
+                      سلام و عرض ادب<br />
+                      تاجایی که امکانش بود مباحث کلی مطرح شده
+                    </p>
+                  </div>
+                  <!-- end comment -->
+                </div>
+              </div>
+              <!-- end comment -->
+
+              <!-- comment -->
+              <div class="comments__comment">
+                <!--header -->
+                <div class="comment__header">
+                  <!-- image -->
+                  <div class="comment__image">
+                    <a href="/pages/teacher.html">
+                      <img src="/assets/images/global/user-profile.png" alt="user image" />
+                    </a>
+                  </div>
+                  <!-- author -->
+                  <div class="comment__author">
+                    زهرا کریمی
+                    <span class="author__tag student">( دانشجوی دوره )</span>
+                  </div>
+                  <!-- time -->
+                  <div class="comment__time">8 مرداد 1400</div>
+                  <!-- reply -->
+                  <button class="comment__reply">پاسخ</button>
+                </div>
+                <!-- text -->
+                <p class="comment__text">
+                  سلام خسته نباشید.<br />
+                  ممنون از آموزش خوبتون
+                </p>
+                <!-- reply -->
+                <div class="comment__reply"></div>
+              </div>
+              <!-- end comment -->
+            </div>
+
+            <!-- pagination -->
+            <nav class="comments__pagination">
+              <ul>
+                <li>
+                  <a href="#prev">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li><a href="#1">1</a></li>
+                <li><a href="#load-more">...</a></li>
+                <li><a href="#7">7</a></li>
+                <li><a href="#8">8</a></li>
+                <li><a href="#9">9</a></li>
+                <li class="active"><a href="#10">10</a></li>
+              </ul>
+            </nav>
+
+            <!-- rules -->
+            <div class="comments__rules">
+              <!-- title -->
+              <h4 class="rules__title">قوانین ثبت دیدگاه</h4>
+              <!-- rules list -->
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+
+            <!-- form -->
+            <div class="comments__form">
+              <h4 class="form__title">
+                نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت گذاری شده اند
+                <span class="form__mark">*</span>
+              </h4>
+
+              <!-- form -->
+              <form method="post" action="">
+                <!-- text -->
+                <label for="text"> دیدگاه شما <span class="form__mark">*</span> </label>
+                <textarea name="text" id="text" cols="30" rows="7" required></textarea>
+                <!-- box -->
+                <div class="form__box">
+                  <!-- name -->
+                  <label>
+                    نام <span class="form__mark">*</span>
+                    <input type="text" name="name" id="name" required />
+                  </label>
+                  <!-- email -->
+                  <label class="required">
+                    ایمیل <span class="form__mark">*</span>
+                    <input type="email" name="email" id="email" required />
+                  </label>
+                </div>
+                <!-- submit -->
+                <button class="form-submit" type="submit">ارسال</button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <!-- post-sidebar -->
+        <aside class="post-sidebar">
+          <!-- container -->
+          <div class="sidebar__container">
+            <!-- search -->
+            <div class="sidebar__search">
+              <div class="search__form">
+                <form method="get" role="search" action="">
+                  <!-- search field -->
+                  <input type="text" placeholder="ورود واژه کلیدی ..." name="s" required />
+                  <!-- submit -->
+                  <button type="submit" value="جستجو">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- category -->
+            <div class="sidebar__category">
+              <h3 class="sidebar__tab">دسته ها</h3>
+              <!-- list -->
+              <ul class="category__list">
+                <li><a href="/pages/articles.html#redux">ریداکس</a></li>
+                <li><a href="/pages/articles.html#react">ریکت</a></li>
+                <li><a href="/pages/articles.html#articles">مقالات</a></li>
+              </ul>
+            </div>
+
+            <!-- recent articles -->
+            <div class="sidebar__articles">
+              <h3 class="sidebar__tab">جدید ترین مقاله ها</h3>
+              <!-- list -->
+              <ul class="articles__list">
+                <li>
+                  <a href="/pages/articles/article.html#nodejs"> چند دلیل مهم که باید Node.js رو یاد بگیری </a>
+                </li>
+                <li>
+                  <a href="/pages/articles/article.html#react-libraries"> بهترین libraries برای react در سال 2021 </a>
+                </li>
+                <li>
+                  <a href="/pages/articles/article.html#react-component"> آموزش کامپوننت ها در react و بررسی آن </a>
+                </li>
+                <li>
+                  <a href="/pages/articles/article.html#react-redux"> آموزش اتصال به react و redux به صورت کامل </a>
+                </li>
+                <li>
+                  <a href="/pages/articles/article.html#react-mistakes"> اشتباهات react و آشنایی با رایج ترین آنها در ری اکت </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!-- links -->
-          <div class="footer__links">
-            <a href="https://instagram.com/example">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://t.me/example">
-              <i class="fab fa-telegram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
+        </aside>
       </div>
     </div>
-  </footer>
-  <!-- end footer -->
+    <!-- end article -->
 
-  <!-- scripts -->
-  <script src="/assets/js/global.js"></script>
-  <script type="module" src="/assets/js/pages/article.js"></script>
-  <script src="/assets/js/modules/carousel.js"></script>
-</body>
+    <!-- footer -->
+    <footer class="main-footer">
+      <!-- container -->
+      <div class="footer__container">
+        <!-- footer content -->
+        <div class="footer__content">
+          <!-- column 1 -->
+          <div class="footer__column">
+            <h3 class="footer__title">درباره sitename</h3>
+            <div class="footer__text">
+              ما در sitename در تلاشیم بستری فراهم کنیم که علاقه مندان به برنامه نویسی بتوانند مطالب به روز حوزه برنامه نویسی را یاد بگیرند.
+            </div>
+          </div>
+          <!-- column 2 -->
+          <div class="footer__column">
+            <h3 class="footer__title">فهرست سفارشی</h3>
+            <div class="footer__menu">
+              <ul>
+                <li><a href="/">صفحه نخست</a></li>
+                <li><a href="/pages/courses.html">دوره ها</a></li>
+                <li><a href="/pages/contact.html"> تماس با ما </a></li>
+                <li><a href="/pages/about.html"> درباره ما </a></li>
+                <li><a href="/pages/cart.html"> سبد خرید </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- column 3 -->
+          <div class="footer__column">
+            <h3 class="footer__title">پرداخت آسان</h3>
+            <div class="footer__text">
+              <img src="/assets/icons/zarin-pal.svg" alt="zarin-pal" />
+            </div>
+          </div>
+        </div>
 
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="footer__wrapper">
+            <!-- copyright -->
+            <div class="footer__copyright">تمامی حقوق برای سایت sitename محفوظ می باشد.</div>
+            <!-- links -->
+            <div class="footer__links">
+              <a href="https://instagram.com/example">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://t.me/example">
+                <i class="fab fa-telegram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- scripts -->
+    <script src="/assets/js/global.js"></script>
+    <script type="module" src="/assets/js/pages/article.js"></script>
+    <script src="/assets/js/modules/carousel.js"></script>
+  </body>
 </html>
