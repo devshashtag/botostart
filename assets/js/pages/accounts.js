@@ -1,5 +1,4 @@
-
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('DOMContentLoaded', function () {
   const loginModal = document.querySelector('.account__modal .account__login');
   const registerModal = document.querySelector('.account__modal .account__register');
   const showLoginBtn = document.getElementById('showLogin');
@@ -12,5 +11,4 @@ window.addEventListener("DOMContentLoaded", function () {
     registerModal.classList.toggle('active');
     loginModal.classList.toggle('active');
   }
-
 });

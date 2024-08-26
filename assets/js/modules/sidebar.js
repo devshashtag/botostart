@@ -18,16 +18,16 @@ export default function sidebarSmoothScroll(sidebar, callback) {
     if (callback) callback();
 
     // dont scroll until its visible
-    if (this.scrollY <= sidebar.offsetTop - headerHeightPadding ||
-      containerHeight <= (this.innerHeight - headerHeightPadding) ||
-      this.innerWidth <= lgSize) {
+    if (
+      this.scrollY <= sidebar.offsetTop - headerHeightPadding ||
+      containerHeight <= this.innerHeight - headerHeightPadding ||
+      this.innerWidth <= lgSize
+    ) {
       sidebarContainer.style.top = '';
       return;
     }
 
-    if (isScrollUp)
-      sidebarContainer.style.top = `${headerHeightPadding}px`;
-    else
-      sidebarContainer.style.top = `calc(100vh - ${containerHeight + padding}px)`;
-  }
+    if (isScrollUp) sidebarContainer.style.top = `${headerHeightPadding}px`;
+    else sidebarContainer.style.top = `calc(100vh - ${containerHeight + padding}px)`;
+  };
 }

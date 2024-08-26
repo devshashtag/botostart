@@ -5,7 +5,7 @@ function displayTemplate(API, displayElm, templateType) {
   let template;
 
   if (!displayElm) {
-    console.log("display element is undefined");
+    console.log('display element is undefined');
     return;
   }
 
@@ -22,26 +22,27 @@ function displayTemplate(API, displayElm, templateType) {
   }
 
   // fetch and display
-  fetch(API).then(response => response.json()).then(jsonData => {
-    let templateHtml = '';
+  fetch(API)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      let templateHtml = '';
 
-    jsonData.forEach(item => {
-      templateHtml += template(item);
+      jsonData.forEach((item) => {
+        templateHtml += template(item);
+      });
+
+      displayElm.insertAdjacentHTML('beforeend', templateHtml);
     });
-
-    displayElm.insertAdjacentHTML('beforeend', templateHtml);
-  });
-
 }
 
 function courseCardTemplate(card) {
   const discount = commafy(calcDiscount(card.discount, card.price));
-  const isFree = (discount === "free") ? true : false;
-  const templateFooterDiscount = `<div class="discount">${isFree ? "– رایگان!" : discount}</div>`;
+  const isFree = discount === 'free' ? true : false;
+  const templateFooterDiscount = `<div class="discount">${isFree ? '– رایگان!' : discount}</div>`;
 
   // price
   if (+card.price === 0 && !discount) {
-    card.price = "رایگان!";
+    card.price = 'رایگان!';
   }
 
   // rating
@@ -50,8 +51,7 @@ function courseCardTemplate(card) {
   else if (rating < 0) rating = 0;
 
   let ratingTitle = 'هنوز امتیازی ثبت نشده است';
-  if (rating > 0 && rating <= 5)
-    ratingTitle = `دارای امتیاز ${rating} از 5`;
+  if (rating > 0 && rating <= 5) ratingTitle = `دارای امتیاز ${rating} از 5`;
 
   // template Course Card
   const templateCourseCard = `
@@ -66,24 +66,32 @@ function courseCardTemplate(card) {
     </div>
     <!-- card icons -->
     <div class="card__icons">
-      ${(card.videoUrl) ? `
+      ${
+        card.videoUrl
+          ? `
       <div class="icon video-player" title="نمایش دمو">
         <a href="${card.videoUrl}" rel="nofollow">
           <i class="fas fa-play" aria-hidden="true"></i>
         </a>
-      </div>` : ""}
+      </div>`
+          : ''
+      }
       <div class="icon" title="ثبت نام دوره">
         <a href="?add-to-cart=${card.id}" rel="nofollow">
           <i class="fas fa-user-plus" aria-hidden="true"></i>
         </a>
       </div>
     </div>
-    ${discount ? `
+    ${
+      discount
+        ? `
     <!--card discount -->
     <div class="card__discount">
       <div class="percent">${card.discount}</div>
       <div class="text">تخفیف</div>
-    </div>`: ""}
+    </div>`
+        : ''
+    }
   </div>
 
   <div class="card__body">
@@ -113,8 +121,8 @@ function courseCardTemplate(card) {
         <span>${commafy(card.students)}</span>
       </div>
       <!-- card price -->
-      <div class="card__price${isFree ? " free" : ""}">
-        ${discount ? templateFooterDiscount : ""}
+      <div class="card__price${isFree ? ' free' : ''}">
+        ${discount ? templateFooterDiscount : ''}
         <div class="price">${commafy(card.price)}</div>
       </div>
     </div>
