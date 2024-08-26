@@ -3,9 +3,8 @@ main.not-found {
 
   // error
   .error {
-    height: calc(100vh - $header-height);
-    min-height: $heading-min-height;
-    max-height: $heading-max-height;
+    min-height: calc(100vh - $header-height);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +24,10 @@ main.not-found {
 
       @include breakpoint(md) {
         font-size: 15rem;
+      }
+
+      @include breakpoint(xxxl) {
+        min-height: calc(80rem - $header-height);
       }
     }
 

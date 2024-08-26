@@ -3,15 +3,17 @@ main.cart {
 
   // empty
   .cart__empty {
+    min-height: calc(100vh - $header-height);
+
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
 
-    height: calc(100vh - $header-height);
-    max-height: $heading-max-height;
-    min-height: $heading-min-height;
+    @include breakpoint(xxxl) {
+      min-height: calc(80rem - $header-height);
+    }
 
     // active
     &.active {

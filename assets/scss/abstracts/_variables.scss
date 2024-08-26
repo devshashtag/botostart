@@ -53,20 +53,20 @@ $color-pink-0: #ec406a;
 //? sizes
 // global
 $section-max-width: 1230px;
-$mobile-max-width: 500px;
-$modal-max-width-login: 400px;
-$modal-max-width-account: 600px;
+$mobile-max-width: 50rem;
+$modal-max-width-login: 40rem;
+$modal-max-width-account: 60rem;
 
 // heading
-$heading-min-height: 500px;
-$heading-max-height: 900px;
+$heading-min-height: 50rem;
+$heading-max-height: 80rem;
 
 // header
 $header-height: 65px;
 // navbar
-$navbar-mobile-width: 200px;
+$navbar-mobile-width: 25rem;
 // shop
-$shop-width: 339px;
+$shop-width: 40rem;
 // toogle
 $toggle-icon-height: 3px;
 $toggle-icon-width: calc($toggle-icon-height * 9);

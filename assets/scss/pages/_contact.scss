@@ -6,12 +6,17 @@ main.contact {
     display: flex;
     flex-direction: column;
 
-    background-color: $color-white-2;
+    background-color: $color-white-3;
     max-width: $section-max-width;
+    min-height: calc(100vh - $header-height);
     margin: 0 auto;
 
     @include breakpoint(lg) {
       flex-direction: row-reverse;
+    }
+
+    @include breakpoint(xxxl) {
+      min-height: calc(80rem - $header-height);
     }
   }
 

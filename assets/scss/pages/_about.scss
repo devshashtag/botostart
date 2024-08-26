@@ -2,11 +2,11 @@ main.about {
   @extend %sections-gap;
   // content
   .about__content {
+    min-height: calc(100vh - $header-height);
     padding: 2rem;
-    padding-bottom: 6rem;
 
-    @include breakpoint(lg) {
-      padding-bottom: 8rem;
+    @include breakpoint(xxxl) {
+      min-height: calc(80rem - $header-height);
     }
 
     // title

@@ -3,7 +3,12 @@ main.teacher {
 
   // info
   .teacher__info {
+    min-height: calc(100vh - $header-height);
     padding-inline: 2rem;
+
+    @include breakpoint(xxxl) {
+      min-height: calc(80rem - $header-height);
+    }
   }
 
   // heading
