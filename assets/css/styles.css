@@ -2886,7 +2886,7 @@ main.accounts .account__content .account__modal::after {
   width: 12rem;
   height: 12rem;
   margin: auto;
-  background: url('/botostart/assets/images/accounts/accounts.png') #654fef center/cover no-repeat;
+  background: url('/botostart/assets/images/accounts/accounts.webp') #654fef center/cover no-repeat;
   border-radius: 100%;
 }
 main.accounts .account__content .account__register,

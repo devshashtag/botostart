@@ -4,7 +4,7 @@
     "url": "/botostart/pages/articles/article.html#nodejs",
     "title": "چند دلیل مهم که باید Node.js رو یاد بگیری",
     "description": "دلتون میخواد Node.js رو یاد بگیرید؟ توی این مقاله دلایل مهمی ذکر شده که باید...",
-    "imageUrl": "/botostart/assets/images/articles/nodejs.png",
+    "imageUrl": "/botostart/assets/images/articles/nodejs.webp",
     "imageAlt": "nodejs"
   },
   {
@@ -12,7 +12,7 @@
     "url": "/botostart/pages/articles/article.html#html-comments",
     "title": "آموزش کامنت ها در HTML و آشنایی با آن",
     "description": "کامنت در HTML به نوشته هایی گفته می شود که معمولا برای توضیح ، در...",
-    "imageUrl": "/botostart/assets/images/articles/html-comments.png",
+    "imageUrl": "/botostart/assets/images/articles/html-comments.webp",
     "imageAlt": "html-comments"
   },
   {
@@ -20,7 +20,7 @@
     "url": "/botostart/pages/articles/article.html#html-examples",
     "title": "مثال های پر کاربرد در Basic Examples | HTML در اچ تی ام ال",
     "description": "مثال های پرکاربرد HTML زیاد نیستند. قبل شروع آموزش تگ های اچ تی ام ال...",
-    "imageUrl": "/botostart/assets/images/articles/html-examples.jpg",
+    "imageUrl": "/botostart/assets/images/articles/html-examples.webp",
     "imageAlt": "html-examples"
   },
   {
@@ -28,7 +28,7 @@
     "url": "/botostart/pages/articles/article.html#html-heading",
     "title": "آموزش Heading ها در HTML | آشنایی با عنوان ها در اچ تی ام ال",
     "description": "Heading ها در HTML  جزء یکی از مهم ترین مباحث هستند که باید آن را...",
-    "imageUrl": "/botostart/assets/images/articles/html-heading.png",
+    "imageUrl": "/botostart/assets/images/articles/html-heading.webp",
     "imageAlt": "html-heading"
   },
   {
@@ -36,7 +36,7 @@
     "url": "/botostart/pages/articles/article.html#html-inputs",
     "title": "آشنایی با صفات عناصر input در HTML",
     "description": "صفت ها اطلاعات اضافی را در مورد عنصر اچ تی ام ال فراهم می آورند...",
-    "imageUrl": "/botostart/assets/images/articles/html-inputs.png",
+    "imageUrl": "/botostart/assets/images/articles/html-inputs.webp",
     "imageAlt": "html-inputs"
   },
   {
@@ -44,7 +44,7 @@
     "url": "/botostart/pages/articles/article.html#html-styles",
     "title": "Style ها در HTML و آشنایی با آن",
     "description": "تمامی تگ های HTML صفتی به نام Style دارند که میتوان با مقدار دهی آن...",
-    "imageUrl": "/botostart/assets/images/articles/html-styles.png",
+    "imageUrl": "/botostart/assets/images/articles/html-styles.webp",
     "imageAlt": "html-styles"
   },
   {
@@ -52,7 +52,7 @@
     "url": "/botostart/pages/articles/article.html#react-component",
     "title": "آموزش کامپوننت ها در react و بررسی آن",
     "description": "ما در این مقاله قصد داریم چگونگی استفاده از کامپوننت ها در React را به صورت...",
-    "imageUrl": "/botostart/assets/images/articles/react-component.jpg",
+    "imageUrl": "/botostart/assets/images/articles/react-component.webp",
     "imageAlt": "react-component"
   },
   {
@@ -60,7 +60,7 @@
     "url": "/botostart/pages/articles/article.html#react-mistakes",
     "title": "اشتباهات react و آشنایی با رایج ترین آنها در ری اکت",
     "description": "کتابخانه react در حال حاضر یکی از بزرگ ترین کتابخانه های طراحی front-end است و...",
-    "imageUrl": "/botostart/assets/images/articles/react-mistakes.jpg",
+    "imageUrl": "/botostart/assets/images/articles/react-mistakes.webp",
     "imageAlt": "react-mistakes"
   },
   {
@@ -68,7 +68,7 @@
     "url": "/botostart/pages/articles/article.html#react-redux",
     "title": "آموزش اتصال به react و redux به صورت کامل",
     "description": "ما در این آموزش قصد داریم اتصال به React و Redux را به صورت کامل...",
-    "imageUrl": "/botostart/assets/images/articles/react-redux.jpeg",
+    "imageUrl": "/botostart/assets/images/articles/react-redux.webp",
     "imageAlt": "react-redux"
   }
 ]

@@ -8,7 +8,7 @@
     "price": "1329000",
     "rating": "5",
     "students": "1752",
-    "imageUrl": "/botostart/assets/images/courses/javascript.png",
+    "imageUrl": "/botostart/assets/images/courses/javascript.webp",
     "imageAlt": "javascript",
     "videoUrl": "",
     "discount": "0%"
@@ -22,7 +22,7 @@
     "price": "2398000",
     "rating": "0",
     "students": "256",
-    "imageUrl": "/botostart/assets/images/courses/nodejs.png",
+    "imageUrl": "/botostart/assets/images/courses/nodejs.webp",
     "imageAlt": "nodejs",
     "videoUrl": "",
     "discount": "0%"
@@ -36,7 +36,7 @@
     "price": "219000",
     "rating": "5",
     "students": "413",
-    "imageUrl": "/botostart/assets/images/courses/git.png",
+    "imageUrl": "/botostart/assets/images/courses/git.webp",
     "imageAlt": "git",
     "videoUrl": "",
     "discount": "0%"
@@ -50,7 +50,7 @@
     "price": "2289000",
     "rating": "5",
     "students": "1343",
-    "imageUrl": "/botostart/assets/images/courses/react-redux.png",
+    "imageUrl": "/botostart/assets/images/courses/react-redux.webp",
     "imageAlt": "react-redux",
     "videoUrl": "",
     "discount": "0%"
@@ -64,7 +64,7 @@
     "price": "149000",
     "rating": "5",
     "students": "3138",
-    "imageUrl": "/botostart/assets/images/courses/sass.png",
+    "imageUrl": "/botostart/assets/images/courses/sass.webp",
     "imageAlt": "sass",
     "videoUrl": "",
     "discount": "100%"
@@ -78,7 +78,7 @@
     "price": "429000",
     "rating": "4",
     "students": "2007",
-    "imageUrl": "/botostart/assets/images/courses/html-css.png",
+    "imageUrl": "/botostart/assets/images/courses/html-css.webp",
     "imageAlt": "html-css",
     "videoUrl": "",
     "discount": "0%"
