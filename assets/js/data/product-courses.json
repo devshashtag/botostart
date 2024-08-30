@@ -8,7 +8,7 @@
     "price": "1329000",
     "rating": "5",
     "students": "1752",
-    "imageUrl": "/assets/images/courses/javascript.png",
+    "imageUrl": "/assets/images/courses/javascript.webp",
     "imageAlt": "javascript",
     "videoUrl": "",
     "discount": "0%"
@@ -22,7 +22,7 @@
     "price": "2398000",
     "rating": "0",
     "students": "256",
-    "imageUrl": "/assets/images/courses/nodejs.png",
+    "imageUrl": "/assets/images/courses/nodejs.webp",
     "imageAlt": "nodejs",
     "videoUrl": "",
     "discount": "0%"
@@ -36,7 +36,7 @@
     "price": "2289000",
     "rating": "5",
     "students": "1343",
-    "imageUrl": "/assets/images/courses/react-redux.png",
+    "imageUrl": "/assets/images/courses/react-redux.webp",
     "imageAlt": "react-redux",
     "videoUrl": "",
     "discount": "0%"
@@ -50,7 +50,7 @@
     "price": "429000",
     "rating": "4",
     "students": "2007",
-    "imageUrl": "/assets/images/courses/html-css.png",
+    "imageUrl": "/assets/images/courses/html-css.webp",
     "imageAlt": "html-css",
     "videoUrl": "",
     "discount": "0%"
@@ -64,7 +64,7 @@
     "price": "219000",
     "rating": "5",
     "students": "413",
-    "imageUrl": "/assets/images/courses/git.png",
+    "imageUrl": "/assets/images/courses/git.webp",
     "imageAlt": "git",
     "videoUrl": "",
     "discount": "0%"
@@ -78,7 +78,7 @@
     "price": "0",
     "rating": "0",
     "students": "373",
-    "imageUrl": "/assets/images/courses/mobile-first.png",
+    "imageUrl": "/assets/images/courses/mobile-first.webp",
     "imageAlt": "mobile-first",
     "videoUrl": "",
     "discount": "0%"
@@ -92,7 +92,7 @@
     "price": "149000",
     "rating": "5",
     "students": "3138",
-    "imageUrl": "/assets/images/courses/sass.png",
+    "imageUrl": "/assets/images/courses/sass.webp",
     "imageAlt": "sass",
     "videoUrl": "",
     "discount": "100%"
