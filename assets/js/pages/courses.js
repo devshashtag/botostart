@@ -1,16 +1,16 @@
-import { displayTemplate } from "/botostart/assets/js/modules/template.js";
+import { displayTemplate } from '/botostart/assets/js/modules/template.js';
 
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('DOMContentLoaded', function () {
   // courses cards
-  const courseCardsElm = document.querySelector(".courses__products > .course-cards");
+  const courseCardsElm = document.querySelector('.courses__products > .course-cards');
   // options order
-  const orderSelected = document.querySelector(".options__order > .order__selected");
+  const orderSelected = document.querySelector('.options__order > .order__selected');
   // options view
-  const viewGrid = document.querySelector(".options__view > .view-grid");
-  const viewList = document.querySelector(".options__view > .view-list");
+  const viewGrid = document.querySelector('.options__view > .view-grid');
+  const viewList = document.querySelector('.options__view > .view-list');
 
   // display courses
-  const coursesAPI = "/botostart/assets/js/data/product-courses.json";
+  const coursesAPI = '/botostart/assets/js/data/product-courses.json';
   displayTemplate(coursesAPI, courseCardsElm, 'course');
 
   // order select dropdown

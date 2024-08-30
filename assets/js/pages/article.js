@@ -3,15 +3,15 @@ import sidebarSmoothScroll from '/botostart/assets/js/modules/sidebar.js';
 // functions
 // clear extra indent from code
 function clearIndent(code) {
-  let codeLines = code.split('\n').filter(item => item.trim());
+  let codeLines = code.split('\n').filter((item) => item.trim());
   let indentLevel = codeLines[0].match(/^ */)[0].length;
 
-  return codeLines.map(line => {
-    if (!line.slice(0, indentLevel).trim())
-      return line.slice(indentLevel);
-    else
-      return line.replace(/^ */, '');
-  }).join('\n');
+  return codeLines
+    .map((line) => {
+      if (!line.slice(0, indentLevel).trim()) return line.slice(indentLevel);
+      else return line.replace(/^ */, '');
+    })
+    .join('\n');
 }
 
 // remove autofocus attr from elements
@@ -20,7 +20,7 @@ function preventAutofocus(code) {
 }
 
 // events
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('DOMContentLoaded', function () {
   // sidebar
   const sidebar = document.querySelector('.post-sidebar');
   sidebarSmoothScroll(sidebar);

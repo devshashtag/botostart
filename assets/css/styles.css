@@ -22,24 +22,27 @@ a {
   font-family: yekan;
   font-style: normal;
   font-weight: 600;
-  src: url("/botostart/assets/fonts/yekan/eot/iran-yekan-web-bold.eot");
-  src: url("/botostart/assets/fonts/yekan/woff/iran-yekan-web-bold.woff") format("woff"), url("/botostart/assets/fonts/yekan/ttf/iran-yekan-web-bold.ttf") format("truetype");
+  src: url('/botostart/assets/fonts/yekan/eot/iran-yekan-web-bold.eot');
+  src: url('/botostart/assets/fonts/yekan/woff/iran-yekan-web-bold.woff') format('woff'),
+    url('/botostart/assets/fonts/yekan/ttf/iran-yekan-web-bold.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
   font-family: yekan;
   font-style: normal;
   font-weight: 300;
-  src: url("/botostart/assets/fonts/yekan/eot/iran-yekan-web-light.eot");
-  src: url("/botostart/assets/fonts/yekan/woff/iran-yekan-web-light.woff") format("woff"), url("/botostart/assets/fonts/yekan/ttf/iran-yekan-web-light.ttf") format("truetype");
+  src: url('/botostart/assets/fonts/yekan/eot/iran-yekan-web-light.eot');
+  src: url('/botostart/assets/fonts/yekan/woff/iran-yekan-web-light.woff') format('woff'),
+    url('/botostart/assets/fonts/yekan/ttf/iran-yekan-web-light.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
   font-family: yekan;
   font-style: normal;
   font-weight: 400;
-  src: url("/botostart/assets/fonts/yekan/eot/iran-yekan-web-regular.eot");
-  src: url("/botostart/assets/fonts/yekan/woff/iran-yekan-web-regular.woff") format("woff"), url("/botostart/assets/fonts/yekan/ttf/iran-yekan-web-regular.ttf") format("truetype");
+  src: url('/botostart/assets/fonts/yekan/eot/iran-yekan-web-regular.eot');
+  src: url('/botostart/assets/fonts/yekan/woff/iran-yekan-web-regular.woff') format('woff'),
+    url('/botostart/assets/fonts/yekan/ttf/iran-yekan-web-regular.ttf') format('truetype');
 }
 body {
   font-family: yekan, Arial, sans-serif;
@@ -79,20 +82,38 @@ main > section {
   margin: 0 auto;
 }
 
-main.lost-password, main.accounts, main.articles, main.courses, main.teacher, main.not-found, main.cart, main.about, main.home {
+main.lost-password,
+main.accounts,
+main.articles,
+main.courses,
+main.teacher,
+main.not-found,
+main.cart,
+main.about,
+main.home {
   background-color: rgba(0, 0, 0, 0.0745098039);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main.lost-password > section, main.accounts > section, main.articles > section, main.courses > section, main.teacher > section, main.not-found > section, main.cart > section, main.about > section, main.home > section {
+main.lost-password > section,
+main.accounts > section,
+main.articles > section,
+main.courses > section,
+main.teacher > section,
+main.not-found > section,
+main.cart > section,
+main.about > section,
+main.home > section {
   background-color: #f3f3f3;
 }
 
-.main__article, .main__course {
+.main__article,
+.main__course {
   background-color: #f3f3f3;
 }
-.main__article > [class$=__container], .main__course > [class$=__container] {
+.main__article > [class$='__container'],
+.main__course > [class$='__container'] {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -102,44 +123,67 @@ main.lost-password > section, main.accounts > section, main.articles > section, 
   padding: 3rem 1rem;
 }
 @media (min-width: 768px) {
-  .main__article > [class$=__container], .main__course > [class$=__container] {
+  .main__article > [class$='__container'],
+  .main__course > [class$='__container'] {
     padding: 3rem 2rem;
   }
 }
 @media (min-width: 992px) {
-  .main__article > [class$=__container], .main__course > [class$=__container] {
+  .main__article > [class$='__container'],
+  .main__course > [class$='__container'] {
     flex-direction: row;
   }
 }
-.main__article > [class$=__container] main[class$=__content], .main__course > [class$=__container] main[class$=__content] {
+.main__article > [class$='__container'] main[class$='__content'],
+.main__course > [class$='__container'] main[class$='__content'] {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.main__article > [class$=__container] main[class$=__content] > article, .main__course > [class$=__container] main[class$=__content] > article,
-.main__article > [class$=__container] main[class$=__content] > section,
-.main__course > [class$=__container] main[class$=__content] > section {
+.main__article > [class$='__container'] main[class$='__content'] > article,
+.main__course > [class$='__container'] main[class$='__content'] > article,
+.main__article > [class$='__container'] main[class$='__content'] > section,
+.main__course > [class$='__container'] main[class$='__content'] > section {
   background-color: #ffffff;
   color: #464749;
   border-radius: 1rem;
   font-size: 1.35rem;
 }
 
-main.articles .article__post, main.courses .products__options, main.contact .contact-us,
-main.contact .contact__info, main.about .about__content .content__text, main.about .about__content .content__title, .main-header .header__container, aside.post-sidebar, .course-cards .course__card, .main__article > [class$=__container] main[class$=__content], .main__course > [class$=__container] main[class$=__content] {
-  max-width: 500px;
+main.articles .article__post,
+main.courses .products__options,
+main.contact .contact-us,
+main.contact .contact__info,
+main.about .about__content .content__text,
+main.about .about__content .content__title,
+.main-header .header__container,
+aside.post-sidebar,
+.course-cards .course__card,
+.main__article > [class$='__container'] main[class$='__content'],
+.main__course > [class$='__container'] main[class$='__content'] {
+  max-width: 50rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  main.articles .article__post, main.courses .products__options, main.contact .contact-us,
-main.contact .contact__info, main.about .about__content .content__text, main.about .about__content .content__title, .main-header .header__container, aside.post-sidebar, .course-cards .course__card, .main__article > [class$=__container] main[class$=__content], .main__course > [class$=__container] main[class$=__content] {
+  main.articles .article__post,
+  main.courses .products__options,
+  main.contact .contact-us,
+  main.contact .contact__info,
+  main.about .about__content .content__text,
+  main.about .about__content .content__title,
+  .main-header .header__container,
+  aside.post-sidebar,
+  .course-cards .course__card,
+  .main__article > [class$='__container'] main[class$='__content'],
+  .main__course > [class$='__container'] main[class$='__content'] {
     max-width: unset;
   }
 }
 
 main.accounts .account__content .account__register .account__options label,
-main.accounts .account__content .account__login .account__options label, .login-modal .login__content .form-options label {
+main.accounts .account__content .account__login .account__options label,
+.login-modal .login__content .form-options label {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -150,27 +194,59 @@ main.accounts .account__content .account__login .account__options label, .login-
 }
 
 main.accounts .account__content .account__register .account__options label:focus,
-main.accounts .account__content .account__login .account__options label:focus, .login-modal .login__content .form-options label:focus {
+main.accounts .account__content .account__login .account__options label:focus,
+.login-modal .login__content .form-options label:focus {
   outline: none !important;
 }
 
-main.lost-password .password__content .password__img, main.accounts .account__content .account__register .account__form-changer,
-main.accounts .account__content .account__login .account__form-changer, main.courses .options__view .view-grid,
-main.courses .options__view .view-list, main.teacher .teacher__links .links__icons, main.teacher .teacher__photo, main.teacher .teacher__heading, .main-header .header__buttons .cart-button i .counter, .main-header .header__buttons, .main-header .header__logo, aside.post-sidebar .sidebar__details .details__main, aside.post-sidebar .sidebar__details .details__main i,
-aside.post-sidebar .sidebar__details [class^=info-] i, aside.post-sidebar .sidebar__info .info__register button i, section.post-comments .comments__tab .comments__title, section.post-carousel .carousel__container .carousel__selector, section.post-carousel .carousel__container .carousel__next i,
-section.post-carousel .carousel__container .carousel__prev i, section.post-carousel .carousel__tab .carousel__title, .course-cards .card__icons .icon i, .login-modal .login__content .form-box i, .navbar-toggle, main.courses .options__search, aside.post-sidebar .sidebar__search .search__form, main.articles .article__pagination li a, section.post-comments .comments__pagination li a, main.articles .article__pagination, section.post-comments .comments__pagination, main.lost-password .password__content .password__form .form-box i, main.accounts .account__content .account__register .account__box i,
-main.accounts .account__content .account__login .account__box i, .main-header .header__buttons .cart-button i, .main-header .header__buttons .login-button i {
+main.lost-password .password__content .password__img,
+main.accounts .account__content .account__register .account__form-changer,
+main.accounts .account__content .account__login .account__form-changer,
+main.courses .options__view .view-grid,
+main.courses .options__view .view-list,
+main.teacher .teacher__links .links__icons,
+main.teacher .teacher__photo,
+main.teacher .teacher__heading,
+.main-header .header__buttons .cart-button i .counter,
+.main-header .header__buttons,
+.main-header .header__logo,
+aside.post-sidebar .sidebar__details .details__main,
+aside.post-sidebar .sidebar__details .details__main i,
+aside.post-sidebar .sidebar__details [class^='info-'] i,
+aside.post-sidebar .sidebar__info .info__register button i,
+section.post-comments .comments__tab .comments__title,
+section.post-carousel .carousel__container .carousel__selector,
+section.post-carousel .carousel__container .carousel__next i,
+section.post-carousel .carousel__container .carousel__prev i,
+section.post-carousel .carousel__tab .carousel__title,
+.course-cards .card__icons .icon i,
+.login-modal .login__content .form-box i,
+.navbar-toggle,
+main.courses .options__search,
+aside.post-sidebar .sidebar__search .search__form,
+main.articles .article__pagination li a,
+section.post-comments .comments__pagination li a,
+main.articles .article__pagination,
+section.post-comments .comments__pagination,
+main.lost-password .password__content .password__form .form-box i,
+main.accounts .account__content .account__register .account__box i,
+main.accounts .account__content .account__login .account__box i,
+.main-header .header__buttons .cart-button i,
+.main-header .header__buttons .login-button i {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-header .header__buttons .cart-button i, .main-header .header__buttons .login-button i {
+.main-header .header__buttons .cart-button i,
+.main-header .header__buttons .login-button i {
   color: #654fef;
   font-size: 2.5rem;
 }
 
-main.lost-password .password__content button[type=submit], main.cart .cart__empty .return, main.home .home__heading .btn-start {
+main.lost-password .password__content button[type='submit'],
+main.cart .cart__empty .return,
+main.home .home__heading .btn-start {
   cursor: pointer;
   background-color: #654efe;
   color: #ffffff;
@@ -180,7 +256,9 @@ main.lost-password .password__content button[type=submit], main.cart .cart__empt
   padding: 1.2rem 1.6rem;
   transition: all 0.5s;
 }
-main.lost-password .password__content button[type=submit]:hover, main.cart .cart__empty .return:hover, main.home .home__heading .btn-start:hover {
+main.lost-password .password__content button[type='submit']:hover,
+main.cart .cart__empty .return:hover,
+main.home .home__heading .btn-start:hover {
   background-color: #5442ca;
 }
 
@@ -193,7 +271,10 @@ main.about .about__content .content__title {
 }
 
 main.accounts .account__content .account__register .account__submit,
-main.accounts .account__content .account__login .account__submit, main.contact .contact-us .contact__form .form-submit, section.post-comments .comments__form .form-submit, .login-modal .login__content .form-submit {
+main.accounts .account__content .account__login .account__submit,
+main.contact .contact-us .contact__form .form-submit,
+section.post-comments .comments__form .form-submit,
+.login-modal .login__content .form-submit {
   background-color: #5442ca;
   border-radius: 0.5rem;
   color: #ffffff;
@@ -205,7 +286,8 @@ main.accounts .account__content .account__login .account__submit, main.contact .
 }
 
 main.contact .contact-us .contact__form input,
-main.contact .contact-us .contact__form textarea, section.post-comments .comments__form input,
+main.contact .contact-us .contact__form textarea,
+section.post-comments .comments__form input,
 section.post-comments .comments__form textarea {
   background-color: #ffffff;
   color: #6c757d;
@@ -218,13 +300,15 @@ section.post-comments .comments__form textarea {
 }
 @media (min-width: 768px) {
   main.contact .contact-us .contact__form input,
-main.contact .contact-us .contact__form textarea, section.post-comments .comments__form input,
-section.post-comments .comments__form textarea {
+  main.contact .contact-us .contact__form textarea,
+  section.post-comments .comments__form input,
+  section.post-comments .comments__form textarea {
     font-size: 1.3rem;
   }
 }
 
-main.lost-password .password__content .password__form .form-box, main.accounts .account__content .account__register .account__box,
+main.lost-password .password__content .password__form .form-box,
+main.accounts .account__content .account__register .account__box,
 main.accounts .account__content .account__login .account__box {
   display: flex;
   flex-direction: row-reverse;
@@ -232,18 +316,20 @@ main.accounts .account__content .account__login .account__box {
   border: 1px solid #d3d3d3;
   box-shadow: 0 1px 3px 0 rgba(165, 168, 177, 0.3019607843);
 }
-main.lost-password .password__content .password__form .form-box:focus-within, main.accounts .account__content .account__register .account__box:focus-within,
+main.lost-password .password__content .password__form .form-box:focus-within,
+main.accounts .account__content .account__register .account__box:focus-within,
 main.accounts .account__content .account__login .account__box:focus-within {
   box-shadow: 0 0 10px 0 rgba(165, 168, 177, 0.3019607843);
 }
-main.lost-password .password__content .password__form .form-box input[type=text], main.accounts .account__content .account__register .account__box input[type=text],
-main.accounts .account__content .account__login .account__box input[type=text],
-main.lost-password .password__content .password__form .form-box input[type=password],
-main.accounts .account__content .account__register .account__box input[type=password],
-main.accounts .account__content .account__login .account__box input[type=password],
-main.lost-password .password__content .password__form .form-box input[type=email],
-main.accounts .account__content .account__register .account__box input[type=email],
-main.accounts .account__content .account__login .account__box input[type=email] {
+main.lost-password .password__content .password__form .form-box input[type='text'],
+main.accounts .account__content .account__register .account__box input[type='text'],
+main.accounts .account__content .account__login .account__box input[type='text'],
+main.lost-password .password__content .password__form .form-box input[type='password'],
+main.accounts .account__content .account__register .account__box input[type='password'],
+main.accounts .account__content .account__login .account__box input[type='password'],
+main.lost-password .password__content .password__form .form-box input[type='email'],
+main.accounts .account__content .account__register .account__box input[type='email'],
+main.accounts .account__content .account__login .account__box input[type='email'] {
   color: #464749;
   width: 100%;
   padding: 8px;
@@ -252,7 +338,8 @@ main.accounts .account__content .account__login .account__box input[type=email] 
   font-weight: 300;
   border-radius: 3px;
 }
-main.lost-password .password__content .password__form .form-box i, main.accounts .account__content .account__register .account__box i,
+main.lost-password .password__content .password__form .form-box i,
+main.accounts .account__content .account__register .account__box i,
 main.accounts .account__content .account__login .account__box i {
   font-size: 1.6rem;
   color: #b6b3b3;
@@ -260,18 +347,23 @@ main.accounts .account__content .account__login .account__box i {
 }
 
 main.accounts .account__content .account__register .account__options label,
-main.accounts .account__content .account__login .account__options label, .login-modal .login__content .form-options label {
+main.accounts .account__content .account__login .account__options label,
+.login-modal .login__content .form-options label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-main.accounts .account__content .account__register .account__options label input[type=checkbox],
-main.accounts .account__content .account__login .account__options label input[type=checkbox], .login-modal .login__content .form-options label input[type=checkbox], main.accounts .account__content .account__register .account__options label,
-main.accounts .account__content .account__login .account__options label, .login-modal .login__content .form-options label {
+main.accounts .account__content .account__register .account__options label input[type='checkbox'],
+main.accounts .account__content .account__login .account__options label input[type='checkbox'],
+.login-modal .login__content .form-options label input[type='checkbox'],
+main.accounts .account__content .account__register .account__options label,
+main.accounts .account__content .account__login .account__options label,
+.login-modal .login__content .form-options label {
   cursor: pointer;
 }
 
-main.articles .article__posts, .course-cards {
+main.articles .article__posts,
+.course-cards {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -279,28 +371,33 @@ main.articles .article__posts, .course-cards {
   grid-gap: 3rem 2rem;
 }
 @media (min-width: 768px) {
-  main.articles .article__posts, .course-cards {
+  main.articles .article__posts,
+  .course-cards {
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     padding: 2rem 5rem;
   }
 }
 @media (min-width: 992px) {
-  main.articles .article__posts, .course-cards {
+  main.articles .article__posts,
+  .course-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-main.articles .article__pagination, section.post-comments .comments__pagination {
+main.articles .article__pagination,
+section.post-comments .comments__pagination {
   padding: 1rem;
 }
-main.articles .article__pagination ul, section.post-comments .comments__pagination ul {
+main.articles .article__pagination ul,
+section.post-comments .comments__pagination ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
-main.articles .article__pagination li a, section.post-comments .comments__pagination li a {
+main.articles .article__pagination li a,
+section.post-comments .comments__pagination li a {
   background-color: #e5e5e5;
   font-size: 1.4rem;
   color: #2e2e2e;
@@ -310,10 +407,12 @@ main.articles .article__pagination li a, section.post-comments .comments__pagina
   height: 40px;
   transition: color 0.3s;
 }
-main.articles .article__pagination li a i, section.post-comments .comments__pagination li a i {
+main.articles .article__pagination li a i,
+section.post-comments .comments__pagination li a i {
   font-size: 1.2rem;
 }
-main.articles .article__pagination li.active a, section.post-comments .comments__pagination li.active a,
+main.articles .article__pagination li.active a,
+section.post-comments .comments__pagination li.active a,
 main.articles .article__pagination li a:hover,
 section.post-comments .comments__pagination li a:hover {
   color: #ffffff;
@@ -321,34 +420,40 @@ section.post-comments .comments__pagination li a:hover {
   box-shadow: 0 0 2px rgba(165, 168, 177, 0.3019607843);
 }
 
-main.courses .options__search, aside.post-sidebar .sidebar__search .search__form {
+main.courses .options__search,
+aside.post-sidebar .sidebar__search .search__form {
   border: 1px solid #5442ca;
   min-width: 20rem;
   height: 3.5rem;
   border-radius: 3rem;
   padding: 0 1rem;
 }
-main.courses .options__search form, aside.post-sidebar .sidebar__search .search__form form {
+main.courses .options__search form,
+aside.post-sidebar .sidebar__search .search__form form {
   display: flex;
   width: 100%;
   gap: 0.5rem;
 }
-main.courses .options__search input[type=text], aside.post-sidebar .sidebar__search .search__form input[type=text] {
+main.courses .options__search input[type='text'],
+aside.post-sidebar .sidebar__search .search__form input[type='text'] {
   flex: 1;
   font-size: 1.2rem;
   font-family: inherit;
   background-color: unset;
 }
-main.courses .options__search button[type=submit], aside.post-sidebar .sidebar__search .search__form button[type=submit] {
+main.courses .options__search button[type='submit'],
+aside.post-sidebar .sidebar__search .search__form button[type='submit'] {
   cursor: pointer;
   font-size: 1.4rem;
   color: #9e9e9e;
   background-color: unset;
 }
-main.courses .options__search button[type=submit] i, aside.post-sidebar .sidebar__search .search__form button[type=submit] i {
+main.courses .options__search button[type='submit'] i,
+aside.post-sidebar .sidebar__search .search__form button[type='submit'] i {
   vertical-align: bottom;
 }
-main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sidebar__search .search__form button[type=submit]:hover {
+main.courses .options__search button[type='submit']:hover,
+aside.post-sidebar .sidebar__search .search__form button[type='submit']:hover {
   color: #5442ca;
 }
 
@@ -365,34 +470,35 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   background-color: #343a40;
   position: relative;
   display: inline-block;
-  width: 18px;
-  height: 2px;
+  width: 27px;
+  height: 3px;
   transition: all 0.5s;
 }
-.navbar-toggle .toggle-icon::after, .navbar-toggle .toggle-icon::before {
-  content: "";
+.navbar-toggle .toggle-icon::after,
+.navbar-toggle .toggle-icon::before {
+  content: '';
   position: absolute;
   background-color: #343a40;
-  width: 18px;
-  height: 2px;
+  width: 27px;
+  height: 3px;
   transition: all 0.5s;
 }
 .navbar-toggle .toggle-icon::before {
-  top: -6px;
+  top: -9px;
 }
 .navbar-toggle .toggle-icon::after {
-  top: 6px;
+  top: 9px;
 }
 .navbar-toggle.active .toggle-icon {
   background-color: #ffffff;
 }
 .navbar-toggle.active .toggle-icon::before {
-  -webkit-transform: translateY(6px) rotateZ(-45deg);
-  transform: translateY(6px) rotateZ(-45deg);
+  -webkit-transform: translateY(9px) rotateZ(-45deg);
+  transform: translateY(9px) rotateZ(-45deg);
 }
 .navbar-toggle.active .toggle-icon::after {
-  -webkit-transform: translateY(-6px) rotateZ(45deg);
-  transform: translateY(-6px) rotateZ(45deg);
+  -webkit-transform: translateY(-9px) rotateZ(45deg);
+  transform: translateY(-9px) rotateZ(45deg);
 }
 
 .screen-overlay {
@@ -432,7 +538,7 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   overflow: hidden;
   border-radius: 1rem;
   margin: 5vh auto;
-  max-width: 400px;
+  max-width: 40rem;
 }
 @media (min-width: 576px) {
   .login-modal .login__box {
@@ -478,8 +584,8 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   font-size: 2rem;
   width: 5rem;
 }
-.login-modal .login__content .form-box input[type=text],
-.login-modal .login__content .form-box input[type=password] {
+.login-modal .login__content .form-box input[type='text'],
+.login-modal .login__content .form-box input[type='password'] {
   background-color: #ffffff;
   color: #6c757d;
   font-family: inherit;
@@ -491,8 +597,8 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   -webkit-appearance: none;
 }
 @media (min-width: 768px) {
-  .login-modal .login__content .form-box input[type=text],
-.login-modal .login__content .form-box input[type=password] {
+  .login-modal .login__content .form-box input[type='text'],
+  .login-modal .login__content .form-box input[type='password'] {
     font-size: 1.3rem;
   }
 }
@@ -583,7 +689,7 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/botostart/assets/images/discount.png");
+  background-image: url('/botostart/assets/images/discount.png');
   color: #f3f3f3;
   transition: all 0.3s;
   transform: rotate(-30deg);
@@ -625,12 +731,12 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
 .course-cards .card__details .card__rating {
   direction: ltr;
   overflow-x: hidden;
-  background-image: url("/botostart/assets/icons/star-empty.svg");
+  background-image: url('/botostart/assets/icons/star-empty.svg');
   height: 18px;
   width: 90px;
 }
 .course-cards .card__details .card__rating .rating {
-  background-image: url("/botostart/assets/icons/star-fill.svg");
+  background-image: url('/botostart/assets/icons/star-fill.svg');
   height: 100%;
 }
 .course-cards .card__details .card__teacher i {
@@ -678,7 +784,7 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   padding: 5px 10px;
 }
 .course-cards .card__price .discount:not(:empty) + .price::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: calc(50% - 5px);
   right: -4px;
@@ -688,7 +794,7 @@ main.courses .options__search button[type=submit]:hover, aside.post-sidebar .sid
   background-color: #ffffff;
 }
 .course-cards .card__price .discount:not(:empty) + .price::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 3px;
   top: 47%;
@@ -831,7 +937,8 @@ section.post-carousel .carousel__container .carousel__next i:hover,
 section.post-carousel .carousel__container .carousel__prev i:hover {
   color: #f6f6f6;
 }
-section.post-carousel .carousel__container:hover .carousel__next, section.post-carousel .carousel__container:hover .carousel__prev {
+section.post-carousel .carousel__container:hover .carousel__next,
+section.post-carousel .carousel__container:hover .carousel__prev {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
@@ -1078,7 +1185,7 @@ aside.post-sidebar .sidebar__container {
   gap: 1.5rem;
   transition: top 0.5s;
 }
-aside.post-sidebar .sidebar__container div[class^=sidebar__] {
+aside.post-sidebar .sidebar__container div[class^='sidebar__'] {
   background-color: #ffffff;
   color: #464749;
   border-radius: 0.2rem;
@@ -1092,7 +1199,7 @@ aside.post-sidebar .sidebar__tab {
   border-bottom: 2px solid #f3f3f3;
 }
 aside.post-sidebar .sidebar__tab::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -1129,7 +1236,7 @@ aside.post-sidebar .sidebar__category .category__list li a {
   transition: all 0.3s ease;
 }
 aside.post-sidebar .sidebar__category .category__list li a::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   right: -0.5rem;
@@ -1204,8 +1311,9 @@ aside.post-sidebar .sidebar__info .info__price .price {
   font-size: 1.8rem;
   flex: 2;
 }
-aside.post-sidebar .sidebar__info .info__price::before, aside.post-sidebar .sidebar__info .info__price::after {
-  content: "";
+aside.post-sidebar .sidebar__info .info__price::before,
+aside.post-sidebar .sidebar__info .info__price::after {
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1282,19 +1390,19 @@ aside.post-sidebar .sidebar__info .info__rating b {
 aside.post-sidebar .sidebar__info .info__rating .rating {
   direction: ltr;
   overflow-x: hidden;
-  background-image: url("/botostart/assets/icons/star-empty.svg");
+  background-image: url('/botostart/assets/icons/star-empty.svg');
   height: 18px;
   width: 90px;
 }
 aside.post-sidebar .sidebar__info .info__rating .rating > div {
-  background-image: url("/botostart/assets/icons/star-fill.svg");
+  background-image: url('/botostart/assets/icons/star-fill.svg');
   height: 100%;
 }
 aside.post-sidebar .sidebar__details {
   padding: 1rem;
 }
 aside.post-sidebar .sidebar__details .details__main,
-aside.post-sidebar .sidebar__details [class^=info-] {
+aside.post-sidebar .sidebar__details [class^='info-'] {
   display: flex;
   gap: 1rem;
   padding: 1rem;
@@ -1304,22 +1412,22 @@ aside.post-sidebar .sidebar__details [class^=info-] {
   border-bottom: 1px solid #e5e5e5;
 }
 aside.post-sidebar .sidebar__details .details__main:last-child,
-aside.post-sidebar .sidebar__details [class^=info-]:last-child {
+aside.post-sidebar .sidebar__details [class^='info-']:last-child {
   border-radius: 1rem;
 }
 aside.post-sidebar .sidebar__details .details__main:nth-child(2),
-aside.post-sidebar .sidebar__details [class^=info-]:nth-child(2) {
+aside.post-sidebar .sidebar__details [class^='info-']:nth-child(2) {
   border-top: 1px solid #e5e5e5;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
 aside.post-sidebar .sidebar__details .details__main span,
-aside.post-sidebar .sidebar__details [class^=info-] span {
+aside.post-sidebar .sidebar__details [class^='info-'] span {
   color: #6d6d6d;
   margin-left: auto;
 }
 aside.post-sidebar .sidebar__details .details__main i,
-aside.post-sidebar .sidebar__details [class^=info-] i {
+aside.post-sidebar .sidebar__details [class^='info-'] i {
   width: 2rem;
   font-size: 1.5rem;
   color: #cccccc;
@@ -1356,14 +1464,14 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
 }
 
 .main-header .header__container .header__navbar nav {
-  width: 200px;
+  width: 25rem;
   background-color: #6560d1;
   transition: all 0.5s;
   overflow-y: auto;
   z-index: 6;
   position: fixed;
   top: 65px;
-  right: -200px;
+  right: -25rem;
   bottom: 0;
 }
 .main-header .header__container .header__navbar nav ul {
@@ -1389,7 +1497,7 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
   z-index: 5;
 }
 .main-header .header__container .header__navbar.active nav {
-  transform: translateX(-200px);
+  transform: translateX(-25rem);
 }
 @media (min-width: 992px) {
   .main-header .header__container .header__navbar {
@@ -1427,8 +1535,6 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
   .main-header .header__container .header__navbar nav ul li a:hover {
     color: #5442ca;
   }
-}
-@media (min-width: 992px) {
   .main-header .header__container .header__navbar nav ul li.active {
     pointer-events: none;
     border-radius: 3px;
@@ -1437,13 +1543,9 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
   .main-header .header__container .header__navbar nav ul li.active a:hover {
     color: #464749;
   }
-}
-@media (min-width: 992px) {
   .main-header .header__container .header__navbar nav hr {
     visibility: hidden;
   }
-}
-@media (min-width: 992px) {
   .main-header .header__container .header__navbar.active nav {
     transform: translateX(0);
   }
@@ -1561,7 +1663,7 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
 }
 @media (min-width: 576px) {
   .main-header .header__buttons .buttons__content .cart-content .cart-sidebar {
-    width: 339px;
+    width: 40rem;
   }
 }
 .main-header .header__buttons .buttons__content .cart-content .cart-sidebar img {
@@ -1624,7 +1726,7 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
   }
 }
 .main-footer .footer__title::after {
-  content: "";
+  content: '';
   display: inline;
   width: 18px;
   height: 3px;
@@ -1657,7 +1759,7 @@ aside.post-sidebar .sidebar__teacher .teacher__info .job {
   font-size: 14px;
 }
 .main-footer .footer__menu ul li a::before {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 1px;
@@ -1716,8 +1818,8 @@ main.home section h2.title {
 }
 main.home .home__heading {
   height: calc(100vh - 65px);
-  max-height: 900px;
-  min-height: 500px;
+  max-height: 80rem;
+  min-height: 50rem;
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: 27rem;
@@ -1887,7 +1989,7 @@ main.home .home__articles .article__category {
 }
 main.home .home__articles .article__category::before {
   display: block;
-  content: "";
+  content: '';
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -1920,12 +2022,12 @@ main.home .home__articles .article__name {
 }
 
 main.about .about__content {
+  min-height: calc(100vh - 65px);
   padding: 2rem;
-  padding-bottom: 6rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1920px) {
   main.about .about__content {
-    padding-bottom: 8rem;
+    min-height: calc(80rem - 65px);
   }
 }
 main.about .about__content .content__text p {
@@ -1944,14 +2046,17 @@ main.about .about__content .content__text p {
 }
 
 main.cart .cart__empty {
+  min-height: calc(100vh - 65px);
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  height: calc(100vh - 65px);
-  max-height: 900px;
-  min-height: 500px;
+}
+@media (min-width: 1920px) {
+  main.cart .cart__empty {
+    min-height: calc(80rem - 65px);
+  }
 }
 main.cart .cart__empty.active {
   display: flex;
@@ -1971,9 +2076,7 @@ main.cart .cart__empty .return {
 }
 
 main.not-found .error {
-  height: calc(100vh - 65px);
-  min-height: 500px;
-  max-height: 900px;
+  min-height: calc(100vh - 65px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1995,6 +2098,11 @@ main.not-found .error-code {
 @media (min-width: 768px) {
   main.not-found .error-code {
     font-size: 15rem;
+  }
+}
+@media (min-width: 1920px) {
+  main.not-found .error-code {
+    min-height: calc(80rem - 65px);
   }
 }
 main.not-found .error-message {
@@ -2042,13 +2150,19 @@ main.contact {
 main.contact .contact__container {
   display: flex;
   flex-direction: column;
-  background-color: #f3f3f3;
+  background-color: #e5e5e5;
   max-width: 1230px;
+  min-height: calc(100vh - 65px);
   margin: 0 auto;
 }
 @media (min-width: 992px) {
   main.contact .contact__container {
     flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1920px) {
+  main.contact .contact__container {
+    min-height: calc(80rem - 65px);
   }
 }
 main.contact .contact-us,
@@ -2084,7 +2198,7 @@ main.contact .contact-us .contact__form label {
   font-size: 1.4rem;
 }
 main.contact .contact-us .contact__form label.required::after {
-  content: "*";
+  content: '*';
   color: #ec406a;
   padding-inline: 0.5rem;
 }
@@ -2131,7 +2245,13 @@ main.contact .contact__info .info__address span {
 }
 
 main.teacher .teacher__info {
+  min-height: calc(100vh - 65px);
   padding-inline: 2rem;
+}
+@media (min-width: 1920px) {
+  main.teacher .teacher__info {
+    min-height: calc(80rem - 65px);
+  }
 }
 main.teacher .teacher__heading {
   padding: 3rem;
@@ -2205,8 +2325,9 @@ main.teacher .teacher__links .links__heading {
     margin-top: -0.8rem;
   }
 }
-main.teacher .teacher__links .links__heading::before, main.teacher .teacher__links .links__heading::after {
-  content: "";
+main.teacher .teacher__links .links__heading::before,
+main.teacher .teacher__links .links__heading::after {
+  content: '';
   border: 1px solid #b6b3b3;
   display: inline-block;
   margin: auto 0;
@@ -2443,7 +2564,7 @@ main.courses .options__search {
   line-height: 2;
 }
 .main__course main.course__content .course__post > ul li::before {
-  content: "•";
+  content: '•';
   display: inline-block;
   color: #ec406a;
 }
@@ -2485,7 +2606,8 @@ main.courses .options__search {
   min-height: 5rem;
   list-style: none;
 }
-.main__course main.course__content .course__post .course__sections summary::marker, .main__course main.course__content .course__post .course__sections summary::-webkit-details-marker {
+.main__course main.course__content .course__post .course__sections summary::marker,
+.main__course main.course__content .course__post .course__sections summary::-webkit-details-marker {
   display: none;
 }
 .main__course main.course__content .course__post .course__sections summary:hover {
@@ -2678,7 +2800,7 @@ main.articles .article__post .post__read-more a {
   line-height: 2;
 }
 .main__article article.article__post ul li::before {
-  content: "•";
+  content: '•';
   display: inline-block;
   color: #ec406a;
 }
@@ -2709,14 +2831,14 @@ main.articles .article__post .post__read-more a {
   margin: 0.5rem 0;
   min-width: 150px;
 }
-.main__article article.article__post .code-output input[type=submit] {
+.main__article article.article__post .code-output input[type='submit'] {
   cursor: pointer;
   border-radius: 2px;
   padding: 0.5rem 2rem;
   color: #343a40;
   border: 1px solid #f3f3f3;
 }
-.main__article article.article__post .code-output input[type=submit]:hover {
+.main__article article.article__post .code-output input[type='submit']:hover {
   color: #5442ca;
   border: 1px solid #e5e5e5;
 }
@@ -2742,7 +2864,7 @@ main.accounts .account__content .account__modal {
   }
 }
 main.accounts .account__content .account__modal::before {
-  content: "";
+  content: '';
   width: 16rem;
   height: 16rem;
   position: absolute;
@@ -2756,7 +2878,7 @@ main.accounts .account__content .account__modal::before {
   z-index: -1;
 }
 main.accounts .account__content .account__modal::after {
-  content: "";
+  content: '';
   position: absolute;
   top: -6rem;
   right: 0;
@@ -2764,7 +2886,7 @@ main.accounts .account__content .account__modal::after {
   width: 12rem;
   height: 12rem;
   margin: auto;
-  background: url("/botostart/assets/images/accounts/accounts.png") #654fef center/cover no-repeat;
+  background: url('/botostart/assets/images/accounts/accounts.png') #654fef center/cover no-repeat;
   border-radius: 100%;
 }
 main.accounts .account__content .account__register,
@@ -2789,12 +2911,12 @@ main.accounts .account__content .account__login .account__form {
   gap: 2rem;
   padding: 2.5rem 0;
 }
-main.accounts .account__content .account__register .account__box input[type=text],
-main.accounts .account__content .account__register .account__box input[type=password],
-main.accounts .account__content .account__register .account__box input[type=email],
-main.accounts .account__content .account__login .account__box input[type=text],
-main.accounts .account__content .account__login .account__box input[type=password],
-main.accounts .account__content .account__login .account__box input[type=email] {
+main.accounts .account__content .account__register .account__box input[type='text'],
+main.accounts .account__content .account__register .account__box input[type='password'],
+main.accounts .account__content .account__register .account__box input[type='email'],
+main.accounts .account__content .account__login .account__box input[type='text'],
+main.accounts .account__content .account__login .account__box input[type='password'],
+main.accounts .account__content .account__login .account__box input[type='email'] {
   padding: 1rem;
   padding-left: 5px;
 }
@@ -2834,7 +2956,7 @@ main.accounts .account__content .account__login .account__options {
 }
 @media (min-width: 576px) {
   main.accounts .account__content .account__register .account__options,
-main.accounts .account__content .account__login .account__options {
+  main.accounts .account__content .account__login .account__options {
     font-size: 1.2rem;
   }
 }
@@ -2889,14 +3011,20 @@ main.accounts .account__content .account__warnings ul li {
 }
 
 main.lost-password .password__content {
+  min-height: calc(100vh - 65px);
   padding: 5rem 1rem;
 }
+@media (min-width: 1920px) {
+  main.lost-password .password__content {
+    min-height: calc(80rem - 65px);
+  }
+}
 main.lost-password .password__content .password__modal {
+  box-shadow: 0 6px 20px rgba(165, 168, 177, 0.3019607843);
   background-color: #ffffff;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: 60rem;
   margin: 0 auto;
-  box-shadow: 0 6px 20px rgba(165, 168, 177, 0.3019607843);
 }
 main.lost-password .password__content .password__img {
   padding: 4rem;
@@ -2933,7 +3061,7 @@ main.lost-password .password__content .password__form label {
   font-size: 1.3rem;
   color: #6c757d;
 }
-main.lost-password .password__content button[type=submit] {
+main.lost-password .password__content button[type='submit'] {
   font-size: 1.4rem;
   padding: 1rem 4rem;
 }
