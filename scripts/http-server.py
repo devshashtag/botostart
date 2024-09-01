@@ -5,23 +5,14 @@ import random
 import http.server
 import socketserver
 
-HOST = "localhost"
-
-default_port= 8000
+HOST = "127.0.0.1"
+PORT = random.randint(8000, 65535)
 
 try:
-    if sys.argv[1].isdigit():
-        user_port = int(sys.argv[1])
-
-    elif sys.argv[1] == 'random':
-        user_port = random.randint(8000, 65535)
-
-    else:
-        user_port = default_port
-
-    PORT = user_port
+    if len(sys.argv) > 1:
+        PORT = int(sys.argv[1])
 except:
-    PORT = default_port
+    pass
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -35,11 +26,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     with socketserver.TCPServer((HOST, PORT), Handler) as httpd:
-
-        print(f"serving at http://{HOST}:{PORT}")
         try:
+            print(f"serving at http://{HOST}:{PORT}")
             httpd.serve_forever()
         except:
+            print(f"failed to run server at http://{HOST}:{PORT}")
             httpd.shutdown()
             httpd.server_close()
 
